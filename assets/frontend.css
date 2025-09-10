@@ -1,0 +1,553 @@
+/* Watso WhatsApp Chat - Frontend Styles */
+
+/* Main widget container */
+#watso-chat-widget {
+	position: fixed !important;
+	z-index: 999999 !important;
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+	transition: opacity 0.3s ease !important;
+}
+
+#watso-chat-widget.watso-visible {
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/* Chat button base styles - Text button with icon */
+.watso-chat-button {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 12px 20px !important;
+	background: #119849 !important;
+	color: white !important;
+	text-decoration: none !important;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+	transition: all 0.3s ease !important;
+	cursor: pointer !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	min-width: auto !important;
+	height: auto !important;
+	width: auto !important;
+	white-space: nowrap !important;
+	border: none !important;
+	outline: none !important;
+}
+
+.watso-chat-button:hover {
+	background: #0d7a3a !important;
+	transform: translateY(-2px) !important;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.watso-chat-button:active {
+	transform: translateY(0) !important;
+}
+
+.watso-chat-button:focus {
+	outline: 2px solid rgba(255, 255, 255, 0.5) !important;
+	outline-offset: 2px !important;
+}
+
+/* Icon styles */
+.watso-icon {
+	width: 24px !important;
+	height: 24px !important;
+	margin-right: 8px !important;
+	flex-shrink: 0 !important;
+}
+
+/* Button text */
+.watso-button-text {
+	color: white !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	line-height: 1 !important;
+}
+
+/* Icon-only button styles - when text element doesn't exist */
+.watso-chat-button:not(:has(.watso-button-text)) {
+	padding: 12px !important;
+	width: 48px !important;
+	height: 48px !important;
+}
+
+.watso-chat-button:not(:has(.watso-button-text)) .watso-icon {
+	margin-right: 0 !important;
+}
+
+/* Position classes */
+.watso-bottom-right {
+	bottom: 20px !important;
+	right: 20px !important;
+}
+
+.watso-bottom-left {
+	bottom: 20px !important;
+	left: 20px !important;
+}
+
+.watso-middle-right {
+	top: 50% !important;
+	right: 20px !important;
+	transform: translateY(-50%) !important;
+}
+
+.watso-middle-left {
+	top: 50% !important;
+	left: 20px !important;
+	transform: translateY(-50%) !important;
+}
+
+/* Dropdown Menu Styles */
+.watso-dropdown-menu {
+	position: absolute;
+	bottom: 70px;
+	right: 0;
+	width: 320px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+	border: 1px solid #e5e5e5;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10px);
+	transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+.watso-dropdown-menu.watso-show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.watso-dropdown-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 20px;
+	background: #f8f9fa;
+	border-bottom: 1px solid #e5e5e5;
+	font-weight: 600;
+	color: #333;
+	font-size: 14px;
+}
+
+.watso-close-dropdown {
+	background: none;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: #666;
+	padding: 0;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: all 0.2s ease;
+}
+
+.watso-close-dropdown:hover {
+	background: #e9ecef;
+	color: #333;
+}
+
+.watso-dropdown-content {
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.watso-dropdown-item {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 16px 20px;
+	text-decoration: none;
+	color: #333;
+	border-bottom: 1px solid #f0f0f0;
+	transition: all 0.2s ease;
+	min-height: auto; /* Dynamic height */
+}
+
+.watso-dropdown-item:hover {
+	background: #f8f9fa;
+}
+
+.watso-dropdown-item:last-child {
+	border-bottom: none;
+}
+
+.watso-contact-info {
+	display: flex;
+	align-items: flex-start;
+	flex: 1;
+	gap: 12px;
+}
+
+.watso-contact-avatar {
+	width: 45px;
+	height: 45px;
+	background: #119849;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	margin-top: 2px;
+}
+
+.watso-contact-avatar img {
+	width: 26px;
+	height: 26px;
+	filter: brightness(0) invert(1);
+}
+
+.watso-contact-details {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	justify-content: center; /* Center content */
+	min-height: 45px; /* Same height as avatar */
+}
+
+/* Contact Name */
+.watso-contact-name {
+	font-weight: 600;
+	font-size: 15px;
+	color: #333;
+	line-height: 1.2;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Department */
+.watso-contact-department {
+	font-weight: 500;
+	font-size: 13px;
+	color: #666666;
+	line-height: 1.2;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Short Description */
+.watso-contact-description {
+	font-size: 11px;
+	color: #888888;
+	line-height: 1.3;
+	font-style: italic;
+	margin-top: 2px;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Right side - Status - Only show if available */
+.watso-contact-status {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	margin-top: 2px;
+	gap: 6px;
+	align-self: flex-start; /* Start at top */
+}
+
+.watso-online-indicator {
+	width: 8px;
+	height: 8px;
+	background: #4CAF50;
+	border-radius: 50%;
+	animation: watso-pulse 2s infinite;
+	flex-shrink: 0;
+}
+
+.watso-status-text {
+	font-size: 11px;
+	color: #4CAF50;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+/* Animations */
+@keyframes watso-pulse {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.2);
+		opacity: 0.7;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.watso-chat-button {
+	animation: watso-float 3s ease-in-out infinite;
+}
+
+@keyframes watso-float {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-6px);
+	}
+}
+
+.watso-chat-button:hover {
+	animation: none;
+}
+
+/* Position-specific dropdown adjustments */
+.watso-bottom-left .watso-dropdown-menu {
+	right: auto;
+	left: 0;
+}
+
+.watso-middle-right .watso-dropdown-menu {
+	bottom: auto;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.watso-middle-right .watso-dropdown-menu.watso-show {
+	transform: translateY(-50%);
+}
+
+.watso-middle-left .watso-dropdown-menu {
+	bottom: auto;
+	top: 50%;
+	right: auto;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.watso-middle-left .watso-dropdown-menu.watso-show {
+	transform: translateY(-50%);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.watso-chat-button {
+		padding: 10px 16px !important;
+		font-size: 13px !important;
+	}
+
+	.watso-icon {
+		width: 20px !important;
+		height: 20px !important;
+		margin-right: 6px !important;
+	}
+
+	.watso-dropdown-menu {
+		width: 300px;
+		max-width: calc(100vw - 40px);
+	}
+
+	.watso-dropdown-item {
+		padding: 14px 16px;
+		min-height: auto; /* Dynamic height on mobile too */
+	}
+
+	.watso-contact-avatar {
+		width: 40px;
+		height: 40px;
+	}
+
+	.watso-contact-avatar img {
+		width: 22px;
+		height: 22px;
+	}
+
+	.watso-contact-name {
+		font-size: 14px;
+	}
+
+	.watso-contact-department {
+		font-size: 12px;
+	}
+
+	.watso-contact-description {
+		font-size: 10px;
+	}
+
+	.watso-status-text {
+		font-size: 10px;
+	}
+
+	.watso-bottom-right,
+	.watso-bottom-left {
+		bottom: 16px !important;
+	}
+
+	.watso-bottom-right {
+		right: 16px !important;
+	}
+
+	.watso-bottom-left {
+		left: 16px !important;
+	}
+
+	.watso-middle-right {
+		right: 16px !important;
+	}
+
+	.watso-middle-left {
+		left: 16px !important;
+	}
+
+	/* Mobile icon-only */
+	.watso-chat-button:not(:has(.watso-button-text)) {
+		padding: 10px !important;
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+	.watso-chat-button:not(:has(.watso-button-text)) .watso-icon {
+		width: 20px !important;
+		height: 20px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.watso-chat-button {
+		padding: 8px 12px !important;
+		font-size: 12px !important;
+	}
+
+	.watso-dropdown-menu {
+		width: 280px;
+	}
+
+	.watso-dropdown-header {
+		padding: 12px 16px;
+		font-size: 13px;
+	}
+
+	.watso-dropdown-item {
+		padding: 12px 14px;
+		min-height: auto; /* Dynamic on small screens too */
+	}
+
+	.watso-contact-info {
+		gap: 10px;
+	}
+
+	.watso-contact-avatar {
+		width: 36px;
+		height: 36px;
+	}
+
+	.watso-contact-avatar img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.watso-contact-name {
+		font-size: 13px;
+	}
+
+	.watso-contact-department {
+		font-size: 11px;
+	}
+
+	.watso-contact-description {
+		font-size: 9px;
+	}
+
+	.watso-status-text {
+		font-size: 9px;
+	}
+
+	.watso-online-indicator {
+		width: 6px;
+		height: 6px;
+	}
+}
+
+/* Accessibility - Keyboard access only */
+.watso-dropdown-item:focus-visible {
+	background: #e3f2fd;
+	outline: 2px solid #119849;
+	outline-offset: -2px;
+}
+
+.watso-close-dropdown:focus-visible {
+	outline: 2px solid #119849;
+	outline-offset: 2px;
+}
+
+/* Remove focus, only use focus-visible */
+.watso-dropdown-item:focus {
+	outline: none;
+}
+
+.watso-close-dropdown:focus {
+	outline: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.watso-chat-button,
+	.watso-dropdown-menu,
+	.watso-online-indicator {
+		animation: none;
+		transition: none;
+	}
+
+	.watso-chat-button:hover {
+		transform: none;
+	}
+}
+
+/* Loading state */
+.watso-loading .watso-chat-button {
+	opacity: 0.7;
+	pointer-events: none;
+}
+
+.watso-loading .watso-chat-button::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 -10px;
+	border: 2px solid transparent;
+	border-top: 2px solid #fff;
+	border-radius: 50%;
+	animation: watso-spin 1s linear infinite;
+}
+
+@keyframes watso-spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Print styles */
+@media print {
+	#watso-chat-widget {
+		display: none !important;
+	}
+}

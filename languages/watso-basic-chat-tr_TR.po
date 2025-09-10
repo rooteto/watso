@@ -1,0 +1,640 @@
+# Watso - Basic Help Chat Button
+# Copyright (C) 2024 Hosteva Hosting
+# This file is distributed under the same license as the Watso - Basic Help Chat Button package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Watso - Basic Help Chat Button 1.0.1\n"
+"Report-Msgid-Bugs-To: https://www.hosteva.com\n"
+"POT-Creation-Date: 2024-12-23 15:30+0000\n"
+"PO-Revision-Date: 2025-06-22 14:49+0300\n"
+"Last-Translator: Hosteva Team <support@hosteva.com>\n"
+"Language-Team: Turkish <tr@li.org>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: watso-basic-chat\n"
+
+#. Plugin Name
+msgid "Watso – Basic Help Chat Button"
+msgstr "Watso – Temel Yardım Chat Butonu"
+
+#. Plugin URI
+msgid "https://www.hosteva.com/plugins/watso-basic-chat/"
+msgstr "https://www.hosteva.com/plugins/watso-basic-chat/"
+
+#. Description
+msgid ""
+"A simple and elegant WhatsApp chat button to support your visitors with "
+"multi-number support, UTM tracking, full customization, and scheduling."
+msgstr ""
+"Ziyaretçilerinize destek sağlamak için çoklu numara desteği, UTM takibi, tam "
+"özelleştirme ve zamanlama özellikli basit ve şık bir WhatsApp chat butonu."
+
+#. Author
+msgid "Hosteva Hosting"
+msgstr "Hosteva Hosting"
+
+#. Author URI
+msgid "https://www.hosteva.com/"
+msgstr "https://www.hosteva.com/"
+
+#: watso-basic-chat.php:237
+msgid "Watso - Basic Chat Settings"
+msgstr "Watso - Temel Chat Ayarları"
+
+#: watso-basic-chat.php:238
+msgid "Watso Chat"
+msgstr "Watso Chat"
+
+#: watso-basic-chat.php:287
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: watso-basic-chat.php:288
+msgid "An error occurred while loading content."
+msgstr "İçerik yüklenirken bir hata oluştu."
+
+#: watso-basic-chat.php:310
+msgid "WhatsApp Support"
+msgstr "WhatsApp Destek"
+
+#: watso-basic-chat.php:311 includes/class-button-renderer.php:33
+msgid "Select a contact"
+msgstr "Bir kişi seçin"
+
+#: watso-basic-chat.php:312
+msgid "Hello! I am visiting this page:"
+msgstr "Merhaba! Bu sayfayı ziyaret ediyorum:"
+
+#: watso-basic-chat.php:320
+msgid "John Smith"
+msgstr "Ahmet Yılmaz"
+
+#: watso-basic-chat.php:321
+msgid "Technical Support"
+msgstr "Teknik Destek"
+
+#: watso-basic-chat.php:322
+msgid "Online"
+msgstr "Çevrimiçi"
+
+#: watso-basic-chat.php:668
+msgid "Watso Chat:"
+msgstr "Watso Chat:"
+
+#: watso-basic-chat.php:669
+msgid ""
+"Since database cleanup is active, all plugin data has been deleted. You can "
+"make your new settings."
+msgstr ""
+"Veritabanı temizliği aktif olduğundan, tüm eklenti verileri silindi. Yeni "
+"ayarlarınızı yapabilirsiniz."
+
+#: admin/admin-page.php:24
+msgid "WhatsApp chat button for instant customer support"
+msgstr "Anında müşteri desteği için WhatsApp chat butonu"
+
+#: admin/admin-page.php:30 includes/functions/general.php:12
+#: includes/functions/general.php:122
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: admin/admin-page.php:33 includes/functions/appearance.php:11
+msgid "Appearance & Colors"
+msgstr "Görünüm ve Renkler"
+
+#: admin/admin-page.php:36
+msgid "Numbers"
+msgstr "Numaralar"
+
+#: admin/admin-page.php:39
+msgid "Tracking"
+msgstr "İzleme"
+
+#: admin/admin-page.php:42
+msgid "Schedule"
+msgstr "Zamanlama"
+
+#: admin/admin-page.php:45
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: admin/admin-page.php:77
+msgid "Save Settings"
+msgstr "Ayarları Kaydet"
+
+#: includes/functions/general.php:18 includes/functions/general.php:125
+msgid "Plugin Status"
+msgstr "Eklenti Durumu"
+
+#: includes/functions/general.php:25 includes/functions/general.php:135
+msgid "Position"
+msgstr "Konum"
+
+#: includes/functions/general.php:32 includes/functions/general.php:130
+msgid "Show on Mobile"
+msgstr "Mobilde Göster"
+
+#: includes/functions/general.php:39 includes/functions/general.php:140
+#: includes/functions/numbers.php:36
+msgid "Title"
+msgstr "Başlık"
+
+#: includes/functions/general.php:46 includes/functions/general.php:145
+msgid "Dropdown Header Text"
+msgstr "Açılır Menü Başlık Metni"
+
+#: includes/functions/general.php:53 includes/functions/general.php:150
+msgid "Corner Radius"
+msgstr "Köşe Yuvarlaklığı"
+
+#: includes/functions/general.php:58
+msgid "You can configure the basic settings of the plugin here."
+msgstr "Eklentinin temel ayarlarını buradan yapılandırabilirsiniz."
+
+#: includes/functions/general.php:66
+msgid "Turn the plugin on or off. When off, nobody can see the button."
+msgstr "Eklentiyi açın veya kapatın. Kapalı olduğunda kimse butonu göremez."
+
+#: includes/functions/general.php:72
+msgid "Bottom Right"
+msgstr "Sağ Alt"
+
+#: includes/functions/general.php:73
+msgid "Bottom Left"
+msgstr "Sol Alt"
+
+#: includes/functions/general.php:74
+msgid "Middle Right"
+msgstr "Sağ Orta"
+
+#: includes/functions/general.php:75
+msgid "Middle Left"
+msgstr "Sol Orta"
+
+#: includes/functions/general.php:82
+msgid "Select the position where the button will appear on the screen."
+msgstr "Butonun ekranda görüneceği konumu seçin."
+
+#: includes/functions/general.php:91
+msgid "Should the button also be visible on mobile devices?"
+msgstr "Buton mobil cihazlarda da görünür olsun mu?"
+
+#: includes/functions/general.php:99
+msgid "The text that appears on the button."
+msgstr "Buton üzerinde görünen metin."
+
+#: includes/functions/general.php:105
+msgid "Choose a contact"
+msgstr "Bir kişi seçin"
+
+#: includes/functions/general.php:106
+msgid "The header text displayed in the multi-number menu."
+msgstr "Çoklu numara menüsünde görüntülenen başlık metni."
+
+#: includes/functions/general.php:115
+msgid "Button corner radius (0px = square, 30px = fully rounded)."
+msgstr "Buton köşe yuvarlaklığı (0px = kare, 30px = tamamen yuvarlak)."
+
+#: includes/functions/appearance.php:14
+msgid "Default Icon"
+msgstr "Varsayılan İkon"
+
+#: includes/functions/appearance.php:19
+msgid "Reset to Default"
+msgstr "Varsayılana Sıfırla"
+
+#: includes/functions/appearance.php:22
+msgid "Default WhatsApp icon is displayed, you can change it below."
+msgstr ""
+"Varsayılan WhatsApp ikonu görüntüleniyor, aşağıdan değiştirebilirsiniz."
+
+#: includes/functions/appearance.php:26
+msgid "Upload Custom Icon"
+msgstr "Özel İkon Yükle"
+
+#: includes/functions/appearance.php:30
+msgid "Upload Icon"
+msgstr "İkon Yükle"
+
+#: includes/functions/appearance.php:31
+msgid "Remove"
+msgstr "Kaldır"
+
+#: includes/functions/appearance.php:36
+msgid "Upload your own icon (recommended size: 60x60px, PNG format)."
+msgstr "Kendi ikonunuzu yükleyin (önerilen boyut: 60x60px, PNG formatı)."
+
+#: includes/functions/appearance.php:40
+msgid "Button Color"
+msgstr "Buton Rengi"
+
+#: includes/functions/appearance.php:43 includes/functions/appearance.php:52
+#: includes/functions/appearance.php:59 includes/functions/appearance.php:66
+msgid "Reset"
+msgstr "Sıfırla"
+
+#: includes/functions/appearance.php:45
+msgid "WhatsApp green is default but you can change it."
+msgstr "WhatsApp yeşili varsayılandır ancak değiştirebilirsiniz."
+
+#: includes/functions/appearance.php:49
+msgid "Short Description Color"
+msgstr "Kısa Açıklama Rengi"
+
+#: includes/functions/appearance.php:52
+msgid "Color of short description text. Gray tones are recommended."
+msgstr "Kısa açıklama metninin rengi. Gri tonlar önerilir."
+
+#: includes/functions/appearance.php:56
+msgid "Status Text Color"
+msgstr "Durum Metni Rengi"
+
+#: includes/functions/appearance.php:59
+msgid "Color of status text (Online, Busy, etc.). Default green."
+msgstr "Durum metninin rengi (Çevrimiçi, Meşgul, vb.). Varsayılan yeşil."
+
+#: includes/functions/appearance.php:63
+msgid "Department Text Color"
+msgstr "Departman Metni Rengi"
+
+#: includes/functions/appearance.php:66
+msgid "Color of department name. Appears as subtitle."
+msgstr "Departman adının rengi. Alt başlık olarak görünür."
+
+#: includes/functions/appearance.php:71
+msgid "Color Descriptions"
+msgstr "Renk Açıklamaları"
+
+#: includes/functions/appearance.php:73
+msgid "Button Color:"
+msgstr "Buton Rengi:"
+
+#: includes/functions/appearance.php:73
+msgid "Main button and avatar background"
+msgstr "Ana buton ve avatar arka planı"
+
+#: includes/functions/appearance.php:74
+msgid "Status Text:"
+msgstr "Durum Metni:"
+
+#: includes/functions/appearance.php:74
+msgid "Online/Busy status and online indicator"
+msgstr "Çevrimiçi/Meşgul durumu ve çevrimiçi göstergesi"
+
+#: includes/functions/appearance.php:75
+msgid "Department:"
+msgstr "Departman:"
+
+#: includes/functions/appearance.php:75
+msgid "Department information under person's name"
+msgstr "Kişinin adı altındaki departman bilgisi"
+
+#: includes/functions/appearance.php:76
+msgid "Short Description:"
+msgstr "Kısa Açıklama:"
+
+#: includes/functions/appearance.php:76
+msgid "Small description text at the bottom"
+msgstr "Alttaki küçük açıklama metni"
+
+#: includes/functions/numbers.php:11
+msgid "Numbers & Contact Information"
+msgstr "Numaralar ve İletişim Bilgileri"
+
+#: includes/functions/numbers.php:23
+msgid "Contact"
+msgstr "Kişi"
+
+#: includes/functions/numbers.php:31
+msgid "Phone Number"
+msgstr "Telefon Numarası"
+
+#: includes/functions/numbers.php:32
+msgid "e.g: +905551234567"
+msgstr "örn: +905551234567"
+
+#: includes/functions/numbers.php:37
+msgid "e.g: John Smith"
+msgstr "örn: Ahmet Yılmaz"
+
+#: includes/functions/numbers.php:41
+msgid "Department"
+msgstr "Departman"
+
+#: includes/functions/numbers.php:42
+msgid "e.g: Technical Support"
+msgstr "örn: Teknik Destek"
+
+#: includes/functions/numbers.php:46
+msgid "Status Text"
+msgstr "Durum Metni"
+
+#: includes/functions/numbers.php:47
+msgid "e.g: Online, Busy, In Meeting"
+msgstr "örn: Çevrimiçi, Meşgul, Toplantıda"
+
+#: includes/functions/numbers.php:48
+msgid "If left blank, status will not be displayed"
+msgstr "Boş bırakılırsa durum gösterilmeyecek"
+
+#: includes/functions/numbers.php:52
+msgid "Short Description"
+msgstr "Kısa Açıklama"
+
+#: includes/functions/numbers.php:53
+msgid "e.g: Available Mon-Fri 9AM-6PM"
+msgstr "örn: Pzt-Cum 09:00-18:00 arası müsait"
+
+#: includes/functions/numbers.php:54
+msgid ""
+"Displayed in small font. You can write working hours, availability, or any "
+"brief note."
+msgstr ""
+"Küçük yazı tipiyle görüntülenir. Çalışma saatleri, müsaitlik durumu veya "
+"kısa notlar yazabilirsiniz."
+
+#: includes/functions/numbers.php:58 includes/functions/schedule.php:63
+msgid "Delete"
+msgstr "Sil"
+
+#: includes/functions/numbers.php:62
+msgid "Add Number"
+msgstr "Numara Ekle"
+
+#: includes/functions/numbers.php:65
+msgid ""
+"If there is one number, users are redirected directly. If there are multiple "
+"numbers, a dropdown menu is shown."
+msgstr ""
+"Tek numara varsa kullanıcılar doğrudan yönlendirilir. Birden fazla numara "
+"varsa açılır menü gösterilir."
+
+#: includes/functions/numbers.php:66
+msgid "Display Order:"
+msgstr "Görüntülenme Sırası:"
+
+#: includes/functions/numbers.php:68
+msgid "• Title (main name/person)"
+msgstr "• Başlık (ana isim/kişi)"
+
+#: includes/functions/numbers.php:69
+msgid "• Department (subtitle)"
+msgstr "• Departman (alt başlık)"
+
+#: includes/functions/numbers.php:70
+msgid "• Status + Short Description (on the right side)"
+msgstr "• Durum + Kısa Açıklama (sağ tarafta)"
+
+#: includes/functions/tracking.php:11
+msgid "Tracking & UTM Settings"
+msgstr "İzleme ve UTM Ayarları"
+
+#: includes/functions/tracking.php:14 includes/functions/tracking.php:26
+msgid "UTM Parameters"
+msgstr "UTM Parametreleri"
+
+#: includes/functions/tracking.php:20
+msgid "Add UTM parameters for Google Analytics tracking."
+msgstr "Google Analytics izleme için UTM parametreleri ekleyin."
+
+#: includes/functions/tracking.php:21
+msgid "How to view UTM data in Google Analytics"
+msgstr "Google Analytics'te UTM verilerini nasıl görüntülenir"
+
+#: includes/functions/tracking.php:28
+msgid "UTM Source"
+msgstr "UTM Kaynağı"
+
+#: includes/functions/tracking.php:30
+msgid "UTM Medium"
+msgstr "UTM Ortamı"
+
+#: includes/functions/tracking.php:34
+msgid "UTM Campaign"
+msgstr "UTM Kampanyası"
+
+#: includes/functions/tracking.php:35
+msgid "Automatic \"-2\", \"-3\" suffixes are added for multiple numbers"
+msgstr "Birden fazla numara için otomatik \"-2\", \"-3\" ekleri eklenir"
+
+#: includes/functions/tracking.php:42
+msgid "Facebook/Meta Pixel Tracking"
+msgstr "Facebook/Meta Pixel İzleme"
+
+#: includes/functions/tracking.php:48
+msgid ""
+"Track the performance of your Facebook ads. Sends \"Watso Contact\" event "
+"for single number, \"Watso Contact 2\", \"Watso Contact 3\" for multiple "
+"numbers."
+msgstr ""
+"Facebook reklamlarınızın performansını izleyin. Tek numara için \"Watso "
+"Contact\" eventi, birden fazla numara için \"Watso Contact 2\", \"Watso "
+"Contact 3\" gönderir."
+
+#: includes/functions/tracking.php:49
+msgid "Meta Pixel setup guide"
+msgstr "Meta Pixel kurulum rehberi"
+
+#: includes/functions/tracking.php:53
+msgid "Show Click Source"
+msgstr "Tıklama Kaynağını Göster"
+
+#: includes/functions/tracking.php:58
+msgid "Include the page URL where user clicked the button in WhatsApp message."
+msgstr ""
+"Kullanıcının butona tıkladığı sayfa URL'sini WhatsApp mesajına dahil et."
+
+#: includes/functions/tracking.php:63
+msgid "Source Message Settings"
+msgstr "Kaynak Mesaj Ayarları"
+
+#: includes/functions/tracking.php:65
+msgid "Source Message Text"
+msgstr "Kaynak Mesaj Metni"
+
+#: includes/functions/tracking.php:66
+msgid "This message is sent to WhatsApp along with the page URL."
+msgstr "Bu mesaj sayfa URL'si ile birlikte WhatsApp'a gönderilir."
+
+#: includes/functions/schedule.php:11
+msgid "Scheduling & Visibility"
+msgstr "Zamanlama ve Görünürlük"
+
+#: includes/functions/schedule.php:14
+msgid "Enable Time Range"
+msgstr "Zaman Aralığını Etkinleştir"
+
+#: includes/functions/schedule.php:19
+msgid ""
+"Show button only during specific hours. Note: Controlled via JavaScript for "
+"cache compatibility."
+msgstr ""
+"Butonu sadece belirli saatlerde göster. Not: Önbellek uyumluluğu için "
+"JavaScript ile kontrol edilir."
+
+#: includes/functions/schedule.php:23
+msgid "Working Hours"
+msgstr "Çalışma Saatleri"
+
+#: includes/functions/schedule.php:25
+msgid "Monday"
+msgstr "Pazartesi"
+
+#: includes/functions/schedule.php:26
+msgid "Tuesday"
+msgstr "Salı"
+
+#: includes/functions/schedule.php:27
+msgid "Wednesday"
+msgstr "Çarşamba"
+
+#: includes/functions/schedule.php:28
+msgid "Thursday"
+msgstr "Perşembe"
+
+#: includes/functions/schedule.php:29
+msgid "Friday"
+msgstr "Cuma"
+
+#: includes/functions/schedule.php:30
+msgid "Saturday"
+msgstr "Cumartesi"
+
+#: includes/functions/schedule.php:31
+msgid "Sunday"
+msgstr "Pazar"
+
+#: includes/functions/schedule.php:49
+msgid "Holidays"
+msgstr "Tatil Günleri"
+
+#: includes/functions/schedule.php:59
+msgid "Holiday Name"
+msgstr "Tatil Adı"
+
+#: includes/functions/schedule.php:64
+msgid "Add Holiday"
+msgstr "Tatil Ekle"
+
+#: includes/functions/advanced.php:11
+msgid "Advanced Settings"
+msgstr "Gelişmiş Ayarlar"
+
+#: includes/functions/advanced.php:14
+msgid "Debug Mode"
+msgstr "Hata Ayıklama Modu"
+
+#: includes/functions/advanced.php:19
+msgid "Enable debug logs in browser console and PHP error log."
+msgstr ""
+"Tarayıcı konsolunda ve PHP hata günlüğünde hata ayıklama günlüklerini "
+"etkinleştir."
+
+#: includes/functions/advanced.php:23
+msgid "Database Cleanup"
+msgstr "Veritabanı Temizliği"
+
+#: includes/functions/advanced.php:28
+msgid ""
+"When this option is active, all settings and uploaded files are deleted when "
+"the plugin is uninstalled. Useful for testing or starting fresh."
+msgstr ""
+"Bu seçenek aktif olduğunda, eklenti kaldırıldığında tüm ayarlar ve yüklenen "
+"dosyalar silinir. Test etmek veya temiz başlamak için yararlıdır."
+
+#: includes/functions/advanced.php:32
+msgid "Version Information"
+msgstr "Sürüm Bilgisi"
+
+#: includes/functions/advanced.php:34
+msgid "Current plugin version."
+msgstr "Mevcut eklenti sürümü."
+
+#: includes/functions/advanced.php:39
+msgid "Support & Information"
+msgstr "Destek ve Bilgi"
+
+#: includes/functions/advanced.php:41
+msgid "About Plugin"
+msgstr "Eklenti Hakkında"
+
+#: includes/functions/advanced.php:42
+msgid ""
+"Watso Chat plugin provides professional customer support through instant "
+"messaging capabilities."
+msgstr ""
+"Watso Chat eklentisi, anlık mesajlaşma yetenekleri aracılığıyla profesyonel "
+"müşteri desteği sağlar."
+
+#: includes/functions/advanced.php:44
+msgid "Support:"
+msgstr "Destek:"
+
+#: includes/functions/advanced.php:45
+msgid "Visit Hosteva.com"
+msgstr "Hosteva.com'u Ziyaret Et"
+
+#: includes/functions/advanced.php:48
+msgid "Version:"
+msgstr "Sürüm:"
+
+#: includes/functions/advanced.php:51
+msgid "Documentation:"
+msgstr "Dokümantasyon:"
+
+#: includes/functions/advanced.php:52
+msgid "Watso Documentation"
+msgstr "Watso Dokümantasyonu"
+
+#: includes/functions/advanced.php:57
+msgid "Debug Information"
+msgstr "Hata Ayıklama Bilgileri"
+
+#: includes/functions/advanced.php:59
+msgid "System Info"
+msgstr "Sistem Bilgisi"
+
+#: includes/functions/advanced.php:60
+msgid "WordPress Version:"
+msgstr "WordPress Sürümü:"
+
+#: includes/functions/advanced.php:61
+msgid "PHP Version:"
+msgstr "PHP Sürümü:"
+
+#: includes/functions/advanced.php:62
+msgid "Plugin Version:"
+msgstr "Eklenti Sürümü:"
+
+#: includes/functions/advanced.php:63
+msgid "Active Theme:"
+msgstr "Aktif Tema:"
+
+#: includes/functions/advanced.php:69
+msgid "Debug Log:"
+msgstr "Hata Ayıklama Günlüğü:"
+
+#: includes/functions/advanced.php:72
+#, php-format
+msgid "Log file exists (%s)"
+msgstr "Günlük dosyası mevcut (%s)"
+
+#: includes/class-button-renderer.php:92
+msgid "WhatsApp Contact"
+msgstr "WhatsApp Kişisi"
+
+#: includes/class-button-renderer.php:102
+msgid "WhatsApp contact options"
+msgstr "WhatsApp kişi seçenekleri"
+
+#: includes/class-button-renderer.php:105
+msgid "Close"
+msgstr "Kapat"
+
+#: includes/class-button-renderer.php:121
+msgid "Unnamed"
+msgstr "İsimsiz"

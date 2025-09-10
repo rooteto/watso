@@ -1,0 +1,649 @@
+# Watso - Basic Help Chat Button
+# Copyright (C) 2024 Hosteva Hosting
+# This file is distributed under the same license as the Watso - Basic Help Chat Button package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Watso - Basic Help Chat Button 1.0.1\n"
+"Report-Msgid-Bugs-To: https://www.hosteva.com\n"
+"POT-Creation-Date: 2024-12-23 15:30+0000\n"
+"PO-Revision-Date: 2025-06-22 20:51+0300\n"
+"Last-Translator: Hosteva Team <support@hosteva.com>\n"
+"Language-Team: French <fr@li.org>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: watso-basic-chat\n"
+
+#. Plugin Name
+msgid "Watso – Basic Help Chat Button"
+msgstr "Watso – Bouton de Chat d'Aide Simple"
+
+#. Plugin URI
+msgid "https://www.hosteva.com/plugins/watso-basic-chat/"
+msgstr "https://www.hosteva.com/plugins/watso-basic-chat/"
+
+#. Description
+msgid ""
+"A simple and elegant WhatsApp chat button to support your visitors with "
+"multi-number support, UTM tracking, full customization, and scheduling."
+msgstr ""
+"Un bouton de chat WhatsApp simple et élégant pour soutenir vos visiteurs "
+"avec le support multi-numéros, le suivi UTM, la personnalisation complète et "
+"la planification."
+
+#. Author
+msgid "Hosteva Hosting"
+msgstr "Hosteva Hosting"
+
+#. Author URI
+msgid "https://www.hosteva.com/"
+msgstr "https://www.hosteva.com/"
+
+#: watso-basic-chat.php:237
+msgid "Watso - Basic Chat Settings"
+msgstr "Watso - Paramètres de Chat de Base"
+
+#: watso-basic-chat.php:238
+msgid "Watso Chat"
+msgstr "Watso Chat"
+
+#: watso-basic-chat.php:287
+msgid "Loading..."
+msgstr "Chargement..."
+
+#: watso-basic-chat.php:288
+msgid "An error occurred while loading content."
+msgstr "Une erreur s'est produite lors du chargement du contenu."
+
+#: watso-basic-chat.php:310
+msgid "WhatsApp Support"
+msgstr "Support WhatsApp"
+
+#: watso-basic-chat.php:311 includes/class-button-renderer.php:33
+msgid "Select a contact"
+msgstr "Sélectionner un contact"
+
+#: watso-basic-chat.php:312
+msgid "Hello! I am visiting this page:"
+msgstr "Bonjour ! Je visite cette page :"
+
+#: watso-basic-chat.php:320
+msgid "John Smith"
+msgstr "Jean Dupont"
+
+#: watso-basic-chat.php:321
+msgid "Technical Support"
+msgstr "Support Technique"
+
+#: watso-basic-chat.php:322
+msgid "Online"
+msgstr "En ligne"
+
+#: watso-basic-chat.php:668
+msgid "Watso Chat:"
+msgstr "Watso Chat :"
+
+#: watso-basic-chat.php:669
+msgid ""
+"Since database cleanup is active, all plugin data has been deleted. You can "
+"make your new settings."
+msgstr ""
+"Étant donné que le nettoyage de la base de données est actif, toutes les "
+"données du plugin ont été supprimées. Vous pouvez faire vos nouveaux "
+"paramètres."
+
+#: admin/admin-page.php:24
+msgid "WhatsApp chat button for instant customer support"
+msgstr "Bouton de chat WhatsApp pour le support client instantané"
+
+#: admin/admin-page.php:30 includes/functions/general.php:12
+#: includes/functions/general.php:122
+msgid "General Settings"
+msgstr "Paramètres Généraux"
+
+#: admin/admin-page.php:33 includes/functions/appearance.php:11
+msgid "Appearance & Colors"
+msgstr "Apparence et Couleurs"
+
+#: admin/admin-page.php:36
+msgid "Numbers"
+msgstr "Numéros"
+
+#: admin/admin-page.php:39
+msgid "Tracking"
+msgstr "Suivi"
+
+#: admin/admin-page.php:42
+msgid "Schedule"
+msgstr "Planification"
+
+#: admin/admin-page.php:45
+msgid "Advanced"
+msgstr "Avancé"
+
+#: admin/admin-page.php:77
+msgid "Save Settings"
+msgstr "Enregistrer les Paramètres"
+
+#: includes/functions/general.php:18 includes/functions/general.php:125
+msgid "Plugin Status"
+msgstr "Statut du Plugin"
+
+#: includes/functions/general.php:25 includes/functions/general.php:135
+msgid "Position"
+msgstr "Position"
+
+#: includes/functions/general.php:32 includes/functions/general.php:130
+msgid "Show on Mobile"
+msgstr "Afficher sur Mobile"
+
+#: includes/functions/general.php:39 includes/functions/general.php:140
+#: includes/functions/numbers.php:36
+msgid "Title"
+msgstr "Titre"
+
+#: includes/functions/general.php:46 includes/functions/general.php:145
+msgid "Dropdown Header Text"
+msgstr "Texte d'En-tête du Menu Déroulant"
+
+#: includes/functions/general.php:53 includes/functions/general.php:150
+msgid "Corner Radius"
+msgstr "Rayon des Coins"
+
+#: includes/functions/general.php:58
+msgid "You can configure the basic settings of the plugin here."
+msgstr "Vous pouvez configurer les paramètres de base du plugin ici."
+
+#: includes/functions/general.php:66
+msgid "Turn the plugin on or off. When off, nobody can see the button."
+msgstr ""
+"Activez ou désactivez le plugin. Lorsqu'il est désactivé, personne ne peut "
+"voir le bouton."
+
+#: includes/functions/general.php:72
+msgid "Bottom Right"
+msgstr "En bas à droite"
+
+#: includes/functions/general.php:73
+msgid "Bottom Left"
+msgstr "En bas à gauche"
+
+#: includes/functions/general.php:74
+msgid "Middle Right"
+msgstr "Milieu à droite"
+
+#: includes/functions/general.php:75
+msgid "Middle Left"
+msgstr "Milieu à gauche"
+
+#: includes/functions/general.php:82
+msgid "Select the position where the button will appear on the screen."
+msgstr "Sélectionnez la position où le bouton apparaîtra à l'écran."
+
+#: includes/functions/general.php:91
+msgid "Should the button also be visible on mobile devices?"
+msgstr "Le bouton doit-il également être visible sur les appareils mobiles ?"
+
+#: includes/functions/general.php:99
+msgid "The text that appears on the button."
+msgstr "Le texte qui apparaît sur le bouton."
+
+#: includes/functions/general.php:105
+msgid "Choose a contact"
+msgstr "Choisir un contact"
+
+#: includes/functions/general.php:106
+msgid "The header text displayed in the multi-number menu."
+msgstr "Le texte d'en-tête affiché dans le menu multi-numéros."
+
+#: includes/functions/general.php:115
+msgid "Button corner radius (0px = square, 30px = fully rounded)."
+msgstr "Rayon des coins du bouton (0px = carré, 30px = entièrement arrondi)."
+
+#: includes/functions/appearance.php:14
+msgid "Default Icon"
+msgstr "Icône par Défaut"
+
+#: includes/functions/appearance.php:19
+msgid "Reset to Default"
+msgstr "Remettre par Défaut"
+
+#: includes/functions/appearance.php:22
+msgid "Default WhatsApp icon is displayed, you can change it below."
+msgstr ""
+"L'icône WhatsApp par défaut est affichée, vous pouvez la changer ci-dessous."
+
+#: includes/functions/appearance.php:26
+msgid "Upload Custom Icon"
+msgstr "Télécharger une Icône Personnalisée"
+
+#: includes/functions/appearance.php:30
+msgid "Upload Icon"
+msgstr "Télécharger l'Icône"
+
+#: includes/functions/appearance.php:31
+msgid "Remove"
+msgstr "Supprimer"
+
+#: includes/functions/appearance.php:36
+msgid "Upload your own icon (recommended size: 60x60px, PNG format)."
+msgstr ""
+"Téléchargez votre propre icône (taille recommandée : 60x60px, format PNG)."
+
+#: includes/functions/appearance.php:40
+msgid "Button Color"
+msgstr "Couleur du Bouton"
+
+#: includes/functions/appearance.php:43 includes/functions/appearance.php:52
+#: includes/functions/appearance.php:59 includes/functions/appearance.php:66
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: includes/functions/appearance.php:45
+msgid "WhatsApp green is default but you can change it."
+msgstr "Le vert WhatsApp est par défaut mais vous pouvez le changer."
+
+#: includes/functions/appearance.php:49
+msgid "Short Description Color"
+msgstr "Couleur de Description Courte"
+
+#: includes/functions/appearance.php:52
+msgid "Color of short description text. Gray tones are recommended."
+msgstr ""
+"Couleur du texte de description courte. Les tons gris sont recommandés."
+
+#: includes/functions/appearance.php:56
+msgid "Status Text Color"
+msgstr "Couleur du Texte de Statut"
+
+#: includes/functions/appearance.php:59
+msgid "Color of status text (Online, Busy, etc.). Default green."
+msgstr "Couleur du texte de statut (En ligne, Occupé, etc.). Vert par défaut."
+
+#: includes/functions/appearance.php:63
+msgid "Department Text Color"
+msgstr "Couleur du Texte de Département"
+
+#: includes/functions/appearance.php:66
+msgid "Color of department name. Appears as subtitle."
+msgstr "Couleur du nom de département. Apparaît comme sous-titre."
+
+#: includes/functions/appearance.php:71
+msgid "Color Descriptions"
+msgstr "Descriptions des Couleurs"
+
+#: includes/functions/appearance.php:73
+msgid "Button Color:"
+msgstr "Couleur du Bouton :"
+
+#: includes/functions/appearance.php:73
+msgid "Main button and avatar background"
+msgstr "Bouton principal et arrière-plan de l'avatar"
+
+#: includes/functions/appearance.php:74
+msgid "Status Text:"
+msgstr "Texte de Statut :"
+
+#: includes/functions/appearance.php:74
+msgid "Online/Busy status and online indicator"
+msgstr "Statut En ligne/Occupé et indicateur en ligne"
+
+#: includes/functions/appearance.php:75
+msgid "Department:"
+msgstr "Département :"
+
+#: includes/functions/appearance.php:75
+msgid "Department information under person's name"
+msgstr "Information de département sous le nom de la personne"
+
+#: includes/functions/appearance.php:76
+msgid "Short Description:"
+msgstr "Description Courte :"
+
+#: includes/functions/appearance.php:76
+msgid "Small description text at the bottom"
+msgstr "Petit texte de description en bas"
+
+#: includes/functions/numbers.php:11
+msgid "Numbers & Contact Information"
+msgstr "Numéros et Informations de Contact"
+
+#: includes/functions/numbers.php:23
+msgid "Contact"
+msgstr "Contact"
+
+#: includes/functions/numbers.php:31
+msgid "Phone Number"
+msgstr "Numéro de Téléphone"
+
+#: includes/functions/numbers.php:32
+msgid "e.g: +905551234567"
+msgstr "ex: +33123456789"
+
+#: includes/functions/numbers.php:37
+msgid "e.g: John Smith"
+msgstr "ex: Jean Dupont"
+
+#: includes/functions/numbers.php:41
+msgid "Department"
+msgstr "Département"
+
+#: includes/functions/numbers.php:42
+msgid "e.g: Technical Support"
+msgstr "ex: Support Technique"
+
+#: includes/functions/numbers.php:46
+msgid "Status Text"
+msgstr "Texte de Statut"
+
+#: includes/functions/numbers.php:47
+msgid "e.g: Online, Busy, In Meeting"
+msgstr "ex: En ligne, Occupé, En réunion"
+
+#: includes/functions/numbers.php:48
+msgid "If left blank, status will not be displayed"
+msgstr "Si laissé vide, le statut ne sera pas affiché"
+
+#: includes/functions/numbers.php:52
+msgid "Short Description"
+msgstr "Description Courte"
+
+#: includes/functions/numbers.php:53
+msgid "e.g: Available Mon-Fri 9AM-6PM"
+msgstr "ex: Disponible Lun-Ven 9h-18h"
+
+#: includes/functions/numbers.php:54
+msgid ""
+"Displayed in small font. You can write working hours, availability, or any "
+"brief note."
+msgstr ""
+"Affiché en petite police. Vous pouvez écrire les heures de travail, la "
+"disponibilité ou toute note brève."
+
+#: includes/functions/numbers.php:58 includes/functions/schedule.php:63
+msgid "Delete"
+msgstr "Supprimer"
+
+#: includes/functions/numbers.php:62
+msgid "Add Number"
+msgstr "Ajouter un Numéro"
+
+#: includes/functions/numbers.php:65
+msgid ""
+"If there is one number, users are redirected directly. If there are multiple "
+"numbers, a dropdown menu is shown."
+msgstr ""
+"S'il y a un numéro, les utilisateurs sont redirigés directement. S'il y a "
+"plusieurs numéros, un menu déroulant est affiché."
+
+#: includes/functions/numbers.php:66
+msgid "Display Order:"
+msgstr "Ordre d'Affichage :"
+
+#: includes/functions/numbers.php:68
+msgid "• Title (main name/person)"
+msgstr "• Titre (nom principal/personne)"
+
+#: includes/functions/numbers.php:69
+msgid "• Department (subtitle)"
+msgstr "• Département (sous-titre)"
+
+#: includes/functions/numbers.php:70
+msgid "• Status + Short Description (on the right side)"
+msgstr "• Statut + Description Courte (sur le côté droit)"
+
+#: includes/functions/tracking.php:11
+msgid "Tracking & UTM Settings"
+msgstr "Paramètres de Suivi et UTM"
+
+#: includes/functions/tracking.php:14 includes/functions/tracking.php:26
+msgid "UTM Parameters"
+msgstr "Paramètres UTM"
+
+#: includes/functions/tracking.php:20
+msgid "Add UTM parameters for Google Analytics tracking."
+msgstr "Ajouter des paramètres UTM pour le suivi Google Analytics."
+
+#: includes/functions/tracking.php:21
+msgid "How to view UTM data in Google Analytics"
+msgstr "Comment voir les données UTM dans Google Analytics"
+
+#: includes/functions/tracking.php:28
+msgid "UTM Source"
+msgstr "Source UTM"
+
+#: includes/functions/tracking.php:30
+msgid "UTM Medium"
+msgstr "Média UTM"
+
+#: includes/functions/tracking.php:34
+msgid "UTM Campaign"
+msgstr "Campagne UTM"
+
+#: includes/functions/tracking.php:35
+msgid "Automatic \"-2\", \"-3\" suffixes are added for multiple numbers"
+msgstr ""
+"Les suffixes automatiques \"-2\", \"-3\" sont ajoutés pour plusieurs numéros"
+
+#: includes/functions/tracking.php:42
+msgid "Facebook/Meta Pixel Tracking"
+msgstr "Suivi Facebook/Meta Pixel"
+
+#: includes/functions/tracking.php:48
+msgid ""
+"Track the performance of your Facebook ads. Sends \"Watso Contact\" event "
+"for single number, \"Watso Contact 2\", \"Watso Contact 3\" for multiple "
+"numbers."
+msgstr ""
+"Suivez les performances de vos publicités Facebook. Envoie l'événement "
+"\"Watso Contact\" pour un numéro unique, \"Watso Contact 2\", \"Watso "
+"Contact 3\" pour plusieurs numéros."
+
+#: includes/functions/tracking.php:49
+msgid "Meta Pixel setup guide"
+msgstr "Guide de configuration Meta Pixel"
+
+#: includes/functions/tracking.php:53
+msgid "Show Click Source"
+msgstr "Afficher la Source du Clic"
+
+#: includes/functions/tracking.php:58
+msgid "Include the page URL where user clicked the button in WhatsApp message."
+msgstr ""
+"Inclure l'URL de la page où l'utilisateur a cliqué sur le bouton dans le "
+"message WhatsApp."
+
+#: includes/functions/tracking.php:63
+msgid "Source Message Settings"
+msgstr "Paramètres du Message Source"
+
+#: includes/functions/tracking.php:65
+msgid "Source Message Text"
+msgstr "Texte du Message Source"
+
+#: includes/functions/tracking.php:66
+msgid "This message is sent to WhatsApp along with the page URL."
+msgstr "Ce message est envoyé à WhatsApp avec l'URL de la page."
+
+#: includes/functions/schedule.php:11
+msgid "Scheduling & Visibility"
+msgstr "Planification et Visibilité"
+
+#: includes/functions/schedule.php:14
+msgid "Enable Time Range"
+msgstr "Activer la Plage Horaire"
+
+#: includes/functions/schedule.php:19
+msgid ""
+"Show button only during specific hours. Note: Controlled via JavaScript for "
+"cache compatibility."
+msgstr ""
+"Afficher le bouton uniquement pendant des heures spécifiques. Note : "
+"Contrôlé via JavaScript pour la compatibilité du cache."
+
+#: includes/functions/schedule.php:23
+msgid "Working Hours"
+msgstr "Heures de Travail"
+
+#: includes/functions/schedule.php:25
+msgid "Monday"
+msgstr "Lundi"
+
+#: includes/functions/schedule.php:26
+msgid "Tuesday"
+msgstr "Mardi"
+
+#: includes/functions/schedule.php:27
+msgid "Wednesday"
+msgstr "Mercredi"
+
+#: includes/functions/schedule.php:28
+msgid "Thursday"
+msgstr "Jeudi"
+
+#: includes/functions/schedule.php:29
+msgid "Friday"
+msgstr "Vendredi"
+
+#: includes/functions/schedule.php:30
+msgid "Saturday"
+msgstr "Samedi"
+
+#: includes/functions/schedule.php:31
+msgid "Sunday"
+msgstr "Dimanche"
+
+#: includes/functions/schedule.php:49
+msgid "Holidays"
+msgstr "Jours Fériés"
+
+#: includes/functions/schedule.php:59
+msgid "Holiday Name"
+msgstr "Nom du Jour Férié"
+
+#: includes/functions/schedule.php:64
+msgid "Add Holiday"
+msgstr "Ajouter un Jour Férié"
+
+#: includes/functions/advanced.php:11
+msgid "Advanced Settings"
+msgstr "Paramètres Avancés"
+
+#: includes/functions/advanced.php:14
+msgid "Debug Mode"
+msgstr "Mode Débogage"
+
+#: includes/functions/advanced.php:19
+msgid "Enable debug logs in browser console and PHP error log."
+msgstr ""
+"Activer les journaux de débogage dans la console du navigateur et le journal "
+"d'erreurs PHP."
+
+#: includes/functions/advanced.php:23
+msgid "Database Cleanup"
+msgstr "Nettoyage de la Base de Données"
+
+#: includes/functions/advanced.php:28
+msgid ""
+"When this option is active, all settings and uploaded files are deleted when "
+"the plugin is uninstalled. Useful for testing or starting fresh."
+msgstr ""
+"Lorsque cette option est active, tous les paramètres et fichiers téléchargés "
+"sont supprimés lorsque le plugin est désinstallé. Utile pour les tests ou "
+"recommencer à zéro."
+
+#: includes/functions/advanced.php:32
+msgid "Version Information"
+msgstr "Information de Version"
+
+#: includes/functions/advanced.php:34
+msgid "Current plugin version."
+msgstr "Version actuelle du plugin."
+
+#: includes/functions/advanced.php:39
+msgid "Support & Information"
+msgstr "Support et Information"
+
+#: includes/functions/advanced.php:41
+msgid "About Plugin"
+msgstr "À Propos du Plugin"
+
+#: includes/functions/advanced.php:42
+msgid ""
+"Watso Chat plugin provides professional customer support through instant "
+"messaging capabilities."
+msgstr ""
+"Le plugin Watso Chat fournit un support client professionnel grâce aux "
+"capacités de messagerie instantanée."
+
+#: includes/functions/advanced.php:44
+msgid "Support:"
+msgstr "Support :"
+
+#: includes/functions/advanced.php:45
+msgid "Visit Hosteva.com"
+msgstr "Visiter Hosteva.com"
+
+#: includes/functions/advanced.php:48
+msgid "Version:"
+msgstr "Version :"
+
+#: includes/functions/advanced.php:51
+msgid "Documentation:"
+msgstr "Documentation :"
+
+#: includes/functions/advanced.php:52
+msgid "Watso Documentation"
+msgstr "Documentation Watso"
+
+#: includes/functions/advanced.php:57
+msgid "Debug Information"
+msgstr "Information de Débogage"
+
+#: includes/functions/advanced.php:59
+msgid "System Info"
+msgstr "Info Système"
+
+#: includes/functions/advanced.php:60
+msgid "WordPress Version:"
+msgstr "Version WordPress :"
+
+#: includes/functions/advanced.php:61
+msgid "PHP Version:"
+msgstr "Version PHP :"
+
+#: includes/functions/advanced.php:62
+msgid "Plugin Version:"
+msgstr "Version du Plugin :"
+
+#: includes/functions/advanced.php:63
+msgid "Active Theme:"
+msgstr "Thème Actif :"
+
+#: includes/functions/advanced.php:69
+msgid "Debug Log:"
+msgstr "Journal de Débogage :"
+
+#: includes/functions/advanced.php:72
+#, php-format
+msgid "Log file exists (%s)"
+msgstr "Le fichier journal existe (%s)"
+
+#: includes/class-button-renderer.php:92
+msgid "WhatsApp Contact"
+msgstr "Contact WhatsApp"
+
+#: includes/class-button-renderer.php:102
+msgid "WhatsApp contact options"
+msgstr "Options de contact WhatsApp"
+
+#: includes/class-button-renderer.php:105
+msgid "Close"
+msgstr "Fermer"
+
+#: includes/class-button-renderer.php:121
+msgid "Unnamed"
+msgstr "Sans nom"
