@@ -1,8 +1,12 @@
 # Watso – Basic Help Chat Button
 
-![Watso Logo](https://www.hosteva.com/logo.png) <!-- Add your logo here if available -->
+![Watso Logo](https://ps.w.org/watso-basic-chat/assets/icon-128x128.jpg?rev=3325382)  <!-- Add your logo here if available -->
 
 Lightweight and blazing-fast WhatsApp chat button for WordPress with full customization, UTM tracking, multi-agent support, and scheduling.
+
+---
+
+![Cover](https://ps.w.org/watso-basic-chat/assets/banner-1544x500.png?rev=3325585)
 
 ---
 
