@@ -1,8 +1,8 @@
 # Watso – Basic Help Chat Button
 
-![Watso Logo](https://ps.w.org/watso-basic-chat/assets/icon-128x128.jpg?rev=3325382) <!-- Logonuz varsa buraya ekleyebilirsiniz -->
+![Watso Logo](https://ps.w.org/watso-basic-chat/assets/icon-128x128.jpg?rev=3325382)  <!-- Add your logo here if available -->
 
-Lightweight and fast WhatsApp chat button for WordPress with full customization, UTM tracking, multi-agent support, and scheduling.
+Lightweight and blazing-fast WhatsApp chat button for WordPress with full customization, UTM tracking, multi-agent support, and scheduling.
 
 ---
 
@@ -10,164 +10,164 @@ Lightweight and fast WhatsApp chat button for WordPress with full customization,
 
 ---
 
-## 🚀 Özellikler
+## 🚀 Features
 
-### Neden Watso?
-- ✔️ Temiz tasarım & sorunsuz entegrasyon
-- ✔️ Kodlama bilgisi gerekmez
-- ✔️ %100 ücretsiz, hiçbir premium sürüm yok
-- ✔️ GDPR, SEO ve cache dostu
+### Why Watso?
+- ✔️ Clean design & seamless integration
+- ✔️ No coding required
+- ✔️ 100% free, no premium versions
+- ✔️ GDPR-friendly, SEO-friendly, and cache-compatible
 
-### Çekirdek Özellikler
-- 🔢 **Çoklu WhatsApp Hesapları** – Takımlar ve departmanlar için ideal
-- 🎯 **UTM & Analytics Hazır** – GA & Meta ile tıklamaları takip edin
-- 🌓 **Karanlık Mod Desteği** – Kullanıcının temasına otomatik uyum
-- 🛠 **Akıllı Konumlandırma** – 4 pozisyon, tam responsive
-- 🎨 **Tam Özelleştirme** – Renkler, ikonlar, kenarlıklar, etiketler
-- 📆 **Planlı Görünürlük** – Çalışma saatleri veya tatil günleri
-- ⚡ **Yıldırım Hızı** – Minimal JS, tüm cache eklentileriyle uyumlu
-- ♿ **Erişilebilirlik** – Klavye uyumlu, WCAG standartlarına uygun
-
----
-
-## 👥 Kimler İçin Uygun?
-- Müşteri destek ekipleri
-- E-ticaret & WooCommerce siteleri
-- Hizmet sağlayıcılar, danışmanlar, ajanslar
-- WhatsApp üzerinden gerçek zamanlı etkileşim isteyen herkes
+### Core Features
+- 🔢 **Multiple WhatsApp Accounts** – Ideal for teams or departments
+- 🎯 **UTM & Analytics Ready** – Track clicks with GA & Meta
+- 🌓 **Dark Mode Detection** – Automatically adapts to user’s theme
+- 🛠 **Smart Placement** – 4 screen positions, fully responsive
+- 🎨 **Full Customization** – Colors, icons, borders, labels
+- 📆 **Schedule Visibility** – Set working hours or hide on holidays
+- ⚡ **Lightning Fast** – Minimal JS, works with all cache plugins
+- ♿ **Accessibility Built-in** – Keyboard-friendly, WCAG compliant
 
 ---
 
-## 👨‍💻 Geliştirici Dostu
-- 💻 Temiz, geliştirici dostu kod tabanı
-- ✅ WordPress kod standartlarıyla uyumlu
-- 🔧 Action hook’lar ve filtreler ile gelişmiş özelleştirme
-- 🌍 Çeviri dosyaları (POT) ile çok dillilik desteği
+## 👥 Perfect For
+- Customer support teams
+- E-commerce & WooCommerce stores
+- Service providers, consultants, agencies
+- Anyone seeking real-time WhatsApp engagement
 
 ---
 
-## 📦 Kurulum
-
-1. `/wp-content/plugins/watso-basic-chat/` dizinine yükleyin veya WordPress panelinden kurun
-2. Eklentiyi “Eklentiler” ekranından etkinleştirin
-3. `Ayarlar > Watso Chat` menüsünden yapılandırma yapın
-4. WhatsApp numaralarınızı ekleyin ve görünümü özelleştirin
-5. Kaydedin ve sohbet butonu sitenizde görünsün 🎉
-
-### Hızlı Kurulum
-1. `Ayarlar > Watso Chat` yoluna gidin
-2. Genel ayarlardan eklentiyi etkinleştirin
-3. “Numbers & Titles” sekmesinden numaranızı ekleyin
-4. “Appearance & Colors” sekmesinden tasarımı özelleştirin
-5. Kaydedin ✅
+## 👨‍💻 Developer Friendly
+- 💻 Clean, developer-friendly codebase
+- ✅ Follows WordPress coding standards
+- 🔧 Action hooks and filters for advanced customization
+- 🌍 Translation ready with POT files included
 
 ---
 
-## ❓ Sık Sorulan Sorular
+## 📦 Installation
 
-**Bu eklenti tamamen ücretsiz mi?**  
-Evet, hiçbir premium sürümü yoktur.
+1. Upload files to `/wp-content/plugins/watso-basic-chat/` or install via WordPress dashboard
+2. Activate through the “Plugins” screen
+3. Go to `Settings > Watso Chat` to configure
+4. Add your WhatsApp number(s) and customize appearance
+5. Save and the chat button appears 🎉
 
-**Birden fazla WhatsApp numarası ekleyebilir miyim?**  
-Evet! Sınırsız numara eklenebilir.
-
-**Cache eklentileriyle uyumlu mu?**  
-Evet, tüm popüler cache eklentileriyle uyumludur.
-
-**Buton tasarımı özelleştirilebilir mi?**  
-Evet, renk, ikon, kenarlık ve konum seçenekleriyle tamamen özelleştirilebilir.
-
-**Karanlık mod desteği var mı?**  
-Evet, otomatik algılama ve özel ikon yükleme imkanı vardır.
-
-**Çalışma saatlerine göre görünürlüğü ayarlayabilir miyim?**  
-Evet, haftalık saatler ve özel tatil günleri eklenebilir.
-
-**Mobil uyumlu mu?**  
-Evet, tam responsive yapıdadır.
-
-**Analytics desteği var mı?**  
-Evet, Google Analytics ve Facebook Meta için UTM parametreleri ile uyumlu.
-
-**Çeviri yapılabilir mi?**  
-Evet, POT dosyaları dahildir.
-
-**Performansa etkisi var mı?**  
-Hayır, minimal JS ile hız için optimize edilmiştir.
+### Quick Setup
+1. Navigate to `Settings > Watso Chat`
+2. Enable plugin in General Settings
+3. Add your number in **Numbers & Titles** tab
+4. Customize design in **Appearance & Colors** tab
+5. Save changes ✅
 
 ---
 
-## 🖼️ Ekran Görüntüleri
-1. Ön yüz WhatsApp butonu
-2. Çoklu numara dropdown menüsü
-3. Genel ayar paneli
-4. Görünüm özelleştirme
-5. Numara & başlık yönetimi
-6. Çalışma saatleri ayarları
-7. Admin panel canlı önizleme
-8. Mobil görünüm
+## ❓ FAQ
+
+**Is this plugin completely free?**  
+Yes, Watso is 100% free – no premium versions.
+
+**Can I add multiple WhatsApp numbers?**  
+Yes! Unlimited numbers supported. Dropdown appears if more than one.
+
+**Is it compatible with caching plugins?**  
+Yes, fully compatible with major cache plugins.
+
+**Can I customize the button design?**  
+Absolutely – colors, icons, border radius, positions.
+
+**Does it support dark mode?**  
+Yes, automatic detection plus custom icons for dark themes.
+
+**Can I schedule when the button appears?**  
+Yes, working hours & holidays can be set.
+
+**Is it mobile responsive?**  
+Yes, fully responsive.
+
+**Does it track analytics?**  
+Yes, supports GA, Universal Analytics, and Facebook Meta with UTM parameters.
+
+**Can it be translated?**  
+Yes, translation-ready with included POT files.
+
+**Does it affect performance?**  
+No, lightweight & optimized for speed.
 
 ---
 
-## 📜 Değişiklik Günlüğü
+## 🖼️ Screenshots
+1. Frontend WhatsApp button
+2. Multi-number dropdown
+3. General settings panel
+4. Appearance customization
+5. Numbers & titles management
+6. Schedule & visibility settings
+7. Live preview in admin
+8. Mobile view
+
+---
+
+## 📜 Changelog
 
 ### v1.0.5
-- Dark mode ikon geliştirmeleri
-- WordPress 6.8 uyumluluk güncellemesi
-- Admin panel UI iyileştirmeleri
-- Çeviri metinlerinde düzenleme
+- Improved dark mode icon handling
+- WordPress 6.8 compatibility update
+- Admin panel UI enhancements
+- Refined translation strings
 
 ### v1.0.1
-- Hosteva markalama güncellemesi
-- Geliştirilmiş UTM sistemi
-- Mobil uyumluluk iyileştirmeleri
-- Performans & bug fix
-- Dokümantasyon güncellemeleri
+- Rebranded to Hosteva
+- Improved UTM tracking
+- Enhanced mobile responsiveness
+- Bug fixes & performance improvements
+- Updated docs & links
 
 ### v1.0.0
-- İlk sürüm
-- Çoklu numara desteği
-- 4 farklı konumlandırma
-- Karanlık mod
-- Çalışma saatleri ayarları
-- UTM ve Meta tracking
-- Cache uyumluluğu
-- WCAG erişilebilirlik
-- Çeviri desteği
+- Initial release
+- Multi-number support
+- 4 positioning options
+- Dark mode support
+- Schedule management
+- UTM & Meta tracking
+- Cache compatibility
+- Accessibility features
+- Translation ready
 
 ---
 
-## 🔒 Gizlilik Politikası
+## 🔒 Privacy Policy
 
-Watso kişisel veri toplamaz.
-- Ayarlar yalnızca WordPress veritabanında saklanır
-- Analytics desteği açılırsa GA veya Meta’ya veri gönderilebilir
-- Ziyaretçiler WhatsApp’a yönlendirilir ve **Meta’nın gizlilik politikası** geçerli olur
+Watso does **not** collect personal data.
+- Settings stored only in your WordPress database
+- Analytics sent to GA/Meta only if enabled
+- Visitors are redirected to official WhatsApp (Meta privacy policy applies)
 
 ---
 
-## 🤝 Destek
+## 🤝 Support
 
-- [WordPress.org Destek Forumu](https://wordpress.org/support/plugin/watso-basic-chat/)
+- [WordPress.org Support Forum](https://wordpress.org/support/plugin/watso-basic-chat/)
 - [Hosteva Website](https://www.hosteva.com/?utm_campaign=watso-basic-chat)
-- [Dokümantasyon](https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso-basic-chat)
+- [Documentation](https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso-basic-chat)
 
 ---
 
-## 📄 Lisans
+## 📄 License
 
-GPLv2 veya sonrası  
+GPLv2 or later  
 [GNU GPL-2.0](https://www.gnu.org/licenses/gpl-2.0.html)
 
 ---
 
-## 🙌 Katkılar & Teşekkürler
+## 🙌 Credits
 
-Watso Hosteva Developer ekibi tarafından geliştirilmiştir.
-- WhatsApp, Meta Platforms, Inc. ticari markasıdır
-- Eklentiye özel ikon & UI öğeleri tasarlanmıştır
-- WordPress standartlarına uygun geliştirilmiştir
+Watso is proudly developed by the Hosteva Developer team.
+- WhatsApp is a trademark of Meta Platforms, Inc.
+- Custom icons and UI designed exclusively for this plugin
+- Built following WordPress standards for performance, security & compatibility
 
 ---
 
-⭐ Eğer bu projeyi faydalı bulduysanız lütfen GitHub’da **star** vermeyi unutmayın!
+⭐ If you find this project useful, please consider giving it a **GitHub star**!
