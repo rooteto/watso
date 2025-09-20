@@ -1,6 +1,6 @@
 # Watso – Basic Help Chat Button
 
-![Watso Logo](https://ps.w.org/watso-basic-chat/assets/icon-128x128.jpg?rev=3325382)  <!-- Add your logo here if available -->
+![Watso Logo](https://ps.w.org/watso-basic-chat/assets/icon-128x128.jpg?rev=3325382)
 
 Lightweight and blazing-fast WhatsApp chat button for WordPress with full customization, UTM tracking, multi-agent support, and scheduling.
 
@@ -21,12 +21,26 @@ Lightweight and blazing-fast WhatsApp chat button for WordPress with full custom
 ### Core Features
 - 🔢 **Multiple WhatsApp Accounts** – Ideal for teams or departments
 - 🎯 **UTM & Analytics Ready** – Track clicks with GA & Meta
-- 🌓 **Dark Mode Detection** – Automatically adapts to user’s theme
+- 🌓 **Dark Mode Detection** – Automatically adapts to user's theme
 - 🛠 **Smart Placement** – 4 screen positions, fully responsive
 - 🎨 **Full Customization** – Colors, icons, borders, labels
 - 📆 **Schedule Visibility** – Set working hours or hide on holidays
 - ⚡ **Lightning Fast** – Minimal JS, works with all cache plugins
 - ♿ **Accessibility Built-in** – Keyboard-friendly, WCAG compliant
+
+---
+
+## 🌍 Languages & Localization
+
+### Supported Languages
+- 🇬🇧 **English** (default)
+- 🇫🇷 **Français** (French)
+- 🇹🇷 **Türkçe** (Turkish)
+
+### Translation Ready
+- 🔧 POT files included for additional languages
+- 📝 Community translations welcome
+- 🌐 Easy localization with WordPress standards
 
 ---
 
@@ -49,7 +63,7 @@ Lightweight and blazing-fast WhatsApp chat button for WordPress with full custom
 ## 📦 Installation
 
 1. Upload files to `/wp-content/plugins/watso-basic-chat/` or install via WordPress dashboard
-2. Activate through the “Plugins” screen
+2. Activate through the "Plugins" screen
 3. Go to `Settings > Watso Chat` to configure
 4. Add your WhatsApp number(s) and customize appearance
 5. Save and the chat button appears 🎉
@@ -90,7 +104,7 @@ Yes, fully responsive.
 Yes, supports GA, Universal Analytics, and Facebook Meta with UTM parameters.
 
 **Can it be translated?**  
-Yes, translation-ready with included POT files.
+Yes, translation-ready with included POT files. Currently supports English, French, and Turkish.
 
 **Does it affect performance?**  
 No, lightweight & optimized for speed.
