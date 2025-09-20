@@ -1,7 +1,7 @@
 === Watso - Basic Help Chat Button ===
-Contributors: hosteva, evatopcu
+Contributors: hosteva
 Donate link: https://www.hosteva.com/donate/
-Tags: whatsapp, chat, button, contact, support, live chat, customer service, click to chat, messaging, mobile
+Tags: Whatsapp Chat Button, Woocommerce Whatsapp, Whatsapp Business, Whatsapp, Click to Chat
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -17,30 +17,34 @@ Watso is a clean, lightweight WhatsApp chat button plugin that seamlessly integr
 
 = Why Choose Watso? =
 
-* Clean design & seamless integration
-* No coding required - simple setup
-* 100% free, no premium versions
-* GDPR-friendly, SEO-friendly, and cache-compatible
-* Follows WordPress coding standards
+* ✔️ Clean design & seamless integration
+* ✔️ No coding required - simple setup
+* ✔️ 100% free, no premium versions
+* ✔️ GDPR-friendly, SEO-friendly, and cache-compatible
+* ✔️ Follows WordPress coding standards
 
 = Core Features =
 
-* **Multiple WhatsApp Accounts** - Add unlimited numbers for teams or departments
-* **UTM & Analytics Ready** - Track clicks with Google Analytics & Meta
-* **Dark Mode Detection** - Automatically adapts to user's theme preference
-* **Smart Placement** - 4 screen positions, fully responsive design
-* **Full Customization** - Colors, icons, borders, labels, and more
-* **Schedule Visibility** - Set working hours or hide on holidays
-* **Lightning Fast** - Minimal JavaScript, works with all cache plugins
-* **Accessibility Built-in** - Keyboard-friendly, WCAG compliant
+* 🔢 **Multiple WhatsApp Accounts** - Add unlimited numbers for teams or departments
+* 🎯 **UTM & Analytics Ready** - Track clicks with Google Analytics & Meta
+* 🌓 **Dark Mode Detection** - Automatically adapts to user's theme preference
+* 🛠 **Smart Placement** - 4 screen positions, fully responsive design
+* 🎨 **Full Customization** - Colors, icons, borders, labels, and more
+* 📆 **Schedule Visibility** - Set working hours or hide on holidays
+* ⚡ **Lightning Fast** - Minimal JavaScript, works with all cache plugins
+* ♿ **Accessibility Built-in** - Keyboard-friendly, WCAG compliant
 
-= Languages & Localization =
+= 🌍 Languages & Localization =
 
-* **Supported Languages:**
-  * English (default)
-  * Français (French)
-  * Türkçe (Turkish)
-* **Translation Ready:** POT files included for additional languages
+**Supported Languages:**
+* 🇬🇧 **English** (default)
+* 🇫🇷 **Français** (French)
+* 🇹🇷 **Türkçe** (Turkish)
+
+**Translation Ready:**
+* 🔧 POT files included for additional languages
+* 📝 Community translations welcome
+* 🌐 Easy localization with WordPress standards
 
 = Perfect For =
 
@@ -49,28 +53,28 @@ Watso is a clean, lightweight WhatsApp chat button plugin that seamlessly integr
 * Service providers, consultants, agencies
 * Anyone seeking real-time WhatsApp engagement
 
-= Developer Friendly =
+= 👨‍💻 Developer Friendly =
 
-* Clean, developer-friendly codebase
-* Follows WordPress coding standards
-* Action hooks and filters for advanced customization
-* Translation ready with POT files included
+* 💻 Clean, developer-friendly codebase
+* ✅ Follows WordPress coding standards
+* 🔧 Action hooks and filters for advanced customization
+* 🌍 Translation ready with POT files included
 
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/watso-basic-chat/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Use the Settings->Watso Chat screen to configure the plugin
+3. Use the `Settings > Watso Chat` screen to configure the plugin
 4. Add your WhatsApp number(s) and customize the appearance
-5. Save the settings and the chat button will appear on your website
+5. Save the settings and the chat button will appear on your website 🎉
 
 = Quick Setup =
 
 1. Navigate to `Settings > Watso Chat` in your WordPress admin
-2. Enable the plugin in General Settings tab
+2. Enable the plugin in **General Settings** tab
 3. Add your WhatsApp number in the **Numbers & Titles** tab
 4. Customize the design in the **Appearance & Colors** tab
-5. Save changes and you're done!
+5. Save changes and you're done! ✅
 
 == Frequently Asked Questions ==
 
@@ -154,9 +158,9 @@ No, Watso is lightweight and optimized for speed. It uses minimal JavaScript and
 
 == Privacy Policy ==
 
-Watso does not collect any personal data from your website visitors.
+Watso does **not** collect any personal data from your website visitors.
 
-* Plugin settings are stored only in your WordPress database
+* Settings stored only in your WordPress database
 * Analytics data is sent to Google Analytics/Meta only if you enable these features
 * Visitors are redirected to the official WhatsApp application (Meta's privacy policy applies)
 
@@ -166,7 +170,7 @@ For support and documentation, please visit:
 
 * [WordPress.org Support Forum](https://wordpress.org/support/plugin/watso-basic-chat/)
 * [Hosteva Website](https://www.hosteva.com/?utm_campaign=watso-basic-chat)
-* [Plugin Documentation](https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso-basic-chat)
+* [Documentation](https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso-basic-chat)
 
 == Credits ==
 
@@ -175,3 +179,5 @@ Watso is proudly developed by the Hosteva Developer team.
 * WhatsApp is a trademark of Meta Platforms, Inc.
 * Custom icons and UI designed exclusively for this plugin
 * Built following WordPress standards for performance, security & compatibility
+
+⭐ If you find this project useful, please consider giving it a **GitHub star**!
