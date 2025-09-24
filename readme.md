@@ -4,7 +4,9 @@
 
 Lightweight and blazing-fast WhatsApp chat button for WordPress with full customization, UTM tracking, multi-agent support, and scheduling.
 
-[![Watso Demo](https://img.youtube.com/vi/I2c29HXMPQs/0.jpg)](https://www.youtube.com/watch?v=I2c29HXMPQs)
+## 🎥 YouTube Setup Video
+
+[Watch the complete setup guide on YouTube](https://www.youtube.com/watch?v=I2c29HXMPQs)
 
 ---
 
