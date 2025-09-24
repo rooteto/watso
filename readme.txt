@@ -1,10 +1,10 @@
 === Watso - Basic Help Chat Button ===
 Contributors: hosteva
-Donate link: https://www.hosteva.com/donate/
+Plugin URI: https://www.hosteva.com/
 Tags: Whatsapp Chat Button, Woocommerce Whatsapp, Whatsapp Business, Whatsapp, Click to Chat
 Requires at least: 5.0
 Tested up to: 6.8
-Requires PHP: 7.4
+Requires PHP: 7.1
 Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,12 @@ Lightweight and blazing-fast WhatsApp chat button for WordPress with full custom
 == Description ==
 
 Watso is a clean, lightweight WhatsApp chat button plugin that seamlessly integrates with any WordPress website. Perfect for customer support teams, e-commerce stores, and service providers who want direct WhatsApp engagement with their visitors.
+
+= Video Tutorial =
+
+**🎥 YouTube Setup Video**
+Watch the complete setup guide on YouTube: https://youtu.be/I2c29HXMPQs
+
 
 = Why Choose Watso? =
 
