@@ -1,0 +1,23 @@
+# Git ve GitHub
+.git
+.github
+.gitignore
+.gitattributes
+.distignore
+
+# Proje içi kural ve dokümantasyonlar (WordPress.org SVN'e ASLA gitmemeli)
+.agents
+.hosteva
+.idea
+.vscode
+repo
+
+# WordPress.org asset dizini (Trunk içine girmemeli, assets dizinine deploy edilir)
+.wordpress-org
+
+# Sistem ve GitHub Belgeleri
+readme.md
+LICENSE.txt
+Thumbs.db
+.DS_Store
+*.log

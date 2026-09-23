@@ -1,4 +1,18 @@
-.eto/
-svn/
+# Gizli & İç Geliştirme Klasörleri (ASLA GitHub'a Gitmeyecek)
+.agents/
+.hosteva/
 .idea/
-readme-tr.md
+.vscode/
+repo/
+
+# OS & Temp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log

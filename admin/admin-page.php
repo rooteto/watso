@@ -21,13 +21,24 @@ $has_title = !empty($preview_title);
 
 <div class="wrap watso-admin-wrap">
 	<div class="watso-header">
-		<div class="watso-header-content">
-			<div class="watso-logo">
-				<span class="dashicons dashicons-format-chat" style="font-size: 40px; width: 40px; height: 40px; color: #25D366;"></span>
+		<div class="watso-header-content" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+			<div style="display: flex; align-items: center; gap: 15px;">
+				<div class="watso-logo">
+					<span class="dashicons dashicons-format-chat" style="font-size: 40px; width: 40px; height: 40px; color: #25D366;"></span>
+				</div>
+				<div class="watso-header-text">
+					<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
+					<p><?php esc_html_e('WhatsApp chat button for instant customer support', 'watso-basic-chat'); ?></p>
+				</div>
 			</div>
-			<div class="watso-header-text">
-				<h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-				<p><?php esc_html_e('WhatsApp chat button for instant customer support', 'watso-basic-chat'); ?></p>
+			<div class="watso-header-utilities" style="display: flex; align-items: center; gap: 15px;">
+				<span class="watso-version-badge" style="background: rgba(37, 211, 102, 0.1); color: #128C7E; font-weight: 600; padding: 4px 10px; border-radius: 20px; font-size: 12px; cursor: pointer;" title="<?php esc_attr_e('Show What\'s New', 'watso-basic-chat'); ?>">
+					v<?php echo esc_html(WATSO_VERSION); ?>
+				</span>
+				<div class="watso-notification-trigger" style="position: relative; cursor: pointer; font-size: 20px; color: #64748b; transition: color 0.2s;" title="<?php esc_attr_e('What\'s New & Support', 'watso-basic-chat'); ?>">
+					<i class="fas fa-bell"></i>
+					<span class="watso-notification-badge" style="position: absolute; top: -5px; right: -5px; width: 8px; height: 8px; background: #ef4444; border-radius: 50%;"></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -36,35 +47,35 @@ $has_title = !empty($preview_title);
 
 
 		<?php
-		// Dinamik banner sistemi
-		$hosteva_banners = array(
+		// Dinamik asset sistemi
+		$hosteva_assets = array(
 			'domain' => array(
-				'image' => 'hosteva-domain-728x90.png',
+				'image' => 'asset-v1.png',
 				'url' => 'https://www.hosteva.com/domain?utm_campaign=watso_basic_chat'
 			)
 		);
 
-		// Rastgele banner seç
-		$banner_keys = array_keys($hosteva_banners);
-		$random_banner_key = $banner_keys[array_rand($banner_keys)];
-		$selected_banner = $hosteva_banners[$random_banner_key];
+		// Rastgele asset seç
+		$asset_keys = array_keys($hosteva_assets);
+		$random_asset_key = $asset_keys[array_rand($asset_keys)];
+		$selected_asset = $hosteva_assets[$random_asset_key];
 
-		// Debug banner using our debug function
+		// Debug asset using our debug function
 		if (isset($settings['debug_mode']) && $settings['debug_mode']) {
 			$watso_instance = WatsoWhatsAppChat::get_instance();
-			$watso_instance->debug_log('Banner displayed', array(
-				'banner_key' => $random_banner_key,
-				'banner_url' => $selected_banner['url']
+			$watso_instance->debug_log('Asset displayed', array(
+				'asset_key' => $random_asset_key,
+				'asset_url' => $selected_asset['url']
 			));
 		}
 		?>
 
-		<div class="watso-hosteva-banner-container">
-			<div class="watso-banner-size">
-				<a href="<?php echo esc_url($selected_banner['url']); ?>"
+		<div class="watso-hero-asset-wrap">
+			<div class="watso-asset-box">
+				<a href="<?php echo esc_url($selected_asset['url']); ?>"
 				   target="_blank" rel="noopener noreferrer"
-				   class="watso-banner-link">
-					<img src="<?php echo esc_url(WATSO_PLUGIN_URL . 'assets/images/' . $selected_banner['image']); ?>" class="watso-banner-img">
+				   class="watso-asset-link">
+					<img src="<?php echo esc_url(WATSO_PLUGIN_URL . 'assets/images/' . $selected_asset['image']); ?>" class="watso-asset-media">
 				</a>
 			</div>
 
@@ -72,23 +83,29 @@ $has_title = !empty($preview_title);
 
 
 		<h2 class="nav-tab-wrapper">
-			<a href="#general" class="nav-tab nav-tab-active watso-tab" data-tab="general">
-				🛠️ <?php esc_html_e('General Settings', 'watso-basic-chat'); ?>
+			<a href="#analytics" class="nav-tab nav-tab-active watso-tab" data-tab="analytics">
+				<i class="fas fa-chart-bar watso-icon-analytics" style="color: #4CAF50;"></i> <?php esc_html_e('Analytics', 'watso-basic-chat'); ?>
+			</a>
+			<a href="#general" class="nav-tab watso-tab" data-tab="general">
+				<i class="fas fa-cog watso-icon-general"></i> <?php esc_html_e('Settings', 'watso-basic-chat'); ?>
 			</a>
 			<a href="#appearance" class="nav-tab watso-tab" data-tab="appearance">
-				🎨 <?php esc_html_e('Appearance & Colors', 'watso-basic-chat'); ?>
+				<i class="fas fa-palette watso-icon-appearance"></i> <?php esc_html_e('Appearance', 'watso-basic-chat'); ?>
 			</a>
 			<a href="#numbers" class="nav-tab watso-tab" data-tab="numbers">
-				📞 <?php esc_html_e('Numbers', 'watso-basic-chat'); ?>
+				<i class="fas fa-phone-alt watso-icon-numbers"></i> <?php esc_html_e('Numbers', 'watso-basic-chat'); ?>
 			</a>
 			<a href="#tracking" class="nav-tab watso-tab" data-tab="tracking">
-				📈 <?php esc_html_e('Tracking', 'watso-basic-chat'); ?>
+				<i class="fas fa-chart-line watso-icon-tracking"></i> <?php esc_html_e('Tracking', 'watso-basic-chat'); ?>
 			</a>
 			<a href="#schedule" class="nav-tab watso-tab" data-tab="schedule">
-				⏱️ <?php esc_html_e('Schedule', 'watso-basic-chat'); ?>
+				<i class="fas fa-clock watso-icon-schedule"></i> <?php esc_html_e('Schedule', 'watso-basic-chat'); ?>
+			</a>
+			<a href="#woocommerce" class="nav-tab watso-tab" data-tab="woocommerce">
+				<i class="fas fa-shopping-cart watso-icon-woo"></i> <?php esc_html_e('Woo', 'watso-basic-chat'); ?>
 			</a>
 			<a href="#advanced" class="nav-tab watso-tab" data-tab="advanced">
-				🧪 <?php esc_html_e('Advanced', 'watso-basic-chat'); ?>
+				<i class="fas fa-flask watso-icon-advanced"></i> <?php esc_html_e('Advanced', 'watso-basic-chat'); ?>
 			</a>
 		</h2>
 
@@ -96,8 +113,13 @@ $has_title = !empty($preview_title);
 			<?php settings_fields('watso_settings_group'); ?>
 
 			<div id="watso-tab-content" class="watso-tab-content">
+				<!-- Analytics Tab -->
+				<div id="tab-analytics" class="watso-tab-panel active">
+					<?php watso_render_analytics_tab($settings); ?>
+				</div>
+
 				<!-- General Tab -->
-				<div id="tab-general" class="watso-tab-panel active">
+				<div id="tab-general" class="watso-tab-panel">
 					<?php watso_render_general_tab($settings); ?>
 				</div>
 
@@ -121,6 +143,11 @@ $has_title = !empty($preview_title);
 					<?php watso_render_schedule_tab($settings); ?>
 				</div>
 
+				<!-- WooCommerce Tab -->
+				<div id="tab-woocommerce" class="watso-tab-panel">
+					<?php watso_render_woocommerce_tab($settings); ?>
+				</div>
+
 				<!-- Advanced Tab -->
 				<div id="tab-advanced" class="watso-tab-panel">
 					<?php watso_render_advanced_tab($settings); ?>
@@ -131,6 +158,58 @@ $has_title = !empty($preview_title);
 				<?php submit_button(__('Save Settings', 'watso-basic-chat'), 'primary', 'submit', false, array('class' => 'watso-btn watso-btn-primary watso-btn-large')); ?>
 			</div>
 		</form>
+	</div>
+
+	<!-- Slide-out Sidebar Panel -->
+	<div class="watso-overlay" id="watso-sidebar-overlay"></div>
+	<div class="watso-sidebar-panel" id="watso-sidebar-panel">
+		<div class="watso-sidebar-header">
+			<h3><i class="fas fa-bullhorn" style="color: #25D366; margin-right: 8px;"></i><?php esc_html_e('What\'s New & Support', 'watso-basic-chat'); ?></h3>
+			<button type="button" class="watso-sidebar-close" id="watso-sidebar-close">&times;</button>
+		</div>
+		<div class="watso-sidebar-body">
+			
+			<!-- Changelog Timeline Section -->
+			<div class="watso-sidebar-section">
+				<h4 class="watso-sidebar-section-title"><?php esc_html_e('Recent Updates', 'watso-basic-chat'); ?></h4>
+				<div class="watso-timeline">
+					<div class="watso-timeline-item">
+						<span class="watso-timeline-badge"><?php esc_html_e('v1.2.0', 'watso-basic-chat'); ?></span>
+						<span class="watso-timeline-date"><?php esc_html_e('May 2026', 'watso-basic-chat'); ?></span>
+						<ul class="watso-timeline-list">
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Built-in Analytics Dashboard (SVG charts, agent clicks and device stats).', 'watso-basic-chat'); ?></li>
+							<li><strong>Code Quality:</strong> <?php esc_html_e('Performance-friendly, lightweight database logging infrastructure with zero extra external libraries.', 'watso-basic-chat'); ?></li>
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Feature Request Submission Panel.', 'watso-basic-chat'); ?></li>
+							<li><strong><?php esc_html_e('Updated:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('WordPress 7.0 compatibility updates and plugin testing.', 'watso-basic-chat'); ?></li>
+						</ul>
+					</div>
+					<div class="watso-timeline-item">
+						<span class="watso-timeline-badge watso-badge-secondary"><?php esc_html_e('v1.1.0', 'watso-basic-chat'); ?></span>
+						<ul class="watso-timeline-list">
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('WooCommerce Integration (Cart, product and order pages).', 'watso-basic-chat'); ?></li>
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Arabic language support and RTL layout compatibility.', 'watso-basic-chat'); ?></li>
+						</ul>
+					</div>
+					<div class="watso-timeline-item">
+						<span class="watso-timeline-badge watso-badge-secondary"><?php esc_html_e('v1.0.6', 'watso-basic-chat'); ?></span>
+						<ul class="watso-timeline-list">
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('German language support and admin settings shortcuts.', 'watso-basic-chat'); ?></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Request Feature Section -->
+			<div class="watso-sidebar-section feedback-section">
+				<h4 class="watso-sidebar-section-title"><?php esc_html_e('Submit Feature Request', 'watso-basic-chat'); ?></h4>
+				<p class="watso-sidebar-section-desc"><?php esc_html_e('Do you want a new feature for Watso Basic Chat? Send us your request via email, and we\'ll add it for you.', 'watso-basic-chat'); ?></p>
+				
+				<a href="mailto:watso@hosteva.com?subject=<?php echo rawurlencode('Watso Chat - Feature Request'); ?>" class="watso-btn watso-btn-primary watso-btn-full" style="text-decoration: none; text-align: center; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+					<i class="fas fa-envelope"></i> <?php esc_html_e('Submit Request via Email', 'watso-basic-chat'); ?>
+				</a>
+			</div>
+
+		</div>
 	</div>
 
 	<!-- Live Preview - Using Unified Renderer -->

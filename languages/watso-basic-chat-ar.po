@@ -1,881 +1,666 @@
-# Watso - Basic Help Chat Button
-# Copyright (C) 2024 Hosteva Hosting
-# This file is distributed under the same license as the Watso - Basic Help Chat Button package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Watso - Basic Help Chat Button 1.0.1\n"
+"Project-Id-Version: Watso - Basic Help Chat Button 1.1.0\n"
 "Report-Msgid-Bugs-To: https://www.hosteva.com\n"
 "POT-Creation-Date: 2024-12-23 15:30+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-05-13 07:40+0300\n"
+"Last-Translator: Hosteva Team <support@hosteva.com>\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Manual\n"
+"X-Generator: Poedit 3.9\n"
 "X-Domain: watso-basic-chat\n"
 
 #. Plugin Name
 msgid "Watso – Basic Help Chat Button"
-msgstr ""
-
-#. Plugin URI
-msgid "https://www.hosteva.com/plugins/watso-basic-chat/"
-msgstr ""
+msgstr "Watso – زر دردشة المساعدة الأساسي"
 
 #. Description
 msgid "A simple and elegant WhatsApp chat button to support your visitors with multi-number support, UTM tracking, full customization, and scheduling."
-msgstr ""
+msgstr "زر دردشة واتساب بسيط وأنيق لدعم زوارك مع دعم أرقام متعددة، تتبع UTM، تخصيص كامل، وجدولة."
 
-#. Author
-msgid "Hosteva Hosting"
-msgstr ""
-
-#. Author URI
-msgid "https://www.hosteva.com/"
-msgstr ""
+#: watso-basic-chat.php:46
+msgid "Settings"
+msgstr "الإعدادات"
 
 #: watso-basic-chat.php:237
 msgid "Watso - Basic Chat Settings"
-msgstr ""
+msgstr "إعدادات Watso - الدردشة الأساسية"
 
 #: watso-basic-chat.php:238
 msgid "Watso Chat"
-msgstr ""
+msgstr "دردشة Watso"
 
 #: watso-basic-chat.php:287
 msgid "Loading..."
-msgstr ""
+msgstr "جاري التحميل..."
 
 #: watso-basic-chat.php:288
 msgid "An error occurred while loading content."
-msgstr ""
+msgstr "حدث خطأ أثناء تحميل المحتوى."
 
 #: watso-basic-chat.php:310
 msgid "WhatsApp Support"
-msgstr ""
+msgstr "دعم واتساب"
 
-#: watso-basic-chat.php:311
+#: watso-basic-chat.php:311 includes/class-button-renderer.php:33
 msgid "Select a contact"
-msgstr ""
+msgstr "اختر جهة اتصال"
 
 #: watso-basic-chat.php:312
 msgid "Hello! I am visiting this page:"
-msgstr ""
+msgstr "مرحبًا! أنا أزور هذه الصفحة:"
 
 #: watso-basic-chat.php:320
 msgid "John Smith"
-msgstr ""
+msgstr "أحمد محمد"
 
 #: watso-basic-chat.php:321
 msgid "Technical Support"
-msgstr ""
+msgstr "الدعم الفني"
 
 #: watso-basic-chat.php:322
 msgid "Online"
-msgstr ""
-
-#: watso-basic-chat.php:668
-msgid "Watso Chat:"
-msgstr ""
-
-#: watso-basic-chat.php:669
-msgid "Since database cleanup is active, all plugin data has been deleted. You can make your new settings."
-msgstr ""
+msgstr "متصل"
 
 #: admin/admin-page.php:24
 msgid "WhatsApp chat button for instant customer support"
-msgstr ""
+msgstr "زر دردشة واتساب لدعم العملاء الفوري"
 
-#: admin/admin-page.php:30
+#: admin/admin-page.php:30 includes/functions/general.php:12
+#: includes/functions/general.php:122
 msgid "General Settings"
-msgstr ""
+msgstr "الإعدادات العامة"
 
-#: admin/admin-page.php:33
+#: admin/admin-page.php:33 includes/functions/appearance.php:11
 msgid "Appearance"
-msgstr ""
+msgstr "المظهر"
 
 #: admin/admin-page.php:36
 msgid "Numbers"
-msgstr ""
+msgstr "الأرقام"
 
 #: admin/admin-page.php:39
 msgid "Tracking"
-msgstr ""
+msgstr "التتبع"
 
 #: admin/admin-page.php:42
 msgid "Schedule"
-msgstr ""
+msgstr "الجدول الزمني"
 
 #: admin/admin-page.php:45
 msgid "Advanced"
-msgstr ""
+msgstr "متقدم"
 
 #: admin/admin-page.php:77
 msgid "Save Settings"
-msgstr ""
+msgstr "حفظ الإعدادات"
 
-#: includes/functions/general.php:12
-#: includes/functions/general.php:122
-msgid "General Settings"
-msgstr ""
-
-#: includes/functions/general.php:18
-#: includes/functions/general.php:125
+#: includes/functions/general.php:18 includes/functions/general.php:125
 msgid "Plugin Status"
-msgstr ""
+msgstr "حالة الإضافة"
 
-#: includes/functions/general.php:25
-#: includes/functions/general.php:135
+#: includes/functions/general.php:25 includes/functions/general.php:135
 msgid "Position"
-msgstr ""
+msgstr "الموقع"
 
-#: includes/functions/general.php:32
-#: includes/functions/general.php:130
+#: includes/functions/general.php:32 includes/functions/general.php:130
 msgid "Show on Mobile"
-msgstr ""
+msgstr "إظهار على الهاتف"
 
-#: includes/functions/general.php:39
-#: includes/functions/general.php:140
+#: includes/functions/general.php:39 includes/functions/general.php:140
 msgid "Title"
-msgstr ""
+msgstr "العنوان"
 
-#: includes/functions/general.php:46
-#: includes/functions/general.php:145
+#: includes/functions/general.php:46 includes/functions/general.php:145
 msgid "Dropdown Header Text"
-msgstr ""
+msgstr "نص رأس القائمة المنسدلة"
 
-#: includes/functions/general.php:53
-#: includes/functions/general.php:150
+#: includes/functions/general.php:53 includes/functions/general.php:150
 msgid "Corner Radius"
-msgstr ""
+msgstr "نصف قطر الزاوية"
 
 #: includes/functions/general.php:58
 msgid "You can configure the basic settings of the plugin here."
-msgstr ""
+msgstr "يمكنك تكوين الإعدادات الأساسية للإضافة هنا."
 
 #: includes/functions/general.php:66
 msgid "Turn the plugin on or off. When off, nobody can see the button."
-msgstr ""
+msgstr "تشغيل أو إيقاف الإضافة. عند الإيقاف، لن يرى أحد الزر."
 
 #: includes/functions/general.php:72
 msgid "Bottom Right"
-msgstr ""
+msgstr "أسفل اليمين"
 
 #: includes/functions/general.php:73
 msgid "Bottom Left"
-msgstr ""
+msgstr "أسفل اليسار"
 
 #: includes/functions/general.php:74
 msgid "Middle Right"
-msgstr ""
+msgstr "وسط اليمين"
 
 #: includes/functions/general.php:75
 msgid "Middle Left"
-msgstr ""
+msgstr "وسط اليسار"
 
 #: includes/functions/general.php:82
 msgid "Select the position where the button will appear on the screen."
-msgstr ""
+msgstr "اختر الموقع الذي سيظهر فيه الزر على الشاشة."
 
 #: includes/functions/general.php:91
 msgid "Should the button also be visible on mobile devices?"
-msgstr ""
+msgstr "هل يجب أن يكون الزر مرئيًا أيضًا على أجهزة الهاتف؟"
 
 #: includes/functions/general.php:99
 msgid "The text that appears on the button."
-msgstr ""
+msgstr "النص الذي يظهر على الزر."
 
 #: includes/functions/general.php:105
 msgid "Choose a contact"
-msgstr ""
-
-#: includes/functions/general.php:106
-msgid "The header text displayed in the multi-number menu."
-msgstr ""
+msgstr "اختر جهة اتصال"
 
 #: includes/functions/general.php:115
 msgid "Button corner radius (0px = square, 30px = fully rounded)."
-msgstr ""
-
-#: includes/functions/appearance.php:11
-msgid "Appearance"
-msgstr ""
+msgstr "نصف قطر زاوية الزر (0 بكسل = مربع، 30 بكسل = مستدير بالكامل)."
 
 #: includes/functions/appearance.php:14
 msgid "Default Icon"
-msgstr ""
+msgstr "الأيقونة الافتراضية"
 
 #: includes/functions/appearance.php:19
 msgid "Reset to Default"
-msgstr ""
-
-#: includes/functions/appearance.php:22
-msgid "Default WhatsApp icon is displayed, you can change it below."
-msgstr ""
+msgstr "إعادة تعيين للافتراضي"
 
 #: includes/functions/appearance.php:26
 msgid "Upload Custom Icon"
-msgstr ""
+msgstr "رفع أيقونة مخصصة"
 
 #: includes/functions/appearance.php:30
 msgid "Upload Icon"
-msgstr ""
+msgstr "رفع أيقونة"
 
 #: includes/functions/appearance.php:31
 msgid "Remove"
-msgstr ""
-
-#: includes/functions/appearance.php:36
-msgid "Upload your own icon (recommended size: 60x60px, PNG format)."
-msgstr ""
+msgstr "إزالة"
 
 #: includes/functions/appearance.php:40
 msgid "Button Color"
-msgstr ""
+msgstr "لون الزر"
 
-#: includes/functions/appearance.php:43
-#: includes/functions/appearance.php:52
-#: includes/functions/appearance.php:59
-#: includes/functions/appearance.php:66
+#: includes/functions/appearance.php:43 includes/functions/appearance.php:52
+#: includes/functions/appearance.php:59 includes/functions/appearance.php:66
 msgid "Reset"
-msgstr ""
-
-#: includes/functions/appearance.php:45
-msgid "WhatsApp green is default but you can change it."
-msgstr ""
+msgstr "إعادة تعيين"
 
 #: includes/functions/appearance.php:49
 msgid "Short Description Color"
-msgstr ""
-
-#: includes/functions/appearance.php:52
-msgid "Color of short description text. Gray tones are recommended."
-msgstr ""
+msgstr "لون الوصف القصير"
 
 #: includes/functions/appearance.php:56
 msgid "Status Text Color"
-msgstr ""
-
-#: includes/functions/appearance.php:59
-msgid "Color of status text (Online, Busy, etc.). Default green."
-msgstr ""
+msgstr "لون نص الحالة"
 
 #: includes/functions/appearance.php:63
 msgid "Department Text Color"
-msgstr ""
-
-#: includes/functions/appearance.php:66
-msgid "Color of department name. Appears as subtitle."
-msgstr ""
-
-#: includes/functions/appearance.php:71
-msgid "Color Descriptions"
-msgstr ""
-
-#: includes/functions/appearance.php:73
-msgid "Button Color:"
-msgstr ""
-
-#: includes/functions/appearance.php:73
-msgid "Main button and avatar background"
-msgstr ""
-
-#: includes/functions/appearance.php:74
-msgid "Status Text:"
-msgstr ""
-
-#: includes/functions/appearance.php:74
-msgid "Online/Busy status and online indicator"
-msgstr ""
-
-#: includes/functions/appearance.php:75
-msgid "Department:"
-msgstr ""
-
-#: includes/functions/appearance.php:75
-msgid "Department information under person's name"
-msgstr ""
-
-#: includes/functions/appearance.php:76
-msgid "Short Description:"
-msgstr ""
-
-#: includes/functions/appearance.php:76
-msgid "Small description text at the bottom"
-msgstr ""
+msgstr "لون نص القسم"
 
 #: includes/functions/numbers.php:11
 msgid "Numbers & Contact Information"
-msgstr ""
+msgstr "الأرقام ومعلومات الاتصال"
 
 #: includes/functions/numbers.php:23
 msgid "Contact"
-msgstr ""
+msgstr "جهة الاتصال"
 
 #: includes/functions/numbers.php:31
 msgid "Phone Number"
-msgstr ""
-
-#: includes/functions/numbers.php:32
-msgid "e.g: +905551234567"
-msgstr ""
-
-#: includes/functions/numbers.php:36
-msgid "Title"
-msgstr ""
-
-#: includes/functions/numbers.php:37
-msgid "e.g: John Smith"
-msgstr ""
+msgstr "رقم الهاتف"
 
 #: includes/functions/numbers.php:41
 msgid "Department"
-msgstr ""
-
-#: includes/functions/numbers.php:42
-msgid "e.g: Technical Support"
-msgstr ""
+msgstr "القسم"
 
 #: includes/functions/numbers.php:46
 msgid "Status Text"
-msgstr ""
-
-#: includes/functions/numbers.php:47
-msgid "e.g: Online, Busy, In Meeting"
-msgstr ""
-
-#: includes/functions/numbers.php:48
-msgid "If left blank, status will not be displayed"
-msgstr ""
+msgstr "نص الحالة"
 
 #: includes/functions/numbers.php:52
 msgid "Short Description"
-msgstr ""
+msgstr "الوصف القصير"
 
-#: includes/functions/numbers.php:53
-msgid "e.g: Available Mon-Fri 9AM-6PM"
-msgstr ""
-
-#: includes/functions/numbers.php:54
-msgid "Displayed in small font. You can write working hours, availability, or any brief note."
-msgstr ""
-
-#: includes/functions/numbers.php:58
-#: includes/functions/schedule.php:63
+#: includes/functions/numbers.php:58 includes/functions/schedule.php:63
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: includes/functions/numbers.php:62
 msgid "Add Number"
-msgstr ""
-
-#: includes/functions/numbers.php:65
-msgid "If there is one number, users are redirected directly. If there are multiple numbers, a dropdown menu is shown."
-msgstr ""
-
-#: includes/functions/numbers.php:66
-msgid "Display Order:"
-msgstr ""
-
-#: includes/functions/numbers.php:68
-msgid "• Title (main name/person)"
-msgstr ""
-
-#: includes/functions/numbers.php:69
-msgid "• Department (subtitle)"
-msgstr ""
-
-#: includes/functions/numbers.php:70
-msgid "• Status + Short Description (on the right side)"
-msgstr ""
+msgstr "إضافة رقم"
 
 #: includes/functions/tracking.php:11
 msgid "Tracking & UTM Settings"
-msgstr ""
+msgstr "إعدادات التتبع و UTM"
 
-#: includes/functions/tracking.php:14
-#: includes/functions/tracking.php:26
+#: includes/functions/tracking.php:14 includes/functions/tracking.php:26
 msgid "UTM Parameters"
-msgstr ""
-
-#: includes/functions/tracking.php:20
-msgid "Add UTM parameters for Google Analytics tracking."
-msgstr ""
-
-#: includes/functions/tracking.php:21
-msgid "How to view UTM data in Google Analytics"
-msgstr ""
+msgstr "بارامترات UTM"
 
 #: includes/functions/tracking.php:28
 msgid "UTM Source"
-msgstr ""
+msgstr "مصدر UTM"
 
 #: includes/functions/tracking.php:30
 msgid "UTM Medium"
-msgstr ""
+msgstr "وسيط UTM"
 
 #: includes/functions/tracking.php:34
 msgid "UTM Campaign"
-msgstr ""
-
-#: includes/functions/tracking.php:35
-msgid "Automatic \"-2\", \"-3\" suffixes are added for multiple numbers"
-msgstr ""
+msgstr "حملة UTM"
 
 #: includes/functions/tracking.php:42
 msgid "Facebook/Meta Pixel Tracking"
-msgstr ""
-
-#: includes/functions/tracking.php:48
-msgid "Track the performance of your Facebook ads. Sends \"Watso Contact\" event for single number, \"Watso Contact 2\", \"Watso Contact 3\" for multiple numbers."
-msgstr ""
-
-#: includes/functions/tracking.php:49
-msgid "Meta Pixel setup guide"
-msgstr ""
+msgstr "تتبع بكسل فيسبوك/ميتا"
 
 #: includes/functions/tracking.php:53
 msgid "Show Click Source"
-msgstr ""
-
-#: includes/functions/tracking.php:58
-msgid "Include the page URL where user clicked the button in WhatsApp message."
-msgstr ""
+msgstr "إظهار مصدر النقرة"
 
 #: includes/functions/tracking.php:63
 msgid "Source Message Settings"
-msgstr ""
+msgstr "إعدادات رسالة المصدر"
 
 #: includes/functions/tracking.php:65
 msgid "Source Message Text"
-msgstr ""
-
-#: includes/functions/tracking.php:66
-msgid "This message is sent to WhatsApp along with the page URL."
-msgstr ""
+msgstr "نص رسالة المصدر"
 
 #: includes/functions/schedule.php:11
 msgid "Scheduling & Visibility"
-msgstr ""
+msgstr "الجدولة والرؤية"
 
 #: includes/functions/schedule.php:14
 msgid "Enable Time Range"
-msgstr ""
-
-#: includes/functions/schedule.php:19
-msgid "Show button only during specific hours. Note: Controlled via JavaScript for cache compatibility."
-msgstr ""
+msgstr "تمكين النطاق الزمني"
 
 #: includes/functions/schedule.php:23
 msgid "Working Hours"
-msgstr ""
+msgstr "ساعات العمل"
 
 #: includes/functions/schedule.php:25
 msgid "Monday"
-msgstr ""
+msgstr "الإثنين"
 
 #: includes/functions/schedule.php:26
 msgid "Tuesday"
-msgstr ""
+msgstr "الثلاثاء"
 
 #: includes/functions/schedule.php:27
 msgid "Wednesday"
-msgstr ""
+msgstr "الأربعاء"
 
 #: includes/functions/schedule.php:28
 msgid "Thursday"
-msgstr ""
+msgstr "الخميس"
 
 #: includes/functions/schedule.php:29
 msgid "Friday"
-msgstr ""
+msgstr "الجمعة"
 
 #: includes/functions/schedule.php:30
 msgid "Saturday"
-msgstr ""
+msgstr "السبت"
 
 #: includes/functions/schedule.php:31
 msgid "Sunday"
-msgstr ""
+msgstr "الأحد"
 
 #: includes/functions/schedule.php:49
 msgid "Holidays"
-msgstr ""
+msgstr "العطلات"
 
 #: includes/functions/schedule.php:59
 msgid "Holiday Name"
-msgstr ""
+msgstr "اسم العطلة"
 
 #: includes/functions/schedule.php:64
 msgid "Add Holiday"
-msgstr ""
+msgstr "إضافة عطلة"
 
 #: includes/functions/advanced.php:11
 msgid "Advanced Settings"
-msgstr ""
+msgstr "إعدادات متقدمة"
 
 #: includes/functions/advanced.php:14
 msgid "Debug Mode"
-msgstr ""
-
-#: includes/functions/advanced.php:19
-msgid "Enable debug logs in browser console and PHP error log."
-msgstr ""
+msgstr "وضع التصحيح"
 
 #: includes/functions/advanced.php:23
 msgid "Database Cleanup"
-msgstr ""
-
-#: includes/functions/advanced.php:28
-msgid "When this option is active, all settings and uploaded files are deleted when the plugin is uninstalled. Useful for testing or starting fresh."
-msgstr ""
+msgstr "تنظيف قاعدة البيانات"
 
 #: includes/functions/advanced.php:32
 msgid "Version Information"
-msgstr ""
-
-#: includes/functions/advanced.php:34
-msgid "Current plugin version."
-msgstr ""
+msgstr "معلومات الإصدار"
 
 #: includes/functions/advanced.php:39
 msgid "Support & Information"
-msgstr ""
+msgstr "الدعم والمعلومات"
 
 #: includes/functions/advanced.php:41
 msgid "About Plugin"
-msgstr ""
-
-#: includes/functions/advanced.php:42
-msgid "Watso Chat plugin provides professional customer support through instant messaging capabilities."
-msgstr ""
+msgstr "عن الإضافة"
 
 #: includes/functions/advanced.php:44
 msgid "Support:"
-msgstr ""
+msgstr "الدعم:"
 
 #: includes/functions/advanced.php:45
 msgid "Visit Hosteva.com"
-msgstr ""
+msgstr "زيارة Hosteva.com"
 
 #: includes/functions/advanced.php:48
 msgid "Version:"
-msgstr ""
+msgstr "الإصدار:"
 
 #: includes/functions/advanced.php:51
 msgid "Documentation:"
-msgstr ""
+msgstr "الوثائق:"
 
 #: includes/functions/advanced.php:52
 msgid "Watso Documentation"
-msgstr ""
+msgstr "وثائق Watso"
 
 #: includes/functions/advanced.php:57
 msgid "Debug Information"
-msgstr ""
+msgstr "معلومات التصحيح"
 
 #: includes/functions/advanced.php:59
 msgid "System Info"
-msgstr ""
+msgstr "معلومات النظام"
 
 #: includes/functions/advanced.php:60
 msgid "WordPress Version:"
-msgstr ""
+msgstr "إصدار ووردبريس:"
 
 #: includes/functions/advanced.php:61
 msgid "PHP Version:"
-msgstr ""
+msgstr "إصدار PHP:"
 
 #: includes/functions/advanced.php:62
 msgid "Plugin Version:"
-msgstr ""
+msgstr "إصدار الإضافة:"
 
 #: includes/functions/advanced.php:63
 msgid "Active Theme:"
-msgstr ""
+msgstr "القالب النشط:"
 
 #: includes/functions/advanced.php:69
 msgid "Debug Log:"
-msgstr ""
-
-#: includes/functions/advanced.php:72
-#, php-format
-msgid "Log file exists (%s)"
-msgstr ""
-
-#: includes/class-button-renderer.php:33
-msgid "Select a contact"
-msgstr ""
+msgstr "سجل التصحيح:"
 
 #: includes/class-button-renderer.php:92
 msgid "WhatsApp Contact"
-msgstr ""
+msgstr "جهة اتصال واتساب"
 
 #: includes/class-button-renderer.php:102
 msgid "WhatsApp contact options"
-msgstr ""
+msgstr "خيارات اتصال واتساب"
 
 #: includes/class-button-renderer.php:105
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: includes/class-button-renderer.php:121
 msgid "Unnamed"
-msgstr ""
+msgstr "بدون اسم"
 
 #: admin/admin-page.php:94
 msgid "WooCommerce"
-msgstr ""
+msgstr "ووكومرس"
 
 #: includes/functions/woocommerce.php:17
 msgid "WooCommerce Integration"
-msgstr ""
+msgstr "تكامل ووكومرس"
 
 #: includes/functions/woocommerce.php:19
 msgid "Enable special WhatsApp features for your WooCommerce store."
-msgstr ""
+msgstr "تمكين ميزات واتساب الخاصة لمتجر ووكومرس الخاص بك."
 
 #: includes/functions/woocommerce.php:24
 msgid "Enable Integration"
-msgstr ""
+msgstr "تمكين التكامل"
 
 #: includes/functions/woocommerce.php:29
 msgid "Activate WooCommerce specific features."
-msgstr ""
+msgstr "تفعيل الميزات الخاصة بووكومرس."
 
 #: includes/functions/woocommerce.php:35
 msgid "Product Page Settings"
-msgstr ""
+msgstr "إعدادات صفحة المنتج"
 
 #: includes/functions/woocommerce.php:38
 msgid "Product Message Template"
-msgstr ""
+msgstr "قالب رسالة المنتج"
 
 #: includes/functions/woocommerce.php:39
 msgid "Hello, I want to get information about [product_name]: [product_url]"
-msgstr ""
+msgstr "مرحبًا، أريد الحصول على معلومات حول [product_name]: [product_url]"
 
 #: includes/functions/woocommerce.php:41
 msgid "Message sent when customer clicks WhatsApp button on product page."
-msgstr ""
+msgstr "الرسالة المرسلة عندما ينقر العميل على زر واتساب في صفحة المنتج."
 
 #: includes/functions/woocommerce.php:42
 msgid "Available tags:"
-msgstr ""
+msgstr "التاجات المتاحة:"
 
 #: includes/functions/woocommerce.php:49
 msgid "Cart Page Settings"
-msgstr ""
+msgstr "إعدادات صفحة السلة"
 
 #: includes/functions/woocommerce.php:52
 msgid "Show Support Button in Cart"
-msgstr ""
+msgstr "إظهار زر الدعم في السلة"
 
 #: includes/functions/woocommerce.php:60
 msgid "Cart Button Text"
-msgstr ""
+msgstr "نص زر السلة"
 
 #: includes/functions/woocommerce.php:61
 msgid "Support before checkout"
-msgstr ""
+msgstr "الدعم قبل إتمام الطلب"
 
 #: includes/functions/woocommerce.php:67
 msgid "Order Confirmation Settings"
-msgstr ""
+msgstr "إعدادات تأكيد الطلب"
 
 #: includes/functions/woocommerce.php:70
 msgid "Show Order Status Button"
-msgstr ""
+msgstr "إظهار زر حالة الطلب"
 
 #: includes/functions/woocommerce.php:78
 msgid "Order Status Message Template"
-msgstr ""
+msgstr "قالب رسالة حالة الطلب"
 
 #: includes/functions/woocommerce.php:79
 msgid "Hello, I want to ask about my order #[order_id]."
-msgstr ""
+msgstr "مرحبًا، أود السؤال عن طلبي رقم [order_id]."
 
 #: includes/functions/woocommerce.php:81
 msgid "Message sent when customer clicks WhatsApp button on order confirmation page."
-msgstr ""
+msgstr "الرسالة المرسلة عندما ينقر العميل على زر واتساب في صفحة تأكيد الطلب."
 
 #: includes/class-woocommerce-integration.php:127
 msgid "Need help with your order?"
-msgstr ""
+msgstr "هل تحتاج إلى مساعدة في طلبك؟"
 
 #: includes/class-woocommerce-integration.php:143
 msgid "Ask Order Status via WhatsApp"
-msgstr ""
+msgstr "اسأل عن حالة الطلب عبر واتساب"
 
 #: includes/functions/woocommerce.php:21
 msgid "WooCommerce plugin is not active. Please install and activate WooCommerce to use these features."
-msgstr ""
+msgstr "إضافة ووكومرس غير نشطة. يرجى تثبيت وتفعيل ووكومرس لاستخدام هذه الميزات."
 
 #: includes/functions/woocommerce.php:88
 msgid "Order Status Button Text"
-msgstr ""
+msgstr "نص زر حالة الطلب"
 
 #: includes/functions/woocommerce.php:74
 msgid "Cart Message Template"
-msgstr ""
+msgstr "قالب رسالة السلة"
 
 #: includes/functions/woocommerce.php:76
 msgid "Hello, I need support with my cart before checkout."
-msgstr ""
+msgstr "مرحباً، أحتاج إلى دعم بخصوص سلة التسوق الخاصة بي قبل إتمام الدفع."
 
 #: includes/functions/woocommerce.php:78
 msgid "Message sent when customer clicks WhatsApp button on cart page."
-msgstr ""
+msgstr "الرسالة المرسلة عندما ينقر العميل على زر واتساب في صفحة السلة."
 
 #: includes/functions/woocommerce.php:96
 msgid "Order Box Title"
-msgstr ""
+msgstr "عنوان صندوق الطلب"
 
 #: admin/admin-page.php:35
 msgid "Show What's New"
-msgstr ""
+msgstr "عرض الجديد"
 
 #: admin/admin-page.php:38
 msgid "What's New & Support"
-msgstr ""
+msgstr "الجديد والدعم"
 
 #: admin/admin-page.php:174
 msgid "Recent Updates"
-msgstr ""
+msgstr "آخر التحديثات"
 
 #: admin/admin-page.php:177
 msgid "v1.2.0"
-msgstr ""
+msgstr "v1.2.0"
 
 #: admin/admin-page.php:178
 msgid "May 2026"
-msgstr ""
+msgstr "مايو 2026"
 
 #: admin/admin-page.php:180
 msgid "Added:"
-msgstr ""
+msgstr "تمت إضافة:"
 
 #: admin/admin-page.php:180
 msgid "Built-in Analytics Dashboard (SVG charts, agent clicks and device stats)."
-msgstr ""
+msgstr "لوحة معلومات التحليلات المدمجة (مخططات SVG ونقرات الوكلاء وإحصاءات الأجهزة)."
 
 #: admin/admin-page.php:181
 msgid "Performance-friendly, lightweight database logging infrastructure with zero extra external libraries."
-msgstr ""
+msgstr "بنية تحتية لتسجيل قاعدة البيانات خفيفة الوزن وصديقة للأداء دون أي مكتبات خارجية إضافية."
 
 #: admin/admin-page.php:182
 msgid "Feature Request Submission Panel."
-msgstr ""
+msgstr "لوحة تقديم طلبات الميزات."
 
 #: admin/admin-page.php:183
 msgid "WordPress 7.0 compatibility updates and plugin testing."
-msgstr ""
+msgstr "تحديثات التوافق مع ووردبريس 7.0 واختبار الإضافة."
 
 #: admin/admin-page.php:189
 msgid "WooCommerce Integration (Cart, product and order pages)."
-msgstr ""
+msgstr "تكامل ووكومرس (صفحات السلة والمنتج والطلب)."
 
 #: admin/admin-page.php:190
 msgid "Arabic language support and RTL layout compatibility."
-msgstr ""
+msgstr "دعم اللغة العربية والتوافق مع تخطيط RTL."
 
 #: admin/admin-page.php:196
 msgid "German language support and admin settings shortcuts."
-msgstr ""
+msgstr "دعم اللغة الألمانية واختصارات إعدادات المسؤول."
 
 #: admin/admin-page.php:204
 msgid "Submit Feature Request"
-msgstr ""
+msgstr "إرسال طلب ميزة"
 
 #: admin/admin-page.php:205
 msgid "Do you want a new feature for Watso Basic Chat? Send us your request via email, and we'll add it for you."
-msgstr ""
+msgstr "هل تريد ميزة جديدة لـ Watso Basic Chat؟ أرسل لنا طلبك عبر البريد الإلكتروني وسنضيفها لك."
 
 #: admin/admin-page.php:209
 msgid "Submit Request via Email"
-msgstr ""
+msgstr "إرسال الطلب عبر البريد الإلكتروني"
 
 #: includes/functions/analytics.php:20
 msgid "Analytics Dashboard"
-msgstr ""
+msgstr "لوحة معلومات التحليلات"
 
 #: includes/functions/analytics.php:23
 msgid "Analytics system is initializing..."
-msgstr ""
+msgstr "جاري تهيئة نظام التحليلات..."
 
 #: includes/functions/analytics.php:24
 msgid "Please refresh the page to view click statistics."
-msgstr ""
+msgstr "يرجى تحديث الصفحة لعرض إحصائيات النقرات."
 
 #: includes/functions/analytics.php:43
 msgid "No Click Data Available Yet"
-msgstr ""
+msgstr "لا توجد بيانات نقرات متاحة بعد"
 
 #: includes/functions/analytics.php:44
 msgid "Once your visitors click the WhatsApp button, statistics about clicked numbers, pages, and devices will start displaying here in real time."
-msgstr ""
+msgstr "بمجرد أن ينقر زوارك على زر واتساب، ستبدأ الإحصائيات حول الأرقام التي تم النقر عليها والصفحات والأجهزة في الظهور هنا في الوقت الفعلي."
 
 #: includes/functions/analytics.php:142
 msgid "Analytics Overview"
-msgstr ""
+msgstr "نظرة عامة على التحليلات"
 
 #: includes/functions/analytics.php:151
 msgid "Total Clicks"
-msgstr ""
+msgstr "إجمالي النقرات"
 
 #: includes/functions/analytics.php:161
 msgid "Last 30 Days"
-msgstr ""
+msgstr "آخر 30 يومًا"
 
 #: includes/functions/analytics.php:171
 msgid "Today"
-msgstr ""
+msgstr "اليوم"
 
 #: includes/functions/analytics.php:179
 msgid "Click Trend (Last 30 Days)"
-msgstr ""
+msgstr "اتجاه النقرات (آخر 30 يومًا)"
 
 #: includes/functions/analytics.php:210
 msgid "clicks"
-msgstr ""
+msgstr "نقرات"
 
 #: includes/functions/analytics.php:232
 msgid "Clicks by Agent / Number"
-msgstr ""
+msgstr "النقرات حسب الوكيل / الرقم"
 
 #: includes/functions/analytics.php:255
 msgid "Top Pages (Clicks)"
-msgstr ""
+msgstr "أهم الصفحات (النقرات)"
 
 #: includes/functions/analytics.php:282
 msgid "Device & Time Breakdown"
-msgstr ""
+msgstr "تقسيم الأجهزة والوقت"
 
 #: includes/functions/analytics.php:290
 msgid "Mobile"
-msgstr ""
+msgstr "الهاتف"
 
 #: includes/functions/analytics.php:291
 msgid "Desktop"
-msgstr ""
+msgstr "سطح المكتب"
 
 #: includes/functions/analytics.php:299
 msgid "Peak Hours"
-msgstr ""
+msgstr "ساعات الذروة"
 
 #: admin/admin-page.php:87
 msgid "Analytics"
-msgstr ""
-
-#: admin/admin-page.php:90
-msgid "Settings"
-msgstr ""
+msgstr "التحليلات"
 
 #: admin/admin-page.php:105
 msgid "Woo"
-msgstr ""
+msgstr "Woo"
 
 

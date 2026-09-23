@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Watso - Basic Help Chat Button 1.0.1\n"
 "Report-Msgid-Bugs-To: https://www.hosteva.com\n"
 "POT-Creation-Date: 2024-12-23 15:30+0000\n"
-"PO-Revision-Date: 2025-06-22 14:49+0300\n"
+"PO-Revision-Date: 2026-05-13 07:40+0300\n"
 "Last-Translator: Hosteva Team <support@hosteva.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "Language: tr_TR\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.9\n"
 "X-Domain: watso-basic-chat\n"
 
 #. Plugin Name
@@ -27,11 +27,11 @@ msgstr "https://www.hosteva.com/plugins/watso-basic-chat/"
 
 #. Description
 msgid ""
-"A simple and elegant WhatsApp chat button to support your visitors with "
-"multi-number support, UTM tracking, full customization, and scheduling."
+"A simple and elegant WhatsApp chat button to support your visitors with multi-number support, UTM tracking, full "
+"customization, and scheduling."
 msgstr ""
-"Ziyaretçilerinize destek sağlamak için çoklu numara desteği, UTM takibi, tam "
-"özelleştirme ve zamanlama özellikli basit ve şık bir WhatsApp chat butonu."
+"Ziyaretçilerinize destek sağlamak için çoklu numara desteği, UTM takibi, tam özelleştirme ve zamanlama özellikli "
+"basit ve şık bir WhatsApp chat butonu."
 
 #. Author
 msgid "Hosteva Hosting"
@@ -40,6 +40,10 @@ msgstr "Hosteva Hosting"
 #. Author URI
 msgid "https://www.hosteva.com/"
 msgstr "https://www.hosteva.com/"
+
+#: watso-basic-chat.php:46
+msgid "Settings"
+msgstr "Ayarlar"
 
 #: watso-basic-chat.php:237
 msgid "Watso - Basic Chat Settings"
@@ -86,25 +90,20 @@ msgid "Watso Chat:"
 msgstr "Watso Chat:"
 
 #: watso-basic-chat.php:669
-msgid ""
-"Since database cleanup is active, all plugin data has been deleted. You can "
-"make your new settings."
-msgstr ""
-"Veritabanı temizliği aktif olduğundan, tüm eklenti verileri silindi. Yeni "
-"ayarlarınızı yapabilirsiniz."
+msgid "Since database cleanup is active, all plugin data has been deleted. You can make your new settings."
+msgstr "Veritabanı temizliği aktif olduğundan, tüm eklenti verileri silindi. Yeni ayarlarınızı yapabilirsiniz."
 
 #: admin/admin-page.php:24
 msgid "WhatsApp chat button for instant customer support"
 msgstr "Anında müşteri desteği için WhatsApp chat butonu"
 
-#: admin/admin-page.php:30 includes/functions/general.php:12
-#: includes/functions/general.php:122
+#: admin/admin-page.php:30 includes/functions/general.php:12 includes/functions/general.php:122
 msgid "General Settings"
-msgstr "Genel Ayarlar"
+msgstr "Ayarlar"
 
 #: admin/admin-page.php:33 includes/functions/appearance.php:11
-msgid "Appearance & Colors"
-msgstr "Görünüm ve Renkler"
+msgid "Appearance"
+msgstr "Görünüm"
 
 #: admin/admin-page.php:36
 msgid "Numbers"
@@ -138,8 +137,7 @@ msgstr "Konum"
 msgid "Show on Mobile"
 msgstr "Mobilde Göster"
 
-#: includes/functions/general.php:39 includes/functions/general.php:140
-#: includes/functions/numbers.php:36
+#: includes/functions/general.php:39 includes/functions/general.php:140 includes/functions/numbers.php:36
 msgid "Title"
 msgstr "Başlık"
 
@@ -209,8 +207,7 @@ msgstr "Varsayılana Sıfırla"
 
 #: includes/functions/appearance.php:22
 msgid "Default WhatsApp icon is displayed, you can change it below."
-msgstr ""
-"Varsayılan WhatsApp ikonu görüntüleniyor, aşağıdan değiştirebilirsiniz."
+msgstr "Varsayılan WhatsApp ikonu görüntüleniyor, aşağıdan değiştirebilirsiniz."
 
 #: includes/functions/appearance.php:26
 msgid "Upload Custom Icon"
@@ -232,8 +229,8 @@ msgstr "Kendi ikonunuzu yükleyin (önerilen boyut: 60x60px, PNG formatı)."
 msgid "Button Color"
 msgstr "Buton Rengi"
 
-#: includes/functions/appearance.php:43 includes/functions/appearance.php:52
-#: includes/functions/appearance.php:59 includes/functions/appearance.php:66
+#: includes/functions/appearance.php:43 includes/functions/appearance.php:52 includes/functions/appearance.php:59
+#: includes/functions/appearance.php:66
 msgid "Reset"
 msgstr "Sıfırla"
 
@@ -350,12 +347,8 @@ msgid "e.g: Available Mon-Fri 9AM-6PM"
 msgstr "örn: Pzt-Cum 09:00-18:00 arası müsait"
 
 #: includes/functions/numbers.php:54
-msgid ""
-"Displayed in small font. You can write working hours, availability, or any "
-"brief note."
-msgstr ""
-"Küçük yazı tipiyle görüntülenir. Çalışma saatleri, müsaitlik durumu veya "
-"kısa notlar yazabilirsiniz."
+msgid "Displayed in small font. You can write working hours, availability, or any brief note."
+msgstr "Küçük yazı tipiyle görüntülenir. Çalışma saatleri, müsaitlik durumu veya kısa notlar yazabilirsiniz."
 
 #: includes/functions/numbers.php:58 includes/functions/schedule.php:63
 msgid "Delete"
@@ -367,11 +360,8 @@ msgstr "Numara Ekle"
 
 #: includes/functions/numbers.php:65
 msgid ""
-"If there is one number, users are redirected directly. If there are multiple "
-"numbers, a dropdown menu is shown."
-msgstr ""
-"Tek numara varsa kullanıcılar doğrudan yönlendirilir. Birden fazla numara "
-"varsa açılır menü gösterilir."
+"If there is one number, users are redirected directly. If there are multiple numbers, a dropdown menu is shown."
+msgstr "Tek numara varsa kullanıcılar doğrudan yönlendirilir. Birden fazla numara varsa açılır menü gösterilir."
 
 #: includes/functions/numbers.php:66
 msgid "Display Order:"
@@ -427,13 +417,11 @@ msgstr "Facebook/Meta Pixel İzleme"
 
 #: includes/functions/tracking.php:48
 msgid ""
-"Track the performance of your Facebook ads. Sends \"Watso Contact\" event "
-"for single number, \"Watso Contact 2\", \"Watso Contact 3\" for multiple "
-"numbers."
+"Track the performance of your Facebook ads. Sends \"Watso Contact\" event for single number, \"Watso Contact 2\", "
+"\"Watso Contact 3\" for multiple numbers."
 msgstr ""
-"Facebook reklamlarınızın performansını izleyin. Tek numara için \"Watso "
-"Contact\" eventi, birden fazla numara için \"Watso Contact 2\", \"Watso "
-"Contact 3\" gönderir."
+"Facebook reklamlarınızın performansını izleyin. Tek numara için \"Watso Contact\" eventi, birden fazla numara için "
+"\"Watso Contact 2\", \"Watso Contact 3\" gönderir."
 
 #: includes/functions/tracking.php:49
 msgid "Meta Pixel setup guide"
@@ -445,8 +433,7 @@ msgstr "Tıklama Kaynağını Göster"
 
 #: includes/functions/tracking.php:58
 msgid "Include the page URL where user clicked the button in WhatsApp message."
-msgstr ""
-"Kullanıcının butona tıkladığı sayfa URL'sini WhatsApp mesajına dahil et."
+msgstr "Kullanıcının butona tıkladığı sayfa URL'sini WhatsApp mesajına dahil et."
 
 #: includes/functions/tracking.php:63
 msgid "Source Message Settings"
@@ -469,12 +456,8 @@ msgid "Enable Time Range"
 msgstr "Zaman Aralığını Etkinleştir"
 
 #: includes/functions/schedule.php:19
-msgid ""
-"Show button only during specific hours. Note: Controlled via JavaScript for "
-"cache compatibility."
-msgstr ""
-"Butonu sadece belirli saatlerde göster. Not: Önbellek uyumluluğu için "
-"JavaScript ile kontrol edilir."
+msgid "Show button only during specific hours. Note: Controlled via JavaScript for cache compatibility."
+msgstr "Butonu sadece belirli saatlerde göster. Not: Önbellek uyumluluğu için JavaScript ile kontrol edilir."
 
 #: includes/functions/schedule.php:23
 msgid "Working Hours"
@@ -530,9 +513,7 @@ msgstr "Hata Ayıklama Modu"
 
 #: includes/functions/advanced.php:19
 msgid "Enable debug logs in browser console and PHP error log."
-msgstr ""
-"Tarayıcı konsolunda ve PHP hata günlüğünde hata ayıklama günlüklerini "
-"etkinleştir."
+msgstr "Tarayıcı konsolunda ve PHP hata günlüğünde hata ayıklama günlüklerini etkinleştir."
 
 #: includes/functions/advanced.php:23
 msgid "Database Cleanup"
@@ -540,11 +521,11 @@ msgstr "Veritabanı Temizliği"
 
 #: includes/functions/advanced.php:28
 msgid ""
-"When this option is active, all settings and uploaded files are deleted when "
-"the plugin is uninstalled. Useful for testing or starting fresh."
+"When this option is active, all settings and uploaded files are deleted when the plugin is uninstalled. Useful for "
+"testing or starting fresh."
 msgstr ""
-"Bu seçenek aktif olduğunda, eklenti kaldırıldığında tüm ayarlar ve yüklenen "
-"dosyalar silinir. Test etmek veya temiz başlamak için yararlıdır."
+"Bu seçenek aktif olduğunda, eklenti kaldırıldığında tüm ayarlar ve yüklenen dosyalar silinir. Test etmek veya temiz "
+"başlamak için yararlıdır."
 
 #: includes/functions/advanced.php:32
 msgid "Version Information"
@@ -563,12 +544,8 @@ msgid "About Plugin"
 msgstr "Eklenti Hakkında"
 
 #: includes/functions/advanced.php:42
-msgid ""
-"Watso Chat plugin provides professional customer support through instant "
-"messaging capabilities."
-msgstr ""
-"Watso Chat eklentisi, anlık mesajlaşma yetenekleri aracılığıyla profesyonel "
-"müşteri desteği sağlar."
+msgid "Watso Chat plugin provides professional customer support through instant messaging capabilities."
+msgstr "Watso Chat eklentisi, anlık mesajlaşma yetenekleri aracılığıyla profesyonel müşteri desteği sağlar."
 
 #: includes/functions/advanced.php:44
 msgid "Support:"
@@ -638,3 +615,253 @@ msgstr "Kapat"
 #: includes/class-button-renderer.php:121
 msgid "Unnamed"
 msgstr "İsimsiz"
+
+#: admin/admin-page.php:94
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: includes/functions/woocommerce.php:17
+msgid "WooCommerce Integration"
+msgstr "WooCommerce Entegrasyonu"
+
+#: includes/functions/woocommerce.php:19
+msgid "Enable special WhatsApp features for your WooCommerce store."
+msgstr "WooCommerce mağazanız için özel WhatsApp özelliklerini etkinleştirin."
+
+#: includes/functions/woocommerce.php:24
+msgid "Enable Integration"
+msgstr "Entegrasyonu Etkinleştir"
+
+#: includes/functions/woocommerce.php:29
+msgid "Activate WooCommerce specific features."
+msgstr "WooCommerce'e özel özellikleri aktif eder."
+
+#: includes/functions/woocommerce.php:35
+msgid "Product Page Settings"
+msgstr "Ürün Sayfası Ayarları"
+
+#: includes/functions/woocommerce.php:38
+msgid "Product Message Template"
+msgstr "Ürün Mesaj Şablonu"
+
+#: includes/functions/woocommerce.php:39
+msgid "Hello, I want to get information about [product_name]: [product_url]"
+msgstr "Merhaba, [product_name] ürünü hakkında bilgi almak istiyorum: [product_url]"
+
+#: includes/functions/woocommerce.php:41
+msgid "Message sent when customer clicks WhatsApp button on product page."
+msgstr "Müşteri ürün sayfasında WhatsApp butonuna tıkladığında gönderilen mesaj."
+
+#: includes/functions/woocommerce.php:42
+msgid "Available tags:"
+msgstr "Kullanılabilir etiketler:"
+
+#: includes/functions/woocommerce.php:49
+msgid "Cart Page Settings"
+msgstr "Sepet Sayfası Ayarları"
+
+#: includes/functions/woocommerce.php:52
+msgid "Show Support Button in Cart"
+msgstr "Sepette Destek Butonunu Göster"
+
+#: includes/functions/woocommerce.php:60
+msgid "Cart Button Text"
+msgstr "Sepet Buton Metni"
+
+#: includes/functions/woocommerce.php:61
+msgid "Support before checkout"
+msgstr "Ödeme öncesi destek"
+
+#: includes/functions/woocommerce.php:67
+msgid "Order Confirmation Settings"
+msgstr "Sipariş Onay Ayarları"
+
+#: includes/functions/woocommerce.php:70
+msgid "Show Order Status Button"
+msgstr "Sipariş Durumu Butonunu Göster"
+
+#: includes/functions/woocommerce.php:78
+msgid "Order Status Message Template"
+msgstr "Sipariş Durumu Mesaj Şablonu"
+
+#: includes/functions/woocommerce.php:79
+msgid "Hello, I want to ask about my order #[order_id]."
+msgstr "Merhaba, #[order_id] numaralı siparişim hakkında bilgi almak istiyorum."
+
+#: includes/functions/woocommerce.php:81
+msgid "Message sent when customer clicks WhatsApp button on order confirmation page."
+msgstr "Müşteri sipariş onay sayfasında WhatsApp butonuna tıkladığında gönderilen mesaj."
+
+#: includes/class-woocommerce-integration.php:127
+msgid "Need help with your order?"
+msgstr "Siparişinizle ilgili yardıma mı ihtiyacınız var?"
+
+#: includes/class-woocommerce-integration.php:143
+msgid "Ask Order Status via WhatsApp"
+msgstr "Sipariş Durumunu WhatsApp'tan Sor"
+
+#: includes/functions/woocommerce.php:21
+msgid "WooCommerce plugin is not active. Please install and activate WooCommerce to use these features."
+msgstr "WooCommerce eklentisi aktif değil. Bu özellikleri kullanmak için lütfen WooCommerce'i kurun ve etkinleştirin."
+
+#: includes/functions/woocommerce.php:88
+msgid "Order Status Button Text"
+msgstr "Sipariş Durumu Buton Metni"
+
+#: includes/functions/woocommerce.php:74
+msgid "Cart Message Template"
+msgstr "Sepet Mesaj Şablonu"
+
+#: includes/functions/woocommerce.php:76
+msgid "Hello, I need support with my cart before checkout."
+msgstr "Merhaba, ödeme öncesi sepetimle ilgili yardıma ihtiyacım var."
+
+#: includes/functions/woocommerce.php:78
+msgid "Message sent when customer clicks WhatsApp button on cart page."
+msgstr "Müşteri sepet sayfasında WhatsApp butonuna tıkladığında gönderilen mesaj."
+
+#: includes/functions/woocommerce.php:96
+msgid "Order Box Title"
+msgstr "Sipariş Onay Kutusu Başlığı"
+
+#: admin/admin-page.php:35
+msgid "Show What's New"
+msgstr "Yenilikleri Göster"
+
+#: admin/admin-page.php:38
+msgid "What's New & Support"
+msgstr "Yenilikler & Destek"
+
+#: admin/admin-page.php:174
+msgid "Recent Updates"
+msgstr "Son Güncellemeler"
+
+#: admin/admin-page.php:177
+msgid "v1.2.0"
+msgstr "v1.2.0"
+
+#: admin/admin-page.php:178
+msgid "May 2026"
+msgstr "Mayıs 2026"
+
+#: admin/admin-page.php:180
+msgid "Added:"
+msgstr "Eklendi:"
+
+#: admin/admin-page.php:180
+msgid "Built-in Analytics Dashboard (SVG charts, agent clicks and device stats)."
+msgstr "Dahili Analitik Paneli (SVG grafikleri, temsilci tıklamaları ve cihaz istatistikleri)."
+
+#: admin/admin-page.php:181
+msgid "Performance-friendly, lightweight database logging infrastructure with zero extra external libraries."
+msgstr "Sıfır ek harici kütüphane ile performans dostu, hafif veritabanı loglama altyapısı."
+
+#: admin/admin-page.php:182
+msgid "Feature Request Submission Panel."
+msgstr "Geliştirme Talebi Gönderme Paneli."
+
+#: admin/admin-page.php:183
+msgid "WordPress 7.0 compatibility updates and plugin testing."
+msgstr "WordPress 7.0 uyumluluk güncellemeleri ve eklenti testi."
+
+#: admin/admin-page.php:189
+msgid "WooCommerce Integration (Cart, product and order pages)."
+msgstr "WooCommerce Entegrasyonu (Sepet, ürün ve sipariş sayfaları)."
+
+#: admin/admin-page.php:190
+msgid "Arabic language support and RTL layout compatibility."
+msgstr "Arapça dil desteği ve RTL düzen uyumluluğu."
+
+#: admin/admin-page.php:196
+msgid "German language support and admin settings shortcuts."
+msgstr "Almanca dil desteği ve admin ayarlar kısayolları."
+
+#: admin/admin-page.php:204
+msgid "Submit Feature Request"
+msgstr "Geliştirme Talebi Gönder"
+
+#: admin/admin-page.php:205
+msgid "Do you want a new feature for Watso Basic Chat? Send us your request via email, and we'll add it for you."
+msgstr "Watso Basic Chat için yeni bir özellik mi istiyorsunuz? Talebinizi e-posta ile bize iletin, sizin için ekleyelim."
+
+#: admin/admin-page.php:209
+msgid "Submit Request via Email"
+msgstr "E-posta ile Talep İlet"
+
+#: includes/functions/analytics.php:20
+msgid "Analytics Dashboard"
+msgstr "Analitik Paneli"
+
+#: includes/functions/analytics.php:23
+msgid "Analytics system is initializing..."
+msgstr "Analiz sistemi başlatılıyor..."
+
+#: includes/functions/analytics.php:24
+msgid "Please refresh the page to view click statistics."
+msgstr "Tıklama istatistiklerini görüntülemek için lütfen sayfayı yenileyin."
+
+#: includes/functions/analytics.php:43
+msgid "No Click Data Available Yet"
+msgstr "Henüz Tıklama Verisi Yok"
+
+#: includes/functions/analytics.php:44
+msgid "Once your visitors click the WhatsApp button, statistics about clicked numbers, pages, and devices will start displaying here in real time."
+msgstr "Ziyaretçileriniz WhatsApp butonuna tıkladığında, tıklanan numaralar, sayfalar ve cihazlarla ilgili istatistikler burada gerçek zamanlı olarak görüntülenmeye başlayacaktır."
+
+#: includes/functions/analytics.php:142
+msgid "Analytics Overview"
+msgstr "Analiz Genel Bakış"
+
+#: includes/functions/analytics.php:151
+msgid "Total Clicks"
+msgstr "Toplam Tıklama"
+
+#: includes/functions/analytics.php:161
+msgid "Last 30 Days"
+msgstr "Son 30 Gün"
+
+#: includes/functions/analytics.php:171
+msgid "Today"
+msgstr "Bugün"
+
+#: includes/functions/analytics.php:179
+msgid "Click Trend (Last 30 Days)"
+msgstr "Tıklama Trendi (Son 30 Gün)"
+
+#: includes/functions/analytics.php:210
+msgid "clicks"
+msgstr "tıklama"
+
+#: includes/functions/analytics.php:232
+msgid "Clicks by Agent / Number"
+msgstr "Temsilciye / Numaraya Göre Tıklamalar"
+
+#: includes/functions/analytics.php:255
+msgid "Top Pages (Clicks)"
+msgstr "En Çok Tıklanan Sayfalar"
+
+#: includes/functions/analytics.php:282
+msgid "Device & Time Breakdown"
+msgstr "Cihaz ve Zaman Dağılımı"
+
+#: includes/functions/analytics.php:290
+msgid "Mobile"
+msgstr "Mobil"
+
+#: includes/functions/analytics.php:291
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: includes/functions/analytics.php:299
+msgid "Peak Hours"
+msgstr "En Yoğun Saatler"
+
+#: admin/admin-page.php:87
+msgid "Analytics"
+msgstr "Analitik"
+
+#: admin/admin-page.php:105
+msgid "Woo"
+msgstr "Woo"
+
+

@@ -1,0 +1,18 @@
+<wpml-config>
+    <admin-texts>
+        <key name="watso_settings">
+            <key name="button_title" />
+            <key name="dropdown_header_text" />
+            <key name="source_message_text" />
+            <key name="woo_product_message" />
+            <key name="woo_cart_button_text" />
+            <key name="woo_order_message" />
+            <key name="numbers">
+                <key name="title" />
+                <key name="department" />
+                <key name="status_text" />
+                <key name="short_description" />
+            </key>
+        </key>
+    </admin-texts>
+</wpml-config>

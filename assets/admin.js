@@ -8,7 +8,7 @@
 
 	class WatsoAdmin {
 		constructor() {
-			this.currentTab = 'general';
+			this.currentTab = 'analytics';
 			this.debugMode = false; // Will be set from settings
 
 			this.init();
@@ -25,6 +25,7 @@
 				this.initToggleFields();
 				this.initDynamicFields();
 				this.bindEvents();
+				this.initSidebarPanel();
 
 				// Preview system
 				this.initLivePreview();
@@ -52,6 +53,50 @@
 
 			const timestamp = new Date().toISOString();
 			console.error(`[Watso Admin ERROR ${timestamp}] ${message}`, data || '');
+		}
+
+		initSidebarPanel() {
+			this.log('Initializing sidebar panel');
+
+			const $panel = $('#watso-sidebar-panel');
+			const $overlay = $('#watso-sidebar-overlay');
+			const $trigger = $('.watso-notification-trigger, .watso-version-badge');
+			const $closeBtn = $('#watso-sidebar-close');
+
+			// Click trigger to open
+			$trigger.on('click', (e) => {
+				e.preventDefault();
+				this.log('Sidebar trigger clicked');
+				$panel.addClass('watso-open');
+				$overlay.addClass('watso-open');
+				// Hide notification badge when opened
+				$('.watso-notification-badge').fadeOut();
+			});
+
+			// Click close to close
+			$closeBtn.on('click', (e) => {
+				e.preventDefault();
+				this.closeSidebar();
+			});
+
+			// Click overlay to close
+			$overlay.on('click', (e) => {
+				e.preventDefault();
+				this.closeSidebar();
+			});
+
+			// Escape key to close
+			$(document).on('keydown', (e) => {
+				if (e.keyCode === 27 && $panel.hasClass('watso-open')) {
+					this.closeSidebar();
+				}
+			});
+		}
+
+		closeSidebar() {
+			this.log('Closing sidebar');
+			$('#watso-sidebar-panel').removeClass('watso-open');
+			$('#watso-sidebar-overlay').removeClass('watso-open');
 		}
 
 		initTabs() {

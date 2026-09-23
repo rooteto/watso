@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 function watso_init_general_settings() {
 	add_settings_section(
 		'watso_general_section',
-		__('General Settings', 'watso-basic-chat'),
+		__('Settings', 'watso-basic-chat'),
 		'watso_general_section_callback',
 		'watso_general'
 	);
@@ -139,10 +139,64 @@ function watso_button_radius_field_callback() {
 	<?php
 }
 
+/**
+ * Register strings for Polylang translation
+ */
+function watso_register_polylang_strings() {
+	if (!function_exists('pll_register_string')) {
+		return;
+	}
+
+	$settings = WatsoWhatsAppChat::get_instance()->get_settings();
+	$group = 'watso-basic-chat';
+
+	pll_register_string('Button Title', $settings['button_title'], $group);
+	pll_register_string('Dropdown Header', $settings['dropdown_header_text'], $group);
+	pll_register_string('Source Message', $settings['source_message_text'], $group);
+	
+	// WooCommerce strings
+	if (isset($settings['woo_enabled']) && $settings['woo_enabled']) {
+		pll_register_string('Woo Product Message', $settings['woo_product_message'], $group);
+		pll_register_string('Woo Cart Button Text', $settings['woo_cart_button_text'], $group);
+		pll_register_string('Woo Order Button Text', $settings['woo_order_button_text'], $group);
+		pll_register_string('Woo Order Message', $settings['woo_order_message'], $group);
+	}
+
+	// Numbers
+	if (!empty($settings['numbers']) && is_array($settings['numbers'])) {
+		foreach ($settings['numbers'] as $index => $number) {
+			pll_register_string("Number Title #$index", $number['title'], $group);
+			pll_register_string("Number Department #$index", $number['department'], $group);
+			pll_register_string("Number Status #$index", $number['status_text'], $group);
+			pll_register_string("Number Description #$index", $number['short_description'], $group);
+		}
+	}
+}
+add_action('init', 'watso_register_polylang_strings');
+
+/**
+ * Get translated version of a setting
+ */
+function watso_get_translated_string($string, $name = '') {
+	if (empty($string)) {
+		return $string;
+	}
+
+	// WPML Translation
+	$translated = apply_filters('wpml_translate_single_string', $string, 'watso-basic-chat', $name);
+
+	// Polylang Translation
+	if (function_exists('pll__')) {
+		$translated = pll__($translated);
+	}
+
+	return $translated;
+}
+
 function watso_render_general_tab($settings) {
 	?>
 	<div class="watso-card">
-		<h3><?php esc_html_e('General Settings', 'watso-basic-chat'); ?></h3>
+		<h3><?php esc_html_e('Settings', 'watso-basic-chat'); ?></h3>
 		<div class="watso-form-grid">
 			<div class="watso-form-field">
 				<label><?php esc_html_e('Plugin Status', 'watso-basic-chat'); ?></label>

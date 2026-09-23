@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 
 class WatsoButtonRenderer {
 
-	public static function render_button($settings, $is_preview = false) {
+	public static function render_button($settings, $is_preview = false, $extra_class = '') {
 		$active_numbers = self::get_active_numbers($settings);
 
 		// Debug
@@ -30,10 +30,12 @@ class WatsoButtonRenderer {
 
 		// Button settings
 		$button_title = isset($settings['button_title']) ? trim($settings['button_title']) : '';
+		$button_title = watso_get_translated_string($button_title, 'Button Title');
 		$has_title = !empty($button_title);
 
 		// Dropdown header text
 		$dropdown_header_text = isset($settings['dropdown_header_text']) ? trim($settings['dropdown_header_text']) : esc_attr__('Select a contact', 'watso-basic-chat');
+		$dropdown_header_text = watso_get_translated_string($dropdown_header_text, 'Dropdown Header');
 
 		// Colors
 		$button_radius = isset($settings['button_radius']) && is_numeric($settings['button_radius']) ? (int)$settings['button_radius'] : 15;
@@ -50,7 +52,7 @@ class WatsoButtonRenderer {
 
 		// Container class and ID
 		$container_id = $is_preview ? 'watso-preview-button-container' : 'watso-chat-widget';
-		$container_class = $is_preview ? 'watso-preview-container' : 'watso-chat-widget watso-' . $settings['position'];
+		$container_class = $is_preview ? 'watso-preview-container' : 'watso-chat-widget watso-' . $settings['position'] . $extra_class;
 
 		// Create inline style
 		$button_inline_style = sprintf(
@@ -116,9 +118,16 @@ class WatsoButtonRenderer {
 
 							// Contact information
 							$person_name = !empty($number['title']) ? $number['title'] : esc_attr__('Unnamed', 'watso-basic-chat');
+							$person_name = watso_get_translated_string($person_name, "Number Title #$index");
+
 							$department = !empty($number['department']) ? $number['department'] : '';
+							$department = watso_get_translated_string($department, "Number Department #$index");
+
 							$status_text = !empty($number['status_text']) ? $number['status_text'] : '';
+							$status_text = watso_get_translated_string($status_text, "Number Status #$index");
+
 							$short_description = !empty($number['short_description']) ? $number['short_description'] : '';
+							$short_description = watso_get_translated_string($short_description, "Number Description #$index");
 							?>
 							<a href="<?php echo esc_url($whatsapp_url); ?>"
 							   class="watso-dropdown-item"

@@ -15,7 +15,7 @@ function watso_init_appearance_settings() {
 function watso_render_appearance_tab($settings) {
 	?>
 	<div class="watso-card">
-		<h3><?php esc_html_e('Appearance & Colors', 'watso-basic-chat'); ?></h3>
+		<h3><?php esc_html_e('Appearance', 'watso-basic-chat'); ?></h3>
 		<div class="watso-form-grid">
 			<div class="watso-form-field watso-field-full">
 				<label><?php esc_html_e('Default Icon', 'watso-basic-chat'); ?></label>

@@ -3,7 +3,7 @@
  * Plugin Name: Watso – Basic Help Chat Button
  * Plugin URI: https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso_basic_chat
  * Description: A simple and elegant WhatsApp chat button to support your visitors with multi-number support, UTM tracking, full customization, and scheduling.
- * Version: 1.0.5
+ * Version: 1.2.0
  * Author: Hosteva Hosting
  * Author URI: https://www.hosteva.com/?utm_campaign=watso_basic_chat
  * License: GPLv2 or later
@@ -11,7 +11,7 @@
  * Text Domain: watso-basic-chat
  * Domain Path: /languages
  * Requires at least: 4.9
- * Tested up to: 6.7
+ * Tested up to: 7.0
  * Requires PHP: 5.6
  */
 
@@ -21,31 +21,38 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('WATSO_VERSION', '1.0.5');
+define('WATSO_VERSION', '1.2.0');
 define('WATSO_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WATSO_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('WATSO_PLUGIN_FILE', __FILE__);
 
-class WatsoWhatsAppChat {
+class WatsoWhatsAppChat
+{
 
 	private static $instance = null;
 
-	public static function get_instance() {
+	public static function get_instance()
+	{
 		if (null === self::$instance) {
 			self::$instance = new self();
 		}
 		return self::$instance;
 	}
 
-	private function __construct() {
+	private function __construct()
+	{
 		add_action('init', array($this, 'init'));
 		register_activation_hook(__FILE__, array($this, 'activate'));
 		register_deactivation_hook(__FILE__, array($this, 'deactivate'));
 		register_uninstall_hook(__FILE__, array('WatsoWhatsAppChat', 'uninstall'));
+
+		// Add settings link to plugins page
+		add_filter('plugin_action_links_' . plugin_basename(__FILE__), array($this, 'add_plugin_action_links'));
 	}
 
 	// Safe debug logging function
-	public function debug_log($message, $data = null) {
+	public function debug_log($message, $data = null)
+	{
 		$settings = $this->get_settings();
 
 		// Only log if plugin debug mode is enabled
@@ -74,7 +81,8 @@ class WatsoWhatsAppChat {
 		}
 	}
 
-	private function get_sanitized_settings_from_post() {
+	private function get_sanitized_settings_from_post()
+	{
 		// Nonce verification - admin sayfasında kullanım için
 		if (!isset($_POST['_wpnonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'])), 'watso_settings_group-options')) {
 			return array();
@@ -92,7 +100,8 @@ class WatsoWhatsAppChat {
 	 *
 	 * @return bool
 	 */
-	private function verify_frontend_nonce() {
+	private function verify_frontend_nonce()
+	{
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing -- This function IS the nonce verification
 		if (!isset($_POST['nonce'])) {
 			wp_send_json_error(array('message' => 'Nonce field missing'));
@@ -114,7 +123,8 @@ class WatsoWhatsAppChat {
 	 *
 	 * @return bool
 	 */
-	private function verify_admin_nonce() {
+	private function verify_admin_nonce()
+	{
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing -- This function IS the nonce verification
 		if (!isset($_POST['nonce'])) {
 			wp_send_json_error(array('message' => 'Nonce field missing'));
@@ -136,7 +146,8 @@ class WatsoWhatsAppChat {
 		return true;
 	}
 
-	public function init() {
+	public function init()
+	{
 		$this->debug_log('Plugin initialization started');
 
 		// Load text domain
@@ -174,10 +185,16 @@ class WatsoWhatsAppChat {
 		add_action('wp_ajax_nopriv_watso_get_current_settings', array($this, 'ajax_get_current_settings'));
 		add_action('wp_ajax_watso_get_current_settings', array($this, 'ajax_get_current_settings'));
 
+		// Initialize WooCommerce Integration
+		if (class_exists('WooCommerce')) {
+			WatsoWooCommerce::get_instance();
+		}
+
 		$this->debug_log('Plugin initialization completed');
 	}
 
-	private function load_includes() {
+	private function load_includes()
+	{
 		$this->debug_log('Loading includes');
 
 		// Load function files
@@ -188,7 +205,10 @@ class WatsoWhatsAppChat {
 			'includes/functions/tracking.php',
 			'includes/functions/schedule.php',
 			'includes/functions/advanced.php',
-			'includes/class-button-renderer.php'
+			'includes/functions/woocommerce.php',
+			'includes/functions/analytics.php',
+			'includes/class-button-renderer.php',
+			'includes/class-woocommerce-integration.php'
 		);
 
 		foreach ($includes as $file) {
@@ -202,8 +222,13 @@ class WatsoWhatsAppChat {
 		}
 	}
 
-	public function activate() {
+	public function activate()
+	{
 		$this->debug_log('Plugin activation started');
+
+		// Create database table
+		$this->create_database_table();
+		update_option('watso_db_version', '1.2.0');
 
 		// Get existing settings
 		$existing_settings = get_option('watso_settings', array());
@@ -240,7 +265,8 @@ class WatsoWhatsAppChat {
 		$this->debug_log('Plugin activation completed');
 	}
 
-	public function deactivate() {
+	public function deactivate()
+	{
 		$this->debug_log('Plugin deactivation started');
 
 		// Database cleanup check
@@ -275,7 +301,8 @@ class WatsoWhatsAppChat {
 		$this->debug_log('Plugin deactivation completed');
 	}
 
-	public static function uninstall() {
+	public static function uninstall()
+	{
 		$settings = get_option('watso_settings', array());
 		if (isset($settings['clean_on_uninstall']) && $settings['clean_on_uninstall']) {
 			delete_option('watso_settings');
@@ -300,7 +327,8 @@ class WatsoWhatsAppChat {
 		}
 	}
 
-	public function add_admin_menu() {
+	public function add_admin_menu()
+	{
 		$this->debug_log('Adding admin menu');
 
 		add_menu_page(
@@ -314,7 +342,15 @@ class WatsoWhatsAppChat {
 		);
 	}
 
-	public function admin_init() {
+	public function add_plugin_action_links($links)
+	{
+		$settings_link = '<a href="admin.php?page=watso-settings">' . __('Settings', 'watso-basic-chat') . '</a>';
+		array_unshift($links, $settings_link);
+		return $links;
+	}
+
+	public function admin_init()
+	{
 		$this->debug_log('Admin init started');
 
 		if (isset($_POST['submit']) && isset($_POST['option_page']) && $_POST['option_page'] === 'watso_settings_group') {
@@ -322,6 +358,13 @@ class WatsoWhatsAppChat {
 			if (!isset($_POST['_wpnonce']) || !wp_verify_nonce(sanitize_text_field(wp_unslash($_POST['_wpnonce'])), 'watso_settings_group-options')) {
 				wp_die(esc_html__('Security check failed. Please try again.', 'watso-basic-chat'));
 			}
+		}
+
+		// Database update check
+		$db_version = get_option('watso_db_version', '0');
+		if (version_compare($db_version, '1.2.0', '<')) {
+			$this->create_database_table();
+			update_option('watso_db_version', '1.2.0');
 		}
 
 		// Register settings for each section
@@ -334,11 +377,18 @@ class WatsoWhatsAppChat {
 		watso_init_tracking_settings();
 		watso_init_schedule_settings();
 		watso_init_advanced_settings();
+		watso_init_woocommerce_settings();
+
+		// Initialize WooCommerce Integration
+		if (class_exists('WatsoWooCommerce')) {
+			WatsoWooCommerce::get_instance();
+		}
 
 		$this->debug_log('Admin init completed');
 	}
 
-	public function admin_enqueue_scripts($hook) {
+	public function admin_enqueue_scripts($hook)
+	{
 		if ('toplevel_page_watso-settings' !== $hook) {
 			return;
 		}
@@ -348,6 +398,10 @@ class WatsoWhatsAppChat {
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('wp-color-picker');
 		wp_enqueue_style('wp-color-picker');
+		
+		// Enqueue Font Awesome locally for maximum performance and reliability
+		wp_enqueue_style('font-awesome', WATSO_PLUGIN_URL . 'assets/vendor/fontawesome/css/all.min.css', array(), '6.4.0');
+		
 		wp_enqueue_media();
 
 		wp_enqueue_script(
@@ -378,7 +432,8 @@ class WatsoWhatsAppChat {
 		$this->debug_log('Admin scripts enqueued successfully');
 	}
 
-	public function enqueue_scripts() {
+	public function enqueue_scripts()
+	{
 		$settings = $this->get_settings();
 
 		if (!$settings['active']) {
@@ -417,7 +472,8 @@ class WatsoWhatsAppChat {
 		));
 	}
 
-	public function render_chat_button() {
+	public function render_chat_button()
+	{
 		$settings = $this->get_settings();
 
 		if (!$settings['active']) {
@@ -435,13 +491,17 @@ class WatsoWhatsAppChat {
 
 		$this->debug_log('All checks passed, rendering chat button');
 
+		// Container class
+		$rtl_class = is_rtl() ? ' watso-rtl' : '';
+		
 		// USE UNIFIED RENDERER
-		WatsoButtonRenderer::render_button($settings, false);
+		WatsoButtonRenderer::render_button($settings, false, $rtl_class);
 
 		$this->debug_log('Chat button rendered successfully');
 	}
 
-	private function is_within_schedule($settings) {
+	private function is_within_schedule($settings)
+	{
 		$this->debug_log('Checking schedule');
 
 		$current_time = current_time('H:i');
@@ -495,13 +555,15 @@ class WatsoWhatsAppChat {
 		return true;
 	}
 
-	public function admin_page() {
+	public function admin_page()
+	{
 		$this->debug_log('Loading admin page');
 		include WATSO_PLUGIN_PATH . 'admin/admin-page.php';
 	}
 
 	// IMPROVED DEFAULT SETTINGS - WITH NEW FIELDS
-	private function get_default_settings() {
+	private function get_default_settings()
+	{
 		return array(
 			'active' => true,
 			'position' => 'bottom-right',
@@ -542,25 +604,32 @@ class WatsoWhatsAppChat {
 				'sunday' => array('start' => '09:00', 'end' => '18:00', 'enabled' => false)
 			),
 			'holidays' => array(),
-			'debug_mode' => false,
-			'clean_on_uninstall' => false
+			'clean_on_uninstall' => false,
+			'woo_enabled' => false,
+			'woo_product_message' => __('Hello, I want to get information about [product_name]: [product_url]', 'watso-basic-chat'),
+			'woo_cart_button_enabled' => false,
+			'woo_cart_button_text' => __('Support before checkout', 'watso-basic-chat'),
+			'woo_order_button_enabled' => false,
+			'woo_order_message' => __('Hello, I want to ask about my order #[order_id].', 'watso-basic-chat')
 		);
 	}
 
-	public function get_settings() {
+	public function get_settings()
+	{
 		$defaults = $this->get_default_settings();
 		$saved = get_option('watso_settings', array());
 		return wp_parse_args($saved, $defaults);
 	}
 
 	// IMPROVED SANITIZE FUNCTION - WITH NEW FIELDS
-	public function sanitize_settings($input) {
+	public function sanitize_settings($input)
+	{
 		$this->debug_log('Sanitizing settings', array('input_keys' => array_keys($input)));
 
 		$sanitized = array();
 
 		// Boolean fields - "online_status_text" removed
-		$bool_fields = array('active', 'show_mobile', 'utm_enabled', 'meta_tracking', 'show_source_url', 'schedule_enabled', 'debug_mode', 'clean_on_uninstall');
+		$bool_fields = array('active', 'show_mobile', 'utm_enabled', 'meta_tracking', 'show_source_url', 'schedule_enabled', 'debug_mode', 'clean_on_uninstall', 'woo_enabled', 'woo_cart_button_enabled', 'woo_order_button_enabled');
 		foreach ($bool_fields as $field) {
 			$sanitized[$field] = isset($input[$field]) ? (bool) $input[$field] : false;
 		}
@@ -570,10 +639,15 @@ class WatsoWhatsAppChat {
 		$sanitized['button_title'] = sanitize_text_field($input['button_title'] ?? '');
 		$sanitized['dropdown_header_text'] = sanitize_text_field($input['dropdown_header_text'] ?? __('Select a contact', 'watso-basic-chat'));
 		$sanitized['source_message_text'] = sanitize_text_field($input['source_message_text'] ?? __('Hello! I am visiting this page:', 'watso-basic-chat'));
+		
+		// WooCommerce text fields
+		$sanitized['woo_product_message'] = sanitize_textarea_field($input['woo_product_message'] ?? '');
+		$sanitized['woo_cart_button_text'] = sanitize_text_field($input['woo_cart_button_text'] ?? '');
+		$sanitized['woo_order_message'] = sanitize_textarea_field($input['woo_order_message'] ?? '');
 
 		// Button radius - support 0 value
 		$sanitized['button_radius'] = isset($input['button_radius']) && is_numeric($input['button_radius'])
-			? max(0, min(30, (int)$input['button_radius']))
+			? max(0, min(30, (int) $input['button_radius']))
 			: 15;
 
 		// Colors
@@ -638,7 +712,8 @@ class WatsoWhatsAppChat {
 		return $sanitized;
 	}
 
-	public function ajax_track_click() {
+	public function ajax_track_click()
+	{
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing -- Verified in verify_frontend_nonce()
 		$this->debug_log('AJAX track click started');
 
@@ -656,12 +731,92 @@ class WatsoWhatsAppChat {
 			'source_url' => $source_url
 		));
 
+		// Insert click log into custom database table
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'watso_clicks';
+
+		// Parse UTM parameters from URL if present
+		$utm_source = '';
+		$utm_medium = '';
+		$utm_campaign = '';
+
+		if (!empty($source_url)) {
+			$query_str = wp_parse_url($source_url, PHP_URL_QUERY);
+			if ($query_str) {
+				parse_str($query_str, $query_params);
+				$utm_source = isset($query_params['utm_source']) ? sanitize_text_field($query_params['utm_source']) : '';
+				$utm_medium = isset($query_params['utm_medium']) ? sanitize_text_field($query_params['utm_medium']) : '';
+				$utm_campaign = isset($query_params['utm_campaign']) ? sanitize_text_field($query_params['utm_campaign']) : '';
+			}
+		}
+
+		// Fallback to plugin default settings if UTM is enabled and parameters are empty in URL
+		if (empty($utm_source)) {
+			$settings = $this->get_settings();
+			if (isset($settings['utm_enabled']) && $settings['utm_enabled']) {
+				$utm_source = isset($settings['utm_source']) ? $settings['utm_source'] : '';
+				$utm_medium = isset($settings['utm_medium']) ? $settings['utm_medium'] : '';
+				$utm_campaign = isset($settings['utm_campaign']) ? $settings['utm_campaign'] : '';
+			}
+		}
+
+		$device = wp_is_mobile() ? 'mobile' : 'desktop';
+		$click_time = current_time('mysql');
+
+		$wpdb->insert(
+			$table_name,
+			array(
+				'click_time'   => $click_time,
+				'number'       => $number,
+				'page_url'     => $source_url,
+				'device'       => $device,
+				'utm_source'   => $utm_source,
+				'utm_medium'   => $utm_medium,
+				'utm_campaign' => $utm_campaign,
+			),
+			array(
+				'%s',
+				'%s',
+				'%s',
+				'%s',
+				'%s',
+				'%s',
+				'%s',
+			)
+		);
+
 		wp_send_json_success(array(
-			                     'message' => 'Click tracked successfully'
-		                     ));
+			'message' => 'Click tracked successfully'
+		));
 	}
 
-	public function ajax_get_current_settings() {
+
+	private function create_database_table()
+	{
+		global $wpdb;
+		$table_name = $wpdb->prefix . 'watso_clicks';
+		$charset_collate = $wpdb->get_charset_collate();
+
+		$sql = "CREATE TABLE $table_name (
+			id bigint(20) NOT NULL AUTO_INCREMENT,
+			click_time datetime NOT NULL,
+			number varchar(50) NOT NULL,
+			page_url text NOT NULL,
+			device varchar(20) NOT NULL,
+			utm_source varchar(100) DEFAULT '' NOT NULL,
+			utm_medium varchar(100) DEFAULT '' NOT NULL,
+			utm_campaign varchar(100) DEFAULT '' NOT NULL,
+			PRIMARY KEY  (id),
+			KEY click_time (click_time),
+			KEY number (number)
+		) $charset_collate;";
+
+		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+		dbDelta($sql);
+	}
+
+	public function ajax_get_current_settings()
+	{
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing -- Verified in verify_frontend_nonce()
 		if (!$this->verify_frontend_nonce()) {
 			return;
@@ -673,7 +828,8 @@ class WatsoWhatsAppChat {
 	}
 
 	// PREVIEW AJAX HANDLER
-	public function ajax_render_preview() {
+	public function ajax_render_preview()
+	{
 		// phpcs:ignore WordPress.Security.NonceVerification.Missing -- Verified in verify_admin_nonce()
 		$this->debug_log('AJAX render preview started');
 
@@ -701,7 +857,7 @@ class WatsoWhatsAppChat {
 		$clean_settings = array();
 
 		// Boolean fields
-		$bool_fields = array('active', 'show_mobile', 'utm_enabled', 'meta_tracking', 'show_source_url', 'schedule_enabled', 'debug_mode', 'clean_on_uninstall');
+		$bool_fields = array('active', 'show_mobile', 'utm_enabled', 'meta_tracking', 'show_source_url', 'schedule_enabled', 'debug_mode', 'clean_on_uninstall', 'woo_enabled', 'woo_cart_button_enabled', 'woo_order_button_enabled');
 		foreach ($bool_fields as $field) {
 			$clean_settings[$field] = isset($raw_settings[$field]) ? (bool) $raw_settings[$field] : false;
 		}
@@ -712,9 +868,14 @@ class WatsoWhatsAppChat {
 		$clean_settings['dropdown_header_text'] = sanitize_text_field($raw_settings['dropdown_header_text'] ?? __('Select a contact', 'watso-basic-chat'));
 		$clean_settings['source_message_text'] = sanitize_text_field($raw_settings['source_message_text'] ?? __('Hello! I am visiting this page:', 'watso-basic-chat'));
 
+		// WooCommerce text fields
+		$clean_settings['woo_product_message'] = sanitize_textarea_field($raw_settings['woo_product_message'] ?? '');
+		$clean_settings['woo_cart_button_text'] = sanitize_text_field($raw_settings['woo_cart_button_text'] ?? '');
+		$clean_settings['woo_order_message'] = sanitize_textarea_field($raw_settings['woo_order_message'] ?? '');
+
 		// Button radius - support 0 value
 		$clean_settings['button_radius'] = isset($raw_settings['button_radius']) && is_numeric($raw_settings['button_radius'])
-			? max(0, min(30, (int)$raw_settings['button_radius']))
+			? max(0, min(30, (int) $raw_settings['button_radius']))
 			: 15;
 
 		$clean_settings['button_color'] = sanitize_hex_color($raw_settings['button_color'] ?? '#119849');
@@ -785,14 +946,14 @@ class WatsoWhatsAppChat {
 			$this->debug_log('Preview rendered successfully', array('html_length' => strlen($html)));
 
 			wp_send_json_success(array(
-				                     'html' => $html,
-				                     'debug' => array(
-					                     'settings_count' => count($final_settings),
-					                     'numbers_count' => count($final_settings['numbers']),
-					                     'html_length' => strlen($html),
-					                     'button_radius' => $final_settings['button_radius']
-				                     )
-			                     ));
+				'html' => $html,
+				'debug' => array(
+					'settings_count' => count($final_settings),
+					'numbers_count' => count($final_settings['numbers']),
+					'html_length' => strlen($html),
+					'button_radius' => $final_settings['button_radius']
+				)
+			));
 
 		} catch (Exception $e) {
 			ob_end_clean();
@@ -803,17 +964,18 @@ class WatsoWhatsAppChat {
 			));
 
 			wp_send_json_error(array(
-				                   'message' => 'Render error: ' . $e->getMessage(),
-				                   'debug' => array(
-					                   'file' => $e->getFile(),
-					                   'line' => $e->getLine(),
-					                   'settings' => $final_settings
-				                   )
-			                   ));
+				'message' => 'Render error: ' . $e->getMessage(),
+				'debug' => array(
+					'file' => $e->getFile(),
+					'line' => $e->getLine(),
+					'settings' => $final_settings
+				)
+			));
 		}
 	}
 
-	public function generate_whatsapp_url($number, $settings, $number_index = 0) {
+	public function generate_whatsapp_url($number, $settings, $number_index = 0)
+	{
 		$this->debug_log('Generating WhatsApp URL', array(
 			'number' => $number,
 			'number_index' => $number_index,
@@ -837,6 +999,8 @@ class WatsoWhatsAppChat {
 			$source_message = isset($settings['source_message_text']) && !empty(trim($settings['source_message_text']))
 				? trim($settings['source_message_text'])
 				: __('Hello! I am visiting this page:', 'watso-basic-chat');
+			
+			$source_message = watso_get_translated_string($source_message, 'Source Message');
 
 			$message_parts[] = $source_message . ' ' . $current_url;
 
@@ -847,6 +1011,7 @@ class WatsoWhatsAppChat {
 		}
 
 		$message = implode("\n", $message_parts);
+		$message = apply_filters('watso_whatsapp_message', $message, $settings);
 
 		// Add UTM parameters to URL
 		$utm_params = array();
@@ -903,7 +1068,8 @@ class WatsoWhatsAppChat {
 	}
 
 	// Show data cleanup notification
-	public function show_data_cleaned_notice() {
+	public function show_data_cleaned_notice()
+	{
 		if (get_option('watso_data_cleaned')) {
 			?>
 			<div class="notice notice-success is-dismissible">

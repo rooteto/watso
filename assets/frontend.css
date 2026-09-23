@@ -551,3 +551,78 @@
 		display: none !important;
 	}
 }
+
+/* WooCommerce Integration Styles */
+.watso-woo-button {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 10px 20px !important;
+	border-radius: 5px !important;
+	font-weight: 600 !important;
+	text-decoration: none !important;
+	transition: all 0.3s ease !important;
+	border: none !important;
+	cursor: pointer !important;
+	gap: 8px !important;
+}
+
+.watso-woo-button:hover {
+	opacity: 0.9 !important;
+	transform: translateY(-1px) !important;
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.watso-woo-cart-support {
+	margin: 15px 0 !important;
+	width: 100% !important;
+}
+
+.watso-woo-order-status {
+	margin-top: 25px !important;
+	padding: 25px !important;
+	background: #f9f9f9 !important;
+	border: 1px solid #eee !important;
+	border-radius: 12px !important;
+	text-align: center !important;
+}
+
+.watso-woo-order-status h4 {
+	margin: 0 0 15px 0 !important;
+	font-size: 18px !important;
+	color: #333 !important;
+}
+
+/* RTL Support */
+.watso-rtl {
+	direction: rtl !important;
+	text-align: right !important;
+}
+
+.watso-rtl .watso-icon {
+	margin-right: 0 !important;
+	margin-left: 8px !important;
+}
+
+.watso-rtl .watso-dropdown-header {
+	flex-direction: row-reverse !important;
+}
+
+.watso-rtl .watso-contact-info {
+	flex-direction: row !important;
+}
+
+.watso-rtl .watso-contact-status {
+	flex-direction: row-reverse !important;
+}
+
+.watso-rtl .watso-online-indicator {
+	margin-left: 0 !important;
+	margin-right: 6px !important;
+}
+
+.watso-rtl .watso-close-dropdown {
+	margin-left: 0 !important;
+	margin-right: auto !important;
+}

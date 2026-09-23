@@ -1,0 +1,32 @@
+name: Deploy to WordPress.org
+
+on:
+  push:
+    tags:
+      - 'v*'
+      - '[0-9]+.[0-9]+.[0-9]+'
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry Run (Test modu - Gerçekte SVN commit yapmaz)'
+        required: true
+        type: boolean
+        default: false
+
+jobs:
+  deploy:
+    name: Deploy to WordPress.org SVN
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: watso-basic-chat
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
