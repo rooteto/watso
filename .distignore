@@ -1,23 +1,28 @@
-# Git ve GitHub
+# Version control & repository files
 .git
 .github
 .gitignore
 .gitattributes
 .distignore
 
-# Proje içi kural ve dokümantasyonlar (WordPress.org SVN'e ASLA gitmemeli)
+# Local development & IDE configs
 .agents
 .hosteva
 .idea
 .vscode
 repo
 
-# WordPress.org asset dizini (Trunk içine girmemeli, assets dizinine deploy edilir)
+# WordPress.org repository assets
 .wordpress-org
 
-# Sistem ve GitHub Belgeleri
+# Docs & GitHub specific files
 readme.md
+README.md
 LICENSE.txt
+
+# System & temporary files
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 .DS_Store
 *.log

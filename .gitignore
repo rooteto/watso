@@ -1,11 +1,11 @@
-# Gizli & İç Geliştirme Klasörleri (ASLA GitHub'a Gitmeyecek)
+# Local development & IDE
 .agents/
 .hosteva/
 .idea/
 .vscode/
 repo/
 
-# OS & Temp
+# OS generated files
 Thumbs.db
 ehthumbs.db
 Desktop.ini
