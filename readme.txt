@@ -12,73 +12,81 @@ Lightweight WhatsApp chat button for WordPress & WooCommerce. Unlimited agents, 
 
 == Description ==
 
-**Are you losing WooCommerce sales because visitors have questions but leave before finding support? Or does your current WhatsApp chat button slow down your site with heavy external scripts?**
+Watso is a premium-grade, ultra-lightweight WhatsApp chat button plugin designed to maximize your conversions, improve customer satisfaction, and skyrocket your sales. Built on modern performance-first guidelines, Watso loads with absolute zero speed impact (no heavy external libraries, no bloated databases).
 
-Meet **Watso** – the ultimate lightweight WhatsApp helper designed to turn website visitors into paying customers. Engineered with a performance-first mindset, Watso loads with **absolute zero page speed impact** (no external script bloat, no heavy database queries).
-
-Whether you run a single-person shop or coordinate a multi-agent customer support team, Watso gives you a highly-converting, context-aware communication bridge directly to your WhatsApp.
+With Watso, you don't just add a communication channel; you deploy a conversion-focused sales and support system that understands your customers and your store context.
 
 = 🌟 Why Choose Watso? =
-* ✔️ **100% Free & Unlimited** – No locked features, no monthly fees, no agent limits.
-* ✔️ **WooCommerce Contextual Intelligence** – The widget dynamically adapts its messages to guide users directly through your sales funnel.
-* ✔️ **Built-in SVG Analytics** – Track your team's performance and page clicks directly in your WordPress dashboard.
-* ✔️ **GDPR & Privacy Compliant** – Zero customer data is stored on your server or sent to third parties.
-* ✔️ **Cache & SEO Friendly** – Fully compatible with WP Rocket, LiteSpeed Cache, and optimized for search visibility.
-
+* ✔️ **Clean design & seamless integration** – Matches any theme perfectly.
+* ✔️ **No coding required** – Simple and intuitive setup.
+* ✔️ **100% free** – No premium versions or hidden fees.
+* ✔️ **GDPR & SEO friendly** – Follows all modern standards and best practices.
+* ✔️ **Cache-compatible** – Works perfectly with all major caching plugins.
 
 = 🎥 Video Tutorial =
 https://www.youtube.com/watch?v=I2c29HXMPQs
 
-= 🛒 1. WooCommerce Sales Accelerator =
-Watso doesn't just display a button—it understands your store. Place high-visibility WhatsApp support widgets where they impact conversions most:
-* **Contextual Product Assistant**: Automatically generates pre-filled WhatsApp messages containing the product name, SKU, price, and URL when clicked on product pages. No more asking "which product are you looking at?".
-* **Cart & Checkout Saver**: Reduce cart abandonment rates by placing support buttons directly on Cart and Checkout pages to assist hesitant buyers right before payment.
-* **Instant Order Status Tracker**: Boost customer trust by allowing buyers to ask about their orders directly from the "Thank You" page with their Order ID automatically attached.
-* **Dynamic Smart Tags**: Use tags like `[product_name]`, `[product_url]`, `[product_price]`, and `[order_id]` to create personalized, high-converting templates.
-* **Context-Aware Widget**: The floating chat button dynamically updates its message template based on the current page to prompt relevant questions.
+= 🛒 1. WooCommerce Integration (Your 24/7 Sales Assistant) =
+Watso understands your store. Instead of generic buttons, it provides context-aware widgets that guide users through the buying funnel and recover lost sales:
+*   🛍️ **Contextual Product Assistant**: The button dynamically generates pre-filled messages containing the product name, URL, SKU, and price. When a customer clicks on a product page, you know exactly what they are looking at. No more time-wasting questions!
+*   📉 **Checkout & Cart Abandonment Saver**: Reduce cart abandonment rates by up to 30%. Place a dedicated, high-visibility WhatsApp support button directly on the Cart and Checkout pages to assist hesitant buyers right before payment.
+*   📦 **Instant Order Status Tracker**: Boost trust by allowing customers to ask about their orders directly from the "Thank You" (Order Received) page with a single click. The order ID and total are automatically attached.
+*   🏷️ **Dynamic Smart Tags**: Use `[product_name]`, `[product_url]`, `[product_price]`, and `[order_id]` to create personalized, high-converting message templates.
+*   🧠 **Context-Aware Widget**: Even your main floating button is smart! It automatically changes its pre-filled message based on whether the user is viewing a product or their cart.
 
-= 📊 2. Built-in Analytics Dashboard =
-Stop guessing. Measure your customer support performance directly in your admin panel:
-* **Zero-Dependency Infrastructure**: Track button clicks without loading any external tracking libraries or slowing down page speed.
-* **Interactive SVG Trend Charts**: Visualize click counts and trends over the last 30 days.
-* **Agent Performance Tracking**: Monitor which representative or number receives the most customer clicks.
-* **Top Converting Pages**: Find out which products or pages generate the most support inquiries.
-* **Peak Hours & Device Breakdown**: Learn when your customers are most active and whether they use mobile or desktop.
+= 📊 2. Built-in SVG Analytics Dashboard (Data-Driven Growth) =
+Stop guessing. Measure your customer support performance directly from your WordPress dashboard:
+*   🔌 **Zero-Dependency Light Infrastructure**: Tracks button clicks without loading any external tracking libraries or slowing down your page load speed.
+*   📈 **Interactive SVG Trend Chart**: Visualize your click trends over the last 30 days or all-time history.
+*   📅 **Instant AJAX Date Range Filtering**: Switch seamlessly between Last 30 Days, This Month, Last Month, Last 7 Days, Today, and All Time without page reloads.
+*   📊 **Smart Period Comparisons**: Compare current performance against previous periods with instant growth badges.
+*   🏆 **Agent Performance Tracking**: See which numbers or team members are getting the most interactions.
+*   🎯 **Top Converting Pages**: Identify which pages or products generate the most support inquiries.
+*   🕒 **Peak Hours & Device Breakdown**: Learn when your customers are most active (mobile vs. desktop) to optimize your support team's shift schedule.
 
-= 👥 3. Multi-Agent & Department Manager =
-Structure your customer relations to scale as your business grows:
-* **Unlimited Support Numbers**: Add as many team members as you need. If only one agent is active, they are redirected directly. If multiple, a gorgeous contact selection menu appears.
-* **Custom Avatars & Names**: Give each representative a personalized name, title, and custom avatar.
-* **Department Labels**: Organize your team with clear tags like "Sales", "Technical Support", or "Billing".
-* **Availability Status**: Use status messages like "Online", "Away", or "Busy" to set clear expectations.
+= ⚙️ 3. General Settings (Seamless Core Configuration) =
+Set up your chat button in under 2 minutes:
+*   📍 **Flexible Position Controls**: Position the button in 4 different screen locations (Bottom-Right, Bottom-Left, Middle-Right, Middle-Left) to fit your theme layout.
+*   📱 **Mobile-Specific Toggle**: Choose whether to show or hide the button on mobile devices depending on your user experience goals.
+*   💬 **Custom Menu Header Text**: Write engaging titles for the dropdown selection menu to welcome your visitors.
 
-= 🕒 4. Smart Time Scheduling =
-Avoid late-night notifications and manage your team's active hours:
-* **Weekly Working Hours**: Set custom availability times for each day of the week. The button automatically hides when your team is offline.
-* **Holiday Exclusion List**: Define specific holiday dates or company breaks to automatically disable the button and keep your customers informed.
+= 🎨 4. Appearance & Branding (Match Your Brand Identity) =
+Fully customize the look and feel to make it a natural part of your website:
+*   🖼️ **Custom Icon Uploader**: Replace the default WhatsApp icon with your company logo or custom avatar.
+*   🎨 **Harmonious Color Customizer**: Change the button background color, short description color, status text color, and department colors to match your brand style.
+*   📐 **Corner Radius Control**: Make your button look modern and sleek (fully rounded) or classic and corporate (square corners) using a range of 0px to 30px.
 
-= 🎨 5. Appearance & Customization =
-Fully customize the look and feel to make it a natural extension of your brand:
-* **Custom Icon Uploader**: Replace the default WhatsApp icon with your logo or custom avatar.
-* **Color Customizer**: Style the background, text, status colors, and department labels to match your brand identity.
-* **Corner Radius Controls**: Switch between a sleek, fully rounded button or a classic corporate design.
+= 👥 5. Multi-Agent & Department Manager (Structure Your Support) =
+Scale your customer relations as your business grows:
+*   👥 **Unlimited Contact Numbers**: Add as many team members as you need. If only one agent is active, they are redirected directly. If multiple, a gorgeous contact selection menu appears.
+*   🎭 **Custom Avatars & Names**: Give each representative a personalized name and title.
+*   🏢 **Department Labels**: Assign clear responsibilities like "Technical Support", "Sales Team", or "Billing".
+*   🟢 **Custom Status Messages**: Show real-time status like "Online", "Busy", or "Away" to manage expectations.
 
-= 🎯 6. Marketing & Advanced Tracking =
-Connect Watso with your marketing stack to measure ROI:
-* **Auto UTM Builder**: Automatically append UTM Source, Medium, and Campaign parameters to your WhatsApp links for precise tracking in Google Analytics.
-* **Meta/Facebook Pixel Integration**: Trigger custom events automatically to measure the effectiveness of your Facebook ads.
-* **Source URL Tracking**: Include the exact page URL where the visitor clicked the button inside the pre-filled message text.
+= 🎯 6. Advanced Tracking & UTM Parameters (Track Your ROI) =
+Connect Watso with your marketing stack:
+*   🔗 **Auto UTM Builder**: Automatically append UTM Source, Medium, and Campaign parameters to your WhatsApp URLs to monitor campaign performance in Google Analytics.
+*   🎯 **Facebook/Meta Pixel Integration**: Send custom "Watso Contact" events automatically to track conversion ads.
+*   🌐 **Source URL Tracking**: Include the exact page URL where the visitor clicked the button inside the WhatsApp message text.
 
-= 🌍 7. Languages & Localization =
+= 🕒 7. Smart Time Scheduling (Working Hours Management) =
+Manage your team's availability and avoid late-night notifications:
+*   📅 **Weekly Working Hours**: Set custom availability times for each day of the week. The button automatically hides when your team is offline.
+*   🏖️ **Holiday Exclusion List**: Define specific holiday dates (national holidays, company breaks) to automatically disable the button and keep your customers informed.
+
+= 🌍 8. Languages & Localization (Global Reach) =
 Watso is translation-ready and optimized for international sites. It currently supports:
 * 🇬🇧 **English** (Default)
 * 🇹🇷 **Türkçe** (Turkish)
 * 🇫🇷 **Français** (French)
-* 🇩Ｅ **Deutsch** (German)
+* 🇩🇪 **Deutsch** (German)
 * 🇸🇦 **العربية** (Arabic - Fully RTL Compatible)
 
-= 🛡️ 8. Privacy & GDPR Compliance =
-We respect your privacy. Watso does not store any customer information or conversation logs on our servers. All chats happen directly on the official WhatsApp platform, keeping your website fully GDPR compliant.
+= 🛡️ 9. Privacy & GDPR Compliance =
+We respect your privacy and your customers' data. Watso does not store any customer information or conversation logs on our servers. All chats happen directly on the official WhatsApp platform, keeping your store fully GDPR compliant.
+
+= ⚡ 10. Lightweight & Zero Speed Impact =
+Built on performance-first guidelines. Watso does not load any external libraries, heavy tracking scripts, or bloated databases. Your page load speed remains completely unaffected.
 
 == Installation ==
 
@@ -103,21 +111,15 @@ Absolutely! The plugin automatically detects the visitor's system preference and
 
 == Screenshots ==
 
-1. Elegant floating WhatsApp button on website front-end.
-2. Beautiful multi-agent and department selection menu.
-3. Interactive SVG analytics dashboard with click trend charts.
-4. General settings panel and widget behavior configuration.
-5. Unlimited multi-agent and department management.
-6. Smart working hours schedule and holiday exclusion planner.
-7. Advanced appearance, colors, and layout customization.
-8. Marketing integrations, UTM tracking, and Meta Pixel setups.
+1. Elegant floating WhatsApp button.
+2. Multi-agent selection menu.
+3. Advanced admin settings panel.
+4. Appearance and color customization.
 
 == Changelog ==
 
 = 1.2.0 =
 * Added: Internal Analytics Dashboard with SVG click trend charts, agent distribution, and device metrics.
-* Added: Instant AJAX date range filters (This Month, Last Month, Last 7 Days, Today, All Time).
-* Added: Real-time period comparison badges (This Month vs. Last Month growth rates).
 * Added: Slide-out updates and development/feature request panel directly linked to support.
 * Added: Dynamic custom database table for tracking clicks without impacting WordPress performance.
 * Updated: Simplified tab structure by renaming "Appearance & Colors" to "Appearance".
