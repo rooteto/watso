@@ -2,7 +2,11 @@
 
 ![Watso Logo](https://ps.w.org/watso-basic-chat/assets/icon-128x128.jpg?rev=3325382)
 
-Lightweight and blazing-fast WhatsApp chat button for WordPress with full customization, UTM tracking, multi-agent support, and scheduling.
+Lightweight WhatsApp chat button for WordPress & WooCommerce. Unlimited agents, page-specific widgets, and SVG analytics with zero speed impact.
+
+[![WordPress Plugin Version](https://img.shields.io/badge/WordPress.org-v1.2.0-blue.svg)](https://wordpress.org/plugins/watso-basic-chat/)
+[![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![Active Installs](https://img.shields.io/badge/Active%20Installs-4000%2B-brightgreen.svg)](https://wordpress.org/plugins/watso-basic-chat/)
 
 ## 🎥 YouTube Setup Video
 
@@ -10,182 +14,112 @@ Lightweight and blazing-fast WhatsApp chat button for WordPress with full custom
 
 ---
 
-![Cover](https://ps.w.org/watso-basic-chat/assets/banner-1544x500.png?rev=3325585)
+![Banner](https://ps.w.org/watso-basic-chat/assets/banner-1544x500.jpg?rev=3554817)
 
 ---
 
-## 🚀 Features
+## 🌟 Why Choose Watso?
 
-### Why Watso?
-- ✔️ Clean design & seamless integration
-- ✔️ No coding required
-- ✔️ 100% free, no premium versions
-- ✔️ GDPR-friendly, SEO-friendly, and cache-compatible
+- ✔️ **100% Free & Unlimited** – No premium locks, no monthly subscriptions, unlimited agents.
+- ✔️ **WooCommerce Contextual Intelligence** – Adapts WhatsApp messages dynamically based on product, cart, or order context.
+- ✔️ **Built-in SVG Analytics Dashboard** – Zero-dependency, lightweight click tracking with date filtering and instant comparison.
+- ✔️ **Privacy & GDPR Compliant** – Zero personal customer data stored on servers; all chats occur directly on official WhatsApp.
+- ✔️ **Cache & SEO Friendly** – Fully compatible with LiteSpeed, WP Rocket, W3 Total Cache, and modern caching engines.
 
-### Core Features
-- 🔢 **Multiple WhatsApp Accounts** – Ideal for teams or departments
-- 🎯 **UTM & Analytics Ready** – Track clicks with GA & Meta
-- 🌓 **Dark Mode Detection** – Automatically adapts to user's theme
-- 🛠 **Smart Placement** – 4 screen positions, fully responsive
-- 🎨 **Full Customization** – Colors, icons, borders, labels
-- 📆 **Schedule Visibility** – Set working hours or hide on holidays
-- ⚡ **Lightning Fast** – Minimal JS, works with all cache plugins
-- ♿ **Accessibility Built-in** – Keyboard-friendly, WCAG compliant
+---
+
+## 🚀 Key Features
+
+### 🛒 1. WooCommerce Integration
+- **Contextual Product Assistant**: Automatically generates pre-filled WhatsApp messages with product name, URL, SKU, and price.
+- **Cart & Checkout Saver**: Reduces cart abandonment by placing support buttons directly on Cart and Checkout pages.
+- **Instant Order Status Tracker**: Customers can ask about order status from the "Thank You" page with their Order ID attached.
+- **Dynamic Smart Tags**: Use `[product_name]`, `[product_url]`, `[product_price]`, and `[order_id]` in message templates.
+
+### 📊 2. Built-in Analytics Dashboard
+- **Instant Date Range Filtering**: Switch seamlessly between Last 30 Days, This Month, Last Month, Last 7 Days, Today, and All Time via AJAX.
+- **Period Comparison Badges**: Real-time percentage increase/decrease indicators (e.g. This Month vs. Last Month).
+- **Interactive SVG Trend Charts**: Zero-bloat SVG charts showing click trends, peaks, and historical performance.
+- **Detailed Breakdowns**: Analyze clicks by agent/number, top converting pages, and device types (mobile vs. desktop).
+
+### 👥 3. Multi-Agent & Department Manager
+- **Unlimited Support Numbers**: Add unlimited representatives. Single agents redirect directly; multiple agents show a contact menu.
+- **Custom Avatars & Names**: Set unique titles, custom avatars, and status messages (Online, Away, Busy).
+- **Department Labels**: Organize teams into Sales, Technical Support, Billing, etc.
+
+### 🕒 4. Smart Time Scheduling
+- **Weekly Working Hours**: Set custom availability times for each day of the week.
+- **Holiday Exclusion List**: Automatically hides the button on national holidays or scheduled company breaks.
+
+### 🎯 5. Tracking & Marketing Attribution
+- **Auto UTM Builder**: Attach UTM Source, Medium, and Campaign parameters automatically.
+- **Meta / Facebook Pixel**: Fire custom WhatsApp contact events for conversion tracking.
+- **Source URL**: Include current page URLs in WhatsApp messages.
 
 ---
 
 ## 🌍 Languages & Localization
 
-### Supported Languages
-- 🇬🇧 **English** (default)
-- 🇫🇷 **Français** (French)
+Watso is translation-ready and optimized for international WordPress sites:
+- 🇬🇧 **English** (Default)
 - 🇹🇷 **Türkçe** (Turkish)
+- 🇫🇷 **Français** (French)
+- 🇩🇪 **Deutsch** (German)
+- 🇸🇦 **العربية** (Arabic – Fully RTL compatible)
 
-### Translation Ready
-- 🔧 POT files included for additional languages
-- 📝 Community translations welcome
-- 🌐 Easy localization with WordPress standards
-
----
-
-## 👥 Perfect For
-- Customer support teams
-- E-commerce & WooCommerce stores
-- Service providers, consultants, agencies
-- Anyone seeking real-time WhatsApp engagement
-
----
-
-## 👨‍💻 Developer Friendly
-- 💻 Clean, developer-friendly codebase
-- ✅ Follows WordPress coding standards
-- 🔧 Action hooks and filters for advanced customization
-- 🌍 Translation ready with POT files included
+*POT template included in `/languages/watso-basic-chat.pot`.*
 
 ---
 
 ## 📦 Installation
 
-1. Upload files to `/wp-content/plugins/watso-basic-chat/` or install via WordPress dashboard
-2. Activate through the "Plugins" screen
-3. Go to `Settings > Watso Chat` to configure
-4. Add your WhatsApp number(s) and customize appearance
-5. Save and the chat button appears 🎉
-
-### Quick Setup
-1. Navigate to `Settings > Watso Chat`
-2. Enable plugin in General Settings
-3. Add your number in **Numbers & Titles** tab
-4. Customize design in **Appearance & Colors** tab
-5. Save changes ✅
-
----
-
-## ❓ FAQ
-
-**Is this plugin completely free?**  
-Yes, Watso is 100% free – no premium versions.
-
-**Can I add multiple WhatsApp numbers?**  
-Yes! Unlimited numbers supported. Dropdown appears if more than one.
-
-**Is it compatible with caching plugins?**  
-Yes, fully compatible with major cache plugins.
-
-**Can I customize the button design?**  
-Absolutely – colors, icons, border radius, positions.
-
-**Does it support dark mode?**  
-Yes, automatic detection plus custom icons for dark themes.
-
-**Can I schedule when the button appears?**  
-Yes, working hours & holidays can be set.
-
-**Is it mobile responsive?**  
-Yes, fully responsive.
-
-**Does it track analytics?**  
-Yes, supports GA, Universal Analytics, and Facebook Meta with UTM parameters.
-
-**Can it be translated?**  
-Yes, translation-ready with included POT files. Currently supports English, French, and Turkish.
-
-**Does it affect performance?**  
-No, lightweight & optimized for speed.
-
----
-
-## 🖼️ Screenshots
-1. Frontend WhatsApp button
-2. Multi-number dropdown
-3. General settings panel
-4. Appearance customization
-5. Numbers & titles management
-6. Schedule & visibility settings
-7. Live preview in admin
-8. Mobile view
+1. Upload the plugin files to `/wp-content/plugins/watso-basic-chat/` or install via WordPress plugin directory.
+2. Activate the plugin through the **Plugins** screen in WordPress.
+3. Go to **Settings > Watso Chat** to configure your numbers and button appearance.
+4. Save changes and the WhatsApp chat button is live!
 
 ---
 
 ## 📜 Changelog
 
-### v1.0.5
-- Improved dark mode icon handling
-- WordPress 6.8 compatibility update
-- Admin panel UI enhancements
-- Refined translation strings
+### 1.2.0
+- Added: Internal Analytics Dashboard with SVG click trend charts, agent distribution, and device metrics.
+- Added: Instant AJAX date range filters (This Month, Last Month, Last 7 Days, Today, All Time).
+- Added: Real-time period comparison badges (This Month vs. Last Month growth rates).
+- Added: Slide-out updates and development/feature request panel directly linked to support.
+- Added: Dynamic custom database table for tracking clicks without impacting WordPress performance.
+- Updated: Simplified tab structure and WordPress 7.0 core compatibility updates.
 
-### v1.0.1
-- Rebranded to Hosteva
-- Improved UTM tracking
-- Enhanced mobile responsiveness
-- Bug fixes & performance improvements
-- Updated docs & links
+### 1.1.0
+- Added: Full WooCommerce integration (Cart, Checkout, and Thank You pages).
+- Added: Dynamic WhatsApp message tags for products and orders.
+- Added: Arabic (`ar`) language support and RTL layout compatibility.
+- Added: Colored icons for admin tabs for better navigation.
+- Improved: Local Font Awesome hosting for performance and reliability.
 
-### v1.0.0
-- Initial release
-- Multi-number support
-- 4 positioning options
-- Dark mode support
-- Schedule management
-- UTM & Meta tracking
-- Cache compatibility
-- Accessibility features
-- Translation ready
+### 1.0.6
+- Added: German (`de_DE`) language support.
+- Added: Settings shortcut on the plugins page.
+- Added: AdBlock camouflage for improved visibility.
 
----
+### 1.0.5
+- Improved dark mode icon handling.
+- WordPress 6.8 compatibility updates.
 
-## 🔒 Privacy Policy
-
-Watso does **not** collect personal data.
-- Settings stored only in your WordPress database
-- Analytics sent to GA/Meta only if enabled
-- Visitors are redirected to official WhatsApp (Meta privacy policy applies)
+### 1.0.0
+- Initial release with multi-number and UTM support.
 
 ---
 
-## 🤝 Support
+## 🤝 Support & Links
 
-- [WordPress.org Support Forum](https://wordpress.org/support/plugin/watso-basic-chat/)
-- [Hosteva Website](https://www.hosteva.com/?utm_campaign=watso-basic-chat)
-- [Documentation](https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso-basic-chat)
+- [WordPress.org Plugin Page](https://wordpress.org/plugins/watso-basic-chat/)
+- [Hosteva Official Website](https://www.hosteva.com/?utm_campaign=watso-basic-chat)
+- [Documentation & Guides](https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso-basic-chat)
+- [Support Forum](https://wordpress.org/support/plugin/watso-basic-chat/)
 
 ---
 
 ## 📄 License
 
-GPLv2 or later  
-[GNU GPL-2.0](https://www.gnu.org/licenses/gpl-2.0.html)
-
----
-
-## 🙌 Credits
-
-Watso is proudly developed by the Hosteva Developer team.
-- WhatsApp is a trademark of Meta Platforms, Inc.
-- Custom icons and UI designed exclusively for this plugin
-- Built following WordPress standards for performance, security & compatibility
-
----
-
-⭐ If you find this project useful, please consider giving it a **GitHub star**!
+GPLv2 or later - [GNU General Public License v2.0](https://www.gnu.org/licenses/gpl-2.0.html)

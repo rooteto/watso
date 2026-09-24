@@ -116,6 +116,8 @@ Absolutely! The plugin automatically detects the visitor's system preference and
 
 = 1.2.0 =
 * Added: Internal Analytics Dashboard with SVG click trend charts, agent distribution, and device metrics.
+* Added: Instant AJAX date range filters (This Month, Last Month, Last 7 Days, Today, All Time).
+* Added: Real-time period comparison badges (This Month vs. Last Month growth rates).
 * Added: Slide-out updates and development/feature request panel directly linked to support.
 * Added: Dynamic custom database table for tracking clicks without impacting WordPress performance.
 * Updated: Simplified tab structure by renaming "Appearance & Colors" to "Appearance".
