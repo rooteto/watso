@@ -1023,3 +1023,21 @@ msgid "Most clicked support number"
 msgstr ""
 
 
+
+msgid "v1.3.0"
+msgstr ""
+
+msgid "September 2026"
+msgstr ""
+
+msgid "Instant AJAX date filtering for analytics dashboard (no page reload)."
+msgstr ""
+
+msgid "Smart period comparisons with real-time growth rate badges."
+msgstr ""
+
+msgid "Historical monthly timeline aggregation in All-Time chart view."
+msgstr ""
+
+msgid "WordPress 7.1 core compatibility and verification."
+msgstr ""

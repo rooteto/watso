@@ -808,3 +808,21 @@ msgid "Most clicked support number"
 msgstr "رقم الدعم الأكثر نقرًا"
 
 
+
+msgid "v1.3.0"
+msgstr "v1.3.0"
+
+msgid "September 2026"
+msgstr "سبتمبر 2026"
+
+msgid "Instant AJAX date filtering for analytics dashboard (no page reload)."
+msgstr "تصفية نطاق التاريخ عبر AJAX الفوري للوحة التحليلات (بدون إعادة تحميل الصفحة)."
+
+msgid "Smart period comparisons with real-time growth rate badges."
+msgstr "مقارنات الفترات الذكية مع شارات معدل النمو في الوقت الفعلي."
+
+msgid "Historical monthly timeline aggregation in All-Time chart view."
+msgstr "تجميع المخطط الزمني الشهري في عرض كل الأوقات."
+
+msgid "WordPress 7.1 core compatibility and verification."
+msgstr "تحديثات التوافق والاختبار مع نواة WordPress 7.1."

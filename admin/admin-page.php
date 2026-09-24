@@ -174,7 +174,17 @@ $has_title = !empty($preview_title);
 				<h4 class="watso-sidebar-section-title"><?php esc_html_e('Recent Updates', 'watso-basic-chat'); ?></h4>
 				<div class="watso-timeline">
 					<div class="watso-timeline-item">
-						<span class="watso-timeline-badge"><?php esc_html_e('v1.2.0', 'watso-basic-chat'); ?></span>
+						<span class="watso-timeline-badge"><?php esc_html_e('v1.3.0', 'watso-basic-chat'); ?></span>
+						<span class="watso-timeline-date"><?php esc_html_e('September 2026', 'watso-basic-chat'); ?></span>
+						<ul class="watso-timeline-list">
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Instant AJAX date filtering for analytics dashboard (no page reload).', 'watso-basic-chat'); ?></li>
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Smart period comparisons with real-time growth rate badges.', 'watso-basic-chat'); ?></li>
+							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Historical monthly timeline aggregation in All-Time chart view.', 'watso-basic-chat'); ?></li>
+							<li><strong><?php esc_html_e('Updated:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('WordPress 7.1 core compatibility and verification.', 'watso-basic-chat'); ?></li>
+						</ul>
+					</div>
+					<div class="watso-timeline-item">
+						<span class="watso-timeline-badge watso-badge-secondary"><?php esc_html_e('v1.2.0', 'watso-basic-chat'); ?></span>
 						<span class="watso-timeline-date"><?php esc_html_e('May 2026', 'watso-basic-chat'); ?></span>
 						<ul class="watso-timeline-list">
 							<li><strong><?php esc_html_e('Added:', 'watso-basic-chat'); ?></strong> <?php esc_html_e('Built-in Analytics Dashboard (SVG charts, agent clicks and device stats).', 'watso-basic-chat'); ?></li>

@@ -1014,3 +1014,21 @@ msgid "Most clicked support number"
 msgstr "Numéro d'assistance le plus cliqué"
 
 
+
+msgid "v1.3.0"
+msgstr "v1.3.0"
+
+msgid "September 2026"
+msgstr "Septembre 2026"
+
+msgid "Instant AJAX date filtering for analytics dashboard (no page reload)."
+msgstr "Filtrage de date AJAX instantané pour le tableau de bord analytique (sans rechargement)."
+
+msgid "Smart period comparisons with real-time growth rate badges."
+msgstr "Comparaisons de périodes intelligentes avec badges de taux de croissance en temps réel."
+
+msgid "Historical monthly timeline aggregation in All-Time chart view."
+msgstr "Agrégation mensuelle de l\'historique dans la vue graphique Tous les temps."
+
+msgid "WordPress 7.1 core compatibility and verification."
+msgstr "Mises à jour de compatibilité et vérification avec WordPress 7.1."

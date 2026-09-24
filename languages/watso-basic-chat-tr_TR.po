@@ -1010,3 +1010,21 @@ msgid "Most clicked support number"
 msgstr "En çok tıklanan destek numarası"
 
 
+
+msgid "v1.3.0"
+msgstr "v1.3.0"
+
+msgid "September 2026"
+msgstr "Eylül 2026"
+
+msgid "Instant AJAX date filtering for analytics dashboard (no page reload)."
+msgstr "Analitik paneli için anlık AJAX tarih filtreleme (sayfa yenilemesiz)."
+
+msgid "Smart period comparisons with real-time growth rate badges."
+msgstr "Gerçek zamanlı büyüme oranı rozetleriyle akıllı dönem karşılaştırmaları."
+
+msgid "Historical monthly timeline aggregation in All-Time chart view."
+msgstr "Tüm Zamanlar grafik görünümünde geçmişe dönük aylık zaman çizelgesi gruplaması."
+
+msgid "WordPress 7.1 core compatibility and verification."
+msgstr "WordPress 7.1 çekirdek uyumluluk güncellemeleri ve testleri."
