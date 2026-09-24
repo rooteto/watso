@@ -26,6 +26,7 @@
 				this.initDynamicFields();
 				this.bindEvents();
 				this.initSidebarPanel();
+				this.initAnalyticsFilters();
 
 				// Preview system
 				this.initLivePreview();
@@ -97,6 +98,52 @@
 			this.log('Closing sidebar');
 			$('#watso-sidebar-panel').removeClass('watso-open');
 			$('#watso-sidebar-overlay').removeClass('watso-open');
+		}
+
+		initAnalyticsFilters() {
+			this.log('Initializing analytics instant filters');
+
+			$(document).on('click', '.watso-period-btn', (e) => {
+				e.preventDefault();
+				const $btn = $(e.currentTarget);
+				const period = $btn.data('period');
+
+				if (!period || $btn.hasClass('active')) {
+					return;
+				}
+
+				$('.watso-period-btn').removeClass('active');
+				$btn.addClass('active');
+
+				const $container = $('#watso-analytics-content');
+				$container.css({
+					opacity: '0.4',
+					pointerEvents: 'none',
+					transition: 'opacity 0.2s ease'
+				});
+
+				$.post(watso_ajax.ajax_url, {
+					action: 'watso_filter_analytics',
+					nonce: watso_ajax.nonce,
+					period: period
+				}, (response) => {
+					$container.css({
+						opacity: '1',
+						pointerEvents: 'auto'
+					});
+
+					if (response && response.success && response.data && response.data.html) {
+						$container.html(response.data.html);
+						this.log('Analytics filtered successfully via AJAX', { period });
+					}
+				}).fail((xhr, status, error) => {
+					$container.css({
+						opacity: '1',
+						pointerEvents: 'auto'
+					});
+					this.error('Failed filtering analytics', { error });
+				});
+			});
 		}
 
 		initTabs() {

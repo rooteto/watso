@@ -866,16 +866,160 @@ msgstr ""
 msgid "Peak Hours"
 msgstr ""
 
-#: admin/admin-page.php:87
+#: includes/functions/analytics.php:870
 msgid "Analytics"
 msgstr ""
 
-#: admin/admin-page.php:90
+#: includes/functions/analytics.php:874
 msgid "Settings"
 msgstr ""
 
-#: admin/admin-page.php:105
+#: includes/functions/analytics.php:878
 msgid "Woo"
+msgstr ""
+
+#: includes/functions/analytics.php:67
+msgid "Click Trend"
+msgstr ""
+
+#: includes/functions/analytics.php:73
+msgid "Click Trend (This Month)"
+msgstr ""
+
+#: includes/functions/analytics.php:85
+msgid "Click Trend (Last Month)"
+msgstr ""
+
+#: includes/functions/analytics.php:97
+msgid "Click Trend (Last 7 Days)"
+msgstr ""
+
+#: includes/functions/analytics.php:106
+msgid "Click Trend (Today by Hour)"
+msgstr ""
+
+#: includes/functions/analytics.php:115
+msgid "Click Trend (All Time - Last 30 Days Detail)"
+msgstr ""
+
+#: includes/functions/analytics.php:237
+msgid "This Month"
+msgstr ""
+
+#: includes/functions/analytics.php:240
+msgid "Last Month"
+msgstr ""
+
+#: includes/functions/analytics.php:243
+msgid "Last 7 Days"
+msgstr ""
+
+#: includes/functions/analytics.php:249
+msgid "All Time"
+msgstr ""
+
+#: includes/functions/analytics.php:262
+msgid "This Month Clicks"
+msgstr ""
+
+#: includes/functions/analytics.php:264
+msgid "Last Month Clicks"
+msgstr ""
+
+#: includes/functions/analytics.php:266
+msgid "Last 7 Days Clicks"
+msgstr ""
+
+#: includes/functions/analytics.php:268
+msgid "Today Clicks"
+msgstr ""
+
+#: includes/functions/analytics.php:270
+msgid "All Time Total Clicks"
+msgstr ""
+
+#: includes/functions/analytics.php:272
+msgid "Selected Period Clicks"
+msgstr ""
+
+#: includes/functions/analytics.php:278
+msgid "All-time Total:"
+msgstr ""
+
+#: includes/functions/analytics.php:287
+msgid "Monthly Comparison"
+msgstr ""
+
+#: includes/functions/analytics.php:289
+msgid "Increase compared to last month"
+msgstr ""
+
+#: includes/functions/analytics.php:293
+msgid "Decrease compared to last month"
+msgstr ""
+
+#: includes/functions/analytics.php:304
+msgid "vs."
+msgstr ""
+
+#: includes/functions/analytics.php:304
+msgid "(Last Mo.)"
+msgstr ""
+
+#: includes/functions/analytics.php:307
+msgid "Current calendar month vs previous"
+msgstr ""
+
+#: includes/functions/analytics.php:316
+msgid "Today vs Yesterday"
+msgstr ""
+
+#: includes/functions/analytics.php:318
+msgid "Increase compared to yesterday"
+msgstr ""
+
+#: includes/functions/analytics.php:322
+msgid "Decrease compared to yesterday"
+msgstr ""
+
+#: includes/functions/analytics.php:333
+msgid "(Yesterday)"
+msgstr ""
+
+#: includes/functions/analytics.php:336
+msgid "Real-time daily pace comparison"
+msgstr ""
+
+#: includes/functions/analytics.php:346
+msgid "Peak in view:"
+msgstr ""
+
+#: includes/functions/analytics.php:382
+msgid "No clicks in this period."
+msgstr ""
+
+#: includes/functions/analytics.php:446
+msgid "No activity recorded."
+msgstr ""
+
+#: includes/functions/analytics.php:18
+msgid "Unauthorized access."
+msgstr ""
+
+#: includes/functions/analytics.php:338
+msgid "Best Month"
+msgstr ""
+
+#: includes/functions/analytics.php:350
+msgid "Highest engagement in history"
+msgstr ""
+
+#: includes/functions/analytics.php:364
+msgid "Top Agent"
+msgstr ""
+
+#: includes/functions/analytics.php:376
+msgid "Most clicked support number"
 msgstr ""
 
 

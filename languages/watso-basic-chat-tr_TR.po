@@ -864,4 +864,149 @@ msgstr "Analitik"
 msgid "Woo"
 msgstr "Woo"
 
+#: includes/functions/analytics.php:67
+msgid "Click Trend"
+msgstr "Tıklama Trendi"
+
+#: includes/functions/analytics.php:73
+msgid "Click Trend (This Month)"
+msgstr "Tıklama Trendi (Bu Ay)"
+
+#: includes/functions/analytics.php:85
+msgid "Click Trend (Last Month)"
+msgstr "Tıklama Trendi (Geçen Ay)"
+
+#: includes/functions/analytics.php:97
+msgid "Click Trend (Last 7 Days)"
+msgstr "Tıklama Trendi (Son 7 Gün)"
+
+#: includes/functions/analytics.php:106
+msgid "Click Trend (Today)"
+msgstr "Tıklama Trendi (Bugün)"
+
+#: includes/functions/analytics.php:115
+msgid "Click Trend (All Time)"
+msgstr "Tıklama Trendi (Tüm Zamanlar)"
+
+
+#: includes/functions/analytics.php:237
+msgid "This Month"
+msgstr "Bu Ay"
+
+#: includes/functions/analytics.php:240
+msgid "Last Month"
+msgstr "Geçen Ay"
+
+#: includes/functions/analytics.php:243
+msgid "Last 7 Days"
+msgstr "Son 7 Gün"
+
+#: includes/functions/analytics.php:249
+msgid "All Time"
+msgstr "Tüm Zamanlar"
+
+#: includes/functions/analytics.php:262
+msgid "This Month Clicks"
+msgstr "Bu Ayki Tıklamalar"
+
+#: includes/functions/analytics.php:264
+msgid "Last Month Clicks"
+msgstr "Geçen Ayki Tıklamalar"
+
+#: includes/functions/analytics.php:266
+msgid "Last 7 Days Clicks"
+msgstr "Son 7 Günlük Tıklama"
+
+#: includes/functions/analytics.php:268
+msgid "Today Clicks"
+msgstr "Bugünkü Tıklamalar"
+
+#: includes/functions/analytics.php:270
+msgid "All Time Total Clicks"
+msgstr "Tüm Zamanlar Toplam Tıklama"
+
+#: includes/functions/analytics.php:272
+msgid "Selected Period Clicks"
+msgstr "Seçili Dönem Tıklamaları"
+
+#: includes/functions/analytics.php:278
+msgid "All-time Total:"
+msgstr "Tüm Zamanlar Toplamı:"
+
+#: includes/functions/analytics.php:287
+msgid "Monthly Comparison"
+msgstr "Aylık Karşılaştırma"
+
+#: includes/functions/analytics.php:289
+msgid "Increase compared to last month"
+msgstr "Geçen aya göre artış"
+
+#: includes/functions/analytics.php:293
+msgid "Decrease compared to last month"
+msgstr "Geçen aya göre azalış"
+
+#: includes/functions/analytics.php:304
+msgid "vs."
+msgstr "kıyasla"
+
+#: includes/functions/analytics.php:304
+msgid "(Last Mo.)"
+msgstr "(Geçen Ay)"
+
+#: includes/functions/analytics.php:307
+msgid "Current calendar month vs previous"
+msgstr "Bu takvim ayı ile önceki ay karşılaştırması"
+
+#: includes/functions/analytics.php:316
+msgid "Today vs Yesterday"
+msgstr "Bugün ile Dün"
+
+#: includes/functions/analytics.php:318
+msgid "Increase compared to yesterday"
+msgstr "Düne göre artış"
+
+#: includes/functions/analytics.php:322
+msgid "Decrease compared to yesterday"
+msgstr "Düne göre azalış"
+
+#: includes/functions/analytics.php:333
+msgid "(Yesterday)"
+msgstr "(Dün)"
+
+#: includes/functions/analytics.php:336
+msgid "Real-time daily pace comparison"
+msgstr "Gerçek zamanlı günlük tempo karşılaştırması"
+
+#: includes/functions/analytics.php:346
+msgid "Peak in view:"
+msgstr "Dönem zirvesi:"
+
+#: includes/functions/analytics.php:382
+msgid "No clicks in this period."
+msgstr "Bu dönemde tıklama bulunmuyor."
+
+#: includes/functions/analytics.php:446
+msgid "No activity recorded."
+msgstr "Kayıtlı aktivite bulunamadı."
+
+#: includes/functions/analytics.php:18
+msgid "Unauthorized access."
+msgstr "Yetkisiz erişim."
+
+#: includes/functions/analytics.php:338
+msgid "Best Month"
+msgstr "En İyi Ay"
+
+#: includes/functions/analytics.php:350
+msgid "Highest engagement in history"
+msgstr "Tarihteki en yüksek etkileşim"
+
+#: includes/functions/analytics.php:364
+msgid "Top Agent"
+msgstr "En Popüler Temsilci"
+
+#: includes/functions/analytics.php:376
+msgid "Most clicked support number"
+msgstr "En çok tıklanan destek numarası"
+
 

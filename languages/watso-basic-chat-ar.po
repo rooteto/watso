@@ -663,4 +663,148 @@ msgstr "التحليلات"
 msgid "Woo"
 msgstr "Woo"
 
+#: includes/functions/analytics.php:67
+msgid "Click Trend"
+msgstr "مؤشر النقرات"
+
+#: includes/functions/analytics.php:73
+msgid "Click Trend (This Month)"
+msgstr "مؤشر النقرات (هذا الشهر)"
+
+#: includes/functions/analytics.php:85
+msgid "Click Trend (Last Month)"
+msgstr "مؤشر النقرات (الشهر الماضي)"
+
+#: includes/functions/analytics.php:97
+msgid "Click Trend (Last 7 Days)"
+msgstr "مؤشر النقرات (آخر 7 أيام)"
+
+#: includes/functions/analytics.php:106
+msgid "Click Trend (Today by Hour)"
+msgstr "مؤشر النقرات (اليوم بالساعة)"
+
+#: includes/functions/analytics.php:115
+msgid "Click Trend (All Time - Last 30 Days Detail)"
+msgstr "مؤشر النقرات (كل الأوقات - تفاصيل آخر 30 يومًا)"
+
+#: includes/functions/analytics.php:237
+msgid "This Month"
+msgstr "هذا الشهر"
+
+#: includes/functions/analytics.php:240
+msgid "Last Month"
+msgstr "الشهر الماضي"
+
+#: includes/functions/analytics.php:243
+msgid "Last 7 Days"
+msgstr "آخر 7 أيام"
+
+#: includes/functions/analytics.php:249
+msgid "All Time"
+msgstr "كل الأوقات"
+
+#: includes/functions/analytics.php:262
+msgid "This Month Clicks"
+msgstr "نقرات هذا الشهر"
+
+#: includes/functions/analytics.php:264
+msgid "Last Month Clicks"
+msgstr "نقرات الشهر الماضي"
+
+#: includes/functions/analytics.php:266
+msgid "Last 7 Days Clicks"
+msgstr "نقرات آخر 7 أيام"
+
+#: includes/functions/analytics.php:268
+msgid "Today Clicks"
+msgstr "نقرات اليوم"
+
+#: includes/functions/analytics.php:270
+msgid "All Time Total Clicks"
+msgstr "إجمالي النقرات لجميع الأوقات"
+
+#: includes/functions/analytics.php:272
+msgid "Selected Period Clicks"
+msgstr "نقرات الفترة المحددة"
+
+#: includes/functions/analytics.php:278
+msgid "All-time Total:"
+msgstr "المجموع الكلي:"
+
+#: includes/functions/analytics.php:287
+msgid "Monthly Comparison"
+msgstr "مقارنة شهرية"
+
+#: includes/functions/analytics.php:289
+msgid "Increase compared to last month"
+msgstr "زيادة مقارنة بالشهر الماضي"
+
+#: includes/functions/analytics.php:293
+msgid "Decrease compared to last month"
+msgstr "انخفاض مقارنة بالشهر الماضي"
+
+#: includes/functions/analytics.php:304
+msgid "vs."
+msgstr "مقابل"
+
+#: includes/functions/analytics.php:304
+msgid "(Last Mo.)"
+msgstr "(الشهر السابق)"
+
+#: includes/functions/analytics.php:307
+msgid "Current calendar month vs previous"
+msgstr "مقارنة الشهر التقويمي الحالي بالسابق"
+
+#: includes/functions/analytics.php:316
+msgid "Today vs Yesterday"
+msgstr "اليوم مقابل الأمس"
+
+#: includes/functions/analytics.php:318
+msgid "Increase compared to yesterday"
+msgstr "زيادة مقارنة بالأمس"
+
+#: includes/functions/analytics.php:322
+msgid "Decrease compared to yesterday"
+msgstr "انخفاض مقارنة بالأمس"
+
+#: includes/functions/analytics.php:333
+msgid "(Yesterday)"
+msgstr "(الأمس)"
+
+#: includes/functions/analytics.php:336
+msgid "Real-time daily pace comparison"
+msgstr "مقارنة الوتيرة اليومية في الوقت الفعلي"
+
+#: includes/functions/analytics.php:346
+msgid "Peak in view:"
+msgstr "ذروة الفترة:"
+
+#: includes/functions/analytics.php:382
+msgid "No clicks in this period."
+msgstr "لا توجد نقرات في هذه الفترة."
+
+#: includes/functions/analytics.php:446
+msgid "No activity recorded."
+msgstr "لا يوجد نشاط مسجل."
+
+#: includes/functions/analytics.php:18
+msgid "Unauthorized access."
+msgstr "وصول غير مصرح به."
+
+#: includes/functions/analytics.php:338
+msgid "Best Month"
+msgstr "أفضل شهر"
+
+#: includes/functions/analytics.php:350
+msgid "Highest engagement in history"
+msgstr "أعلى تفاعل في التاريخ"
+
+#: includes/functions/analytics.php:364
+msgid "Top Agent"
+msgstr "أفضل ممثل دعم"
+
+#: includes/functions/analytics.php:376
+msgid "Most clicked support number"
+msgstr "رقم الدعم الأكثر نقرًا"
+
 

@@ -1442,3 +1442,64 @@
 	color: #119849;
 }
 
+/* Analytics Period Filters & Comparison Badges */
+.watso-period-btn {
+	padding: 6px 14px;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #64748b;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	line-height: 1.4;
+}
+
+.watso-period-btn:hover {
+	color: #1e293b;
+	background: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+.watso-period-btn.active {
+	background: #fff;
+	color: #119849;
+	font-weight: 600;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+	text-decoration: none;
+}
+
+.watso-growth-badge {
+	font-size: 11px;
+	font-weight: 700;
+	padding: 3px 8px;
+	border-radius: 12px;
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	line-height: 1;
+}
+
+.watso-growth-up {
+	background: #ecfdf5;
+	color: #059669;
+	border: 1px solid #a7f3d0;
+}
+
+.watso-growth-down {
+	background: #fef2f2;
+	color: #dc2626;
+	border: 1px solid #fecaca;
+}
+
+.watso-growth-neutral {
+	background: #f1f5f9;
+	color: #64748b;
+	border: 1px solid #e2e8f0;
+}
+
+.watso-chart-dot:hover {
+	r: 6.5 !important;
+	fill: #119849 !important;
+	stroke: #fff !important;
+}
+
