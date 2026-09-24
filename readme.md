@@ -4,7 +4,7 @@
 
 Lightweight WhatsApp chat button for WordPress & WooCommerce. Unlimited agents, page-specific widgets, and SVG analytics with zero speed impact.
 
-[![WordPress Plugin Version](https://img.shields.io/badge/WordPress.org-v1.2.0-blue.svg)](https://wordpress.org/plugins/watso-basic-chat/)
+[![WordPress Plugin Version](https://img.shields.io/badge/WordPress.org-v1.3.0-blue.svg)](https://wordpress.org/plugins/watso-basic-chat/)
 [![License: GPL-2.0](https://img.shields.io/badge/License-GPLv2-green.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![Active Installs](https://img.shields.io/badge/Active%20Installs-4000%2B-brightgreen.svg)](https://wordpress.org/plugins/watso-basic-chat/)
 
@@ -107,6 +107,13 @@ Built on performance-first guidelines with zero external scripts and zero impact
 ---
 
 ## 📜 Changelog
+
+### 1.3.0
+* Added: Instant AJAX date range filters for Analytics (Last 30 Days, This Month, Last Month, Last 7 Days, Today, All Time).
+* Added: Smart period comparison badges (e.g. This Month vs. Last Month growth rates).
+* Added: Multi-month timeline aggregation in All Time chart mode for long-term historical tracking.
+* Added: Dynamic analytics summary cards adjusting metrics based on the selected date period.
+* Updated: Tested up to WordPress 7.1.
 
 ### 1.2.0
 * Added: Internal Analytics Dashboard with SVG click trend charts, agent distribution, and device metrics.

@@ -2,8 +2,8 @@
 Contributors: hosteva
 Tags: click to chat, whatsapp, whatsapp business, WhatsApp Chat Button, woocommerce whatsapp
 Requires at least: 5.0
-Tested up to: 7.0
-Stable tag: 1.2.0
+Tested up to: 7.1
+Stable tag: 1.3.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -117,6 +117,13 @@ Absolutely! The plugin automatically detects the visitor's system preference and
 4. Appearance and color customization.
 
 == Changelog ==
+
+= 1.3.0 =
+* Added: Instant AJAX date range filters for Analytics (Last 30 Days, This Month, Last Month, Last 7 Days, Today, All Time).
+* Added: Smart period comparison badges (e.g. This Month vs. Last Month growth rates).
+* Added: Multi-month timeline aggregation in All Time chart mode for long-term historical tracking.
+* Added: Dynamic analytics summary cards adjusting metrics based on the selected date period.
+* Updated: Tested up to WordPress 7.1.
 
 = 1.2.0 =
 * Added: Internal Analytics Dashboard with SVG click trend charts, agent distribution, and device metrics.

@@ -3,7 +3,7 @@
  * Plugin Name: Watso – Basic Help Chat Button
  * Plugin URI: https://www.hosteva.com/plugins/watso-basic-chat/?utm_campaign=watso_basic_chat
  * Description: A simple and elegant WhatsApp chat button to support your visitors with multi-number support, UTM tracking, full customization, and scheduling.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Author: Hosteva Hosting
  * Author URI: https://www.hosteva.com/?utm_campaign=watso_basic_chat
  * License: GPLv2 or later
@@ -11,7 +11,7 @@
  * Text Domain: watso-basic-chat
  * Domain Path: /languages
  * Requires at least: 4.9
- * Tested up to: 7.0
+ * Tested up to: 7.1
  * Requires PHP: 5.6
  */
 
@@ -21,7 +21,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('WATSO_VERSION', '1.2.0');
+define('WATSO_VERSION', '1.3.0');
 define('WATSO_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WATSO_PLUGIN_PATH', plugin_dir_path(__FILE__));
 define('WATSO_PLUGIN_FILE', __FILE__);
