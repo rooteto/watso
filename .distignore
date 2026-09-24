@@ -8,6 +8,7 @@
 # Local development & IDE configs
 .agents
 .hosteva
+.plan
 .idea
 .vscode
 repo

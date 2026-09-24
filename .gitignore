@@ -1,6 +1,7 @@
 # Local development & IDE
 .agents/
 .hosteva/
+.plan/
 .idea/
 .vscode/
 repo/
